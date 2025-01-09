@@ -2,26 +2,47 @@
 
 # LAB IN COGNITION AND PERCEPTION
 
-### PSYCH-UA.46 - Spring 2025
+## PSYCH-UA.46 - Spring 2025
+
+
+## Section 01
 
 ### Instructors
 
-<img src='https://codec-lab.github.io/images/mark-ho.jpg' width='100'>
+**Professor**: [Noga Zaslavsky](https://www.nogsky.com/), PhD  
+**Email**: nogaz@nyu.edu  
+**Office Hours**: TBD  
+**Office**: TBD  
+
+**Teaching Assistant**: Nathaniel Imel  
+**Email**: n.imel@nyu.edu  
+**Office Hours**: TBD  
+**Office**: TBD  
+
+### Place and Time
+Meyer Room 159  
+Mon/Wed, 2:00 PM - 3:15 PM
+
+
+## Section 02
+
+### Instructors
 
 **Professor**: [Mark Ho](https://codec-lab.github.io), PhD  
 **Email**: mark.ho@nyu.edu  
 **Office Hours**: Wednesdays 4-6pm (sign up for appointments [here](https://calendar.app.google/qoi3D36aHDfgVjNW8))  
 **Office**: Zoom or Meyer 551
 
-**Teaching Assistant**: Sixing Chen 
-**Email**: sc10264@nyu.edu 
-**Office Hours**: TBD 
-**Office**: TBD
-
+**Teaching Assistant**: Sixing Chen  
+**Email**: sc10264@nyu.edu  
+**Office Hours**: TBD  
+**Office**: TBD  
 
 ### Place and Time
-Meyer Room 159
-Mondays and Wednesdays, 2:00 PM - 3:15 PM
+Meyer Room 159  
+Mon/Wed, 2:00 PM - 3:15 PM
+
+
 
 ## Course Overview
 This course provides hands-on experience with the tools and practices used in psychological research. Students learn how to use a computer to collect, analyze, and report psychological data concerning a variety aspects of human cognition and perception.  By the end of the course students will have an first hand understanding of how to run psychological experiments, collect and analyze data, and write research reports.
@@ -31,7 +52,7 @@ In addition to methods, the course will expose students to key concepts in cogni
 This course is useful for undergraduate students interested in getting actively involved in research at NYU or another university.  In addition, this course provides a strong background for graduate work in psychological science, particularly cognitive science, cognitive neuroscience, and perception.  Even if you plan to not continue to do scientific research, the course should arm you with some of the necessary skills to be an effective worker in a world awash with data.
 
 ### Class Website
-[https://codec-lab.github.io/labincp](https://codec-lab.github.io/labincp)
+[https://markkho.github.io/nyu_lab_in_cognition](https://markkho.github.io/nyu_lab_in_cognition)
 
 ### Credits and Degree Progress
 This class is worth four credit hours and applies to the lab requirement for the psychology major.
