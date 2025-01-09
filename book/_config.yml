@@ -1,9 +1,10 @@
 # Book settings
-title: Lab in C&P (Fall24)
+title: Lab in C&P (Spring 2024)
 author: Todd M. Gureckis
 logo: images/logo/artificialintelligence.svg
 
 html:
+  favicon: "images/favicon.ico"
   home_page_in_navbar: false
 
 latex:
@@ -20,7 +21,7 @@ bibtex_bibfiles:
     - references.bib
     
 repository:
-  url: https://github.com/gureckis/nyu_lab_in_cognition
+  url: https://github.com/markkho/nyu_lab_in_cognition
   path_to_book: book/
   branch: master
 
