@@ -83,20 +83,14 @@ Attendance and participation in lectures and labs is essential given the hands o
 ### Quizzes (10% of grade)
 Short quizzes over the assigned reading and videos will be assigned in class at the start of each lecture.  
 
-
-### Presentation (10% of grade)
-Students will be assigned to working group through the entire semester.  Each group will present a summary of the reading/chapter assigned for that class.  Presentations involve a few slides describing the overall content of the class, and a list of questions that your group had about the read that we can discuss as a group.
+### Presentations (15% of grade)
+Students will be assigned to working group through the entire semester.  Each group will present a summary of the reading/chapter assigned for class.  Presentations involve a few slides describing the overall content of the class, and a list of questions that your group had about the read that we can discuss.
 
 ### Homework (15% of grade)
-We will have semi-regular homeworks (at least once a week or once every other week). These should not be too long or onerous and should let you develop your skill and practice material covered in class.  Often you will complete these assignments by filling out a webform or by completing some exercises on the class Jupyterhub instance and submitting your completed notebooks.  Some are written assignments which give you practice summarizing research results in paper form, writing the various parts of an academic paper, and communicating the results of statistical tests.
+In the first half of the semester, we will have several homework assignments to help reinforce basic ideas covered in class. These should not be too long or onerous and should let you develop your skill and practice material covered in class.  Often you will complete these assignments by filling out a webform or by completing some exercises on the class Jupyterhub instance and submitting your completed notebooks.  Some are written assignments which give you practice summarizing research results in paper form, writing the various parts of an academic paper, and communicating the results of statistical tests.
 
-### Labs (45% of grade)
+### Labs (50% of grade)
 The main part of the course will consist of three multi-part labs.  These labs will expose key concepts in the psychology of cognition and perception and will consist of multiple exercises and reports.  Most of this work will take place in the Jupyterhub.
-
-### Final Project (10% of grade)
-The course builds to a final project which will be completed in groups.  The final project will involve designing and experiment, collecting the data, and analyzing it.  Students may work in small groups (~2-4 people) and will collectively submit a final paper.  The final written paper should be in conference submission format with an abstract, intro, methods, results, discussion, and references.  The lenght will be 6-8 pages in the Cognitive Science Society Latex template (will discuss in class).  Bibliography and references will not included in the page limit. At the end of the class each group will give a ~10 minute presentation on their project (background, hypothesis, experimental design, results, analyses, conclusions).  Paper Due at Midnight on the day of the final exam.
- - Final Paper: 5%
- - Final Presentation: 5%
 
 ## Classroom Policies
 
@@ -107,7 +101,7 @@ Attendance at all classes is required.  The course is very cumulative and so tha
 All work that students turn in must be their own work. For group assignments, all work must have been done by the students on the team and must include an acknowledgements section detailing the contribution of each team member. Any outside sources (articles, books, people) must be appropriately cited in written assignments. Turning in someone else's work as your own is unacceptable and will result in a failing grade. Written assignments will be run through a website that checks for plagarism and we have code that compares the submitted responses across class members and to previous semesters (it is easy in python!). Most importantly, such behavior is academically dishonest and lazy. Submit only your own ideas and words.
 
 ### Policy on Use of Generative Artificial Intelligence
-TODO
+Students are only permitted to use generative artificial intelligence (e.g., Chat-GPT) for specific assignments as noted by the teacher, provided that students explicitly state when they used it (e.g., idea generation, generating text, debugging code, etc.). Any other usage of generative artificial intelligence will be considered a violation of the honor code as stated above.
 
 ### Research Ethics and Misconduct
 Although the experiments performed in this class are for educational purposes, and therefore not covered by the usual informed consent regulations, we will try to treat the confidentiality of the data as if it were. Falsification of any data or analysis will result in a failing grade for the course. (Note that grades are not based in any way on getting statistical significance or any particular result!)
