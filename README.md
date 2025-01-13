@@ -8,3 +8,17 @@ interesting and interactive "hands-on" type learning tasks.  This repository inc
 the notebooks, quizzes, exams, and laboratory units that make up these labs.  They are available
 open source so that other instructors can use these materials and hopefully even contribute to them
 via git pull requests!
+
+## Set up
+
+To build the book, from the root directory:
+```bash
+$ cd book
+$ make book
+```
+
+To deploy, from the root directory:
+```bash
+$ cd book
+$ make deploy
+```
