@@ -11,10 +11,10 @@ parts:
   chapters:
   - url: https://psychua-46-spring.rcnyu.org/ 
     title: JupyterHub
-  - url: https://edstem.org/us/courses/66462/discussion/
-    title: EdStem for section 001 (discussion) **need to update**
-  - url: https://edstem.org/us/courses/66462/discussion/
-    title: EdStem for section 002 (discussion) **need to update**
+  - url: https://edstem.org/us/courses/73799/discussion
+    title: EdStem for section 001 (discussion)
+  - url: https://edstem.org/us/courses/73942/discussion
+    title: EdStem for section 002 (discussion)
   - url: https://github.com/markkho/nyu_lab_in_cognition
     title: GitHub
   - url: https://vimeo.com/showcase/8224818
