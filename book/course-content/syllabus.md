@@ -11,17 +11,17 @@
 
 **Professor**: [Noga Zaslavsky](https://www.nogsky.com/), PhD  
 **Email**: nogaz@nyu.edu  
-**Office Hours**: TBD  
-**Office**: TBD  
+**Office Hours**: By appointment
+**Office**: TBD
 
 **Teaching Assistant**: Nathaniel Imel  
 **Email**: n.imel@nyu.edu  
-**Office Hours**: TBD  
+**Office Hours**: By appointment
 **Office**: TBD  
 
 ### Place and Time
 Meyer Room 159  
-Mon/Wed, 2:00 PM - 3:15 PM
+Mon/Wed, 11:00 AM - 12:15 PM
 
 
 ## Section 02
@@ -35,7 +35,7 @@ Mon/Wed, 2:00 PM - 3:15 PM
 
 **Teaching Assistant**: Sixing Chen  
 **Email**: sc10264@nyu.edu  
-**Office Hours**: TBD  
+**Office Hours**: By appointment
 **Office**: TBD  
 
 ### Place and Time
