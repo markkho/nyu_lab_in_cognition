@@ -1,0 +1,1176 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Mumford Stats practice &#8212; Lab in C&amp;P (Spring 2024)</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nyustyle.css?v=52070268" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/15/Untitled';</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/artificialintelligence.svg" class="logo__image only-light" alt="Lab in C&P (Spring 2024) - Home"/>
+    <img src="../../_static/artificialintelligence.svg" class="logo__image only-dark pst-js-only" alt="Lab in C&P (Spring 2024) - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../course-content/syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../course-content/schedule.html">Schedule</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://psychua-46-spring.rcnyu.org/">JupyterHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://edstem.org/us/courses/66462/discussion/">EdStem for section 001 (discussion) **need to update**</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://edstem.org/us/courses/66462/discussion/">EdStem for section 002 (discussion) **need to update**</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/markkho/nyu_lab_in_cognition">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://vimeo.com/showcase/8224818">Video Lectures</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Textbook</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../00/00-cogsci.html">1. What is Cognitive Science and how do we study it?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/00-whystats.html">2. Why do we have to learn statistics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/00-jupyter.html">3. Introduction to Jupyter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/00-python.html">4. Intro to Python for Psychology Undergrads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/00-researchdesign.html">5. A brief introduction to research design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/00-data.html">6. The Format and Structure of Digital Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/00-plots.html">7. Visualizing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/00-describingdata.html">8. Describing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/01-sampling.html">9. Samples, populations and sampling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/00-hypothesistesting.html">10. Hypothesis testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/00-ttest.html">11. Comparing one or two means</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/00-inferences-from-behavior.html">12. Measuring Behavior</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../21/00-ethics-irb.html">13. Research Ethics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13/00-linearregression.html">14. Linear regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16/00-mentalsimulation.html">15. Mental Imagery, Mental Simulation, and Mental Rotation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../24/00-what-next.html">16. What Next?</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Labs &amp; Homeworks</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/Homework1.html">Intro to Jupyter (HW1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/python-ica.html">Python ICA (Ch 4)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/design-ica.html">Design ICA (Ch 5)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw2/Homework2.html">Python for data (HW2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/data-ica-1.html">Data ICA (Ch 6)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/Homework3.html">Exploring Data Lab (HW3)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/sampling-ica.html">Sampling ICA (Ch 9)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/hypothesistesting-ica.html">Hypotheses ICA (Ch 10)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/ttest-ica.html">t-test ICA (Ch 11)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../labs/LabSDT-Pt1.html">Signal Detection Theory (Lab 1.1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../labs/LabSDT-Pt2.html">Signal Detection Theory (Lab 1.2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../labs/LabReg-IntroToRegression-short.html">Intro to Regression (Lab 2.1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../labs/LabReg-AdvancedRegression.html">Advanced Regression (Lab 2.2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../labs/LabReg-MentalRotation.html">Mental Rotation (Lab 2.2)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tips &amp; Tricks</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../tips/pythonresources.html">Python Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tips/plottingresources.html">Plotting in Python Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tips/fortyforloops.html">Intro to For loops</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../tips/nyu-jupyterhub.html">NYU JupyterHub Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tips/ultimate-guide-ttest-python.html">Ultimate t-test guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../LICENSE.html">License</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://psychua-46-spring.rcnyu.org/hub/user-redirect/git-pull?repo=https%3A//github.com/markkho/nyu_lab_in_cognition&urlpath=tree/nyu_lab_in_cognition/book/chapters/15/Untitled.ipynb&branch=master" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on JupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="JupyterHub logo" src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/15/Untitled.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Mumford Stats practice</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#video-2-two-stage-random-effects-formaulation">Video 2: Two stage random effects formaulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-test-equivalent">t-test equivalent</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="mumford-stats-practice">
+<h1>Mumford Stats practice<a class="headerlink" href="#mumford-stats-practice" title="Link to this heading">#</a></h1>
+<section id="video-2-two-stage-random-effects-formaulation">
+<h2>Video 2: Two stage random effects formaulation<a class="headerlink" href="#video-2-two-stage-random-effects-formaulation" title="Link to this heading">#</a></h2>
+<p>Standard simple regression</p>
+<p>$RT = \beta_0 + \beta_1 Days + \epsilon$</p>
+<p>or another way of writing it is:</p>
+<p>$\begin{bmatrix}265\252\451\335\end{bmatrix} = \begin{bmatrix}1&amp;0\1&amp;1\1&amp;2\1&amp;3\end{bmatrix} \begin{bmatrix}\beta_0\beta_1\end{bmatrix} + \begin{bmatrix}\epsilon_1\epsilon_2\epsilon_3\epsilon_4\end{bmatrix}$</p>
+<p>which can be more compatx like this
+$Y = \mathcal{Z}\beta + \epsilon, \epsilon \sum N(0, \sigma^2 I_n)$</p>
+<p>where $\mathcal{Z}$ is the design matrix:</p>
+<p>$\mathcal{Z}=\begin{bmatrix}1&amp;0\1&amp;1\1&amp;2\1&amp;3\end{bmatrix}$</p>
+<p>In the two stage model were estimate each subject’s slope and intercept separately:</p>
+<p>$Y_i = \mathcal{Z_i}\beta_i + \epsilon_i, \epsilon_i \sum N(0, \sigma^2 I_{n_i})$</p>
+<p>we are assuming $\sigma$ is the same for each subject.  Some other packages can do this.</p>
+<p>The second stage model is</p>
+<p>$\beta_i = \mathcal{A_i}\beta + b_i, b_i \sim N(0, G)$</p>
+<p>$b_i$ is the amount of noise between subjects in the slopes and intercept.  It is expressed with a covariance term $G$ because they might be correlated (slope and intercept).   You don’t actually estimate the $b_i$ values you estimate the $G$.</p>
+<p>$\mathcal{A_i}$ is the identity matrix usually.</p>
+<p>If you plug second stage into first stage:</p>
+<p>$Y_i = \mathcal{Z_i}\mathcal{A_i}\beta + \mathcal{Z_i}b_i+\epsilon_i, \epsilon_i \sim N(0, \sigma^2 I_{n_i}), b_i \sim N(0, G)$</p>
+<p>The $\beta$ is the “fixed effect” usually what we are interested in assessing.</p>
+<p>The $\beta_i$ is the random effect variable of between subject variance</p>
+<p>The $epsilon_i$ is the within subject variance.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy.random</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">npr</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">statsmodels.api</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sm</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">statsmodels.formula.api</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">smf</span>
+
+<span class="c1"># for py2r stuff</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;KMP_DUPLICATE_LIB_OK&#39;</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;True&#39;</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">pymer4.models</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pymer</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">makeFakeSleepStudyData</span><span class="p">(</span><span class="n">subj_num</span><span class="p">,</span> <span class="n">days</span><span class="p">,</span> <span class="n">sigma</span><span class="p">):</span>
+    <span class="n">subj_col</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">((</span><span class="n">days</span><span class="p">,),</span><span class="n">subj_num</span><span class="p">)</span>
+    <span class="n">day_col</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">days</span><span class="p">)</span>
+    <span class="n">intercept</span><span class="p">,</span> <span class="n">slope</span> <span class="o">=</span> <span class="n">npr</span><span class="o">.</span><span class="n">multivariate_normal</span><span class="p">([</span><span class="mi">251</span><span class="p">,</span><span class="mi">10</span><span class="p">],</span> <span class="p">[[</span><span class="mi">24</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="o">**</span><span class="mi">2</span><span class="p">]])</span>
+    <span class="n">rt</span> <span class="o">=</span> <span class="n">intercept</span> <span class="o">+</span> <span class="n">slope</span><span class="o">*</span><span class="n">day_col</span> <span class="o">+</span> <span class="n">npr</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">sigma</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">days</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;subj&#39;</span><span class="p">:</span><span class="n">subj_col</span><span class="p">,</span> <span class="s1">&#39;day&#39;</span><span class="p">:</span><span class="n">day_col</span><span class="p">,</span> <span class="s1">&#39;rt&#39;</span><span class="p">:</span> <span class="n">rt</span><span class="p">})</span>
+
+<span class="n">nsubj</span><span class="o">=</span><span class="mi">16</span>
+<span class="n">sigma</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">days</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">makeFakeSleepStudyData</span><span class="p">(</span><span class="n">subj_num</span><span class="p">,</span><span class="n">days</span><span class="p">,</span> <span class="n">sigma</span><span class="p">)</span> <span class="k">for</span> <span class="n">subj_num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nsubj</span><span class="p">)])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">relplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;day&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;rt&#39;</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s1">&#39;subj&#39;</span><span class="p">,</span> <span class="n">col_wrap</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;line&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x12ee2f320&gt;
+</pre></div>
+</div>
+<img alt="../../_images/2383a20269d499fde51faf2b6c224fad6a716566da3fd71ee14c0756473ae408.png" src="../../_images/2383a20269d499fde51faf2b6c224fad6a716566da3fd71ee14c0756473ae408.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">md</span><span class="o">=</span><span class="n">smf</span><span class="o">.</span><span class="n">mixedlm</span><span class="p">(</span><span class="s1">&#39;rt ~ day&#39;</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="n">groups</span><span class="o">=</span><span class="s1">&#39;subj&#39;</span><span class="p">,</span> <span class="n">re_formula</span><span class="o">=</span><span class="s1">&#39;~day&#39;</span><span class="p">)</span>
+<span class="n">mdf</span><span class="o">=</span> <span class="n">md</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mdf</span><span class="o">.</span><span class="n">summary</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>            Mixed Linear Model Regression Results
+=============================================================
+Model:              MixedLM   Dependent Variable:   rt       
+No. Observations:   160       Method:               REML     
+No. Groups:         16        Scale:                929.9743 
+Min. group size:    10        Log-Likelihood:       -806.0022
+Max. group size:    10        Converged:            Yes      
+Mean group size:    10.0                                     
+-------------------------------------------------------------
+                Coef.   Std.Err.   z    P&gt;|z|  [0.025  0.975]
+-------------------------------------------------------------
+Intercept       236.447    7.600 31.113 0.000 221.552 251.342
+day              12.753    3.161  4.034 0.000   6.557  18.948
+subj Var        602.795   11.695                             
+subj x day Cov -108.392    3.582                             
+day Var         148.609    2.023                             
+=============================================================
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">=</span><span class="n">pymer</span><span class="o">.</span><span class="n">Lmer</span><span class="p">(</span><span class="s1">&#39;rt ~ day + (1+day|subj)&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">REML</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Formula: rt~day+(1+day|subj)
+
+Family: gaussian	 Inference: parametric
+
+Number of observations: 160	 Groups: {&#39;subj&#39;: 16.0}
+
+Log-likelihood: -806.002 	 AIC: 1612.004
+
+Random effects:
+
+                 Name      Var     Std
+subj      (Intercept)  602.805  24.552
+subj              day  148.610  12.191
+Residual               929.974  30.495
+
+              IV1  IV2   Corr
+subj  (Intercept)  day -0.362
+
+Fixed effects:
+
+             Estimate   2.5_ci  97.5_ci     SE    DF  T-stat  P-val  Sig
+(Intercept)   236.447  221.552  251.342  7.600  15.0  31.113  0.000  ***
+day            12.753    6.557   18.948  3.161  15.0   4.034  0.001   **
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">=</span><span class="n">pymer</span><span class="o">.</span><span class="n">Lmer</span><span class="p">(</span><span class="s1">&#39;rt ~ day + (day|subj)&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">REML</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Formula: rt~day+(day|subj)
+
+Family: gaussian	 Inference: parametric
+
+Number of observations: 160	 Groups: {&#39;subj&#39;: 16.0}
+
+Log-likelihood: -806.002 	 AIC: 1612.004
+
+Random effects:
+
+                 Name      Var     Std
+subj      (Intercept)  602.805  24.552
+subj              day  148.610  12.191
+Residual               929.974  30.495
+
+              IV1  IV2   Corr
+subj  (Intercept)  day -0.362
+
+Fixed effects:
+
+             Estimate   2.5_ci  97.5_ci     SE    DF  T-stat  P-val  Sig
+(Intercept)   236.447  221.552  251.342  7.600  15.0  31.113  0.000  ***
+day            12.753    6.557   18.948  3.161  15.0   4.034  0.001   **
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">fixef</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>(Intercept)</th>
+      <th>day</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>239.488909</td>
+      <td>8.728109</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>246.447224</td>
+      <td>13.253108</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>262.839296</td>
+      <td>6.840064</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>220.598601</td>
+      <td>20.848688</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>228.604242</td>
+      <td>-7.779330</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>246.984783</td>
+      <td>3.143458</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>266.748099</td>
+      <td>3.848168</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>219.382655</td>
+      <td>10.854378</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>246.313350</td>
+      <td>12.447120</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>234.900175</td>
+      <td>14.817895</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>210.300050</td>
+      <td>13.592617</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>241.018968</td>
+      <td>43.180904</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>191.800387</td>
+      <td>30.020356</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>259.533097</td>
+      <td>7.212922</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>226.341521</td>
+      <td>3.582218</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>241.852361</td>
+      <td>19.454433</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">res</span><span class="o">.</span><span class="n">BIC</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-35-28d130b93a0b&gt;</span> in <span class="ni">&lt;module&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">res</span><span class="o">.</span><span class="n">BIC</span>
+
+<span class="nn">~/.virtualenvs/science/lib/python3.7/site-packages/pandas/core/generic.py</span> in <span class="ni">__getattr__</span><span class="nt">(self, name)</span>
+<span class="g g-Whitespace">   </span><span class="mi">5137</span>             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_info_axis</span><span class="o">.</span><span class="n">_can_hold_identifiers_and_holds_name</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">5138</span>                 <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+<span class="ne">-&gt; </span><span class="mi">5139</span>             <span class="k">return</span> <span class="nb">object</span><span class="o">.</span><span class="fm">__getattribute__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">5140</span> 
+<span class="g g-Whitespace">   </span><span class="mi">5141</span>     <span class="k">def</span><span class="w"> </span><span class="fm">__setattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+
+<span class="ne">AttributeError</span>: &#39;DataFrame&#39; object has no attribute &#39;BIC&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="t-test-equivalent">
+<h2>t-test equivalent<a class="headerlink" href="#t-test-equivalent" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">group1mean</span><span class="p">,</span> <span class="n">group2mean</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span>
+<span class="n">groupstd</span> <span class="o">=</span> <span class="mf">2.</span>
+<span class="n">subj_col</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">npr</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="n">group1mean</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">groupstd</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">),</span><span class="n">npr</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="n">group2mean</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">groupstd</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">)))</span>
+<span class="n">cond</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">15</span><span class="o">+</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="mi">15</span>
+<span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;subj&#39;</span><span class="p">:</span> <span class="n">subj_col</span><span class="p">,</span> <span class="s1">&#39;cond&#39;</span><span class="p">:</span> <span class="n">cond</span><span class="p">,</span> <span class="s1">&#39;dv&#39;</span><span class="p">:</span> <span class="n">data</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>subj</th>
+      <th>cond</th>
+      <th>dv</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+      <td>9.019312</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>1</td>
+      <td>7.906432</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2</td>
+      <td>1</td>
+      <td>11.817954</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>3</td>
+      <td>1</td>
+      <td>8.498817</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>1</td>
+      <td>13.186811</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">cond</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>1</th>
+      <th>2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span><span class="o">=</span><span class="n">pymer</span><span class="o">.</span><span class="n">Lm</span><span class="p">(</span><span class="s1">&#39;dv ~ 1+cond&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">REML</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Formula: dv~1+cond
+
+Family: gaussian	 Estimator: OLS
+
+Std-errors: non-robust	CIs: standard 95%	Inference: parametric 
+
+Number of observations: 30	 R^2: 0.924	 R^2_adj: 0.921
+
+Log-likelihood: -60.109 	 AIC: 124.219	 BIC: 127.021
+
+Fixed effects:
+
+           Estimate  2.5_ci  97.5_ci     SE  DF  T-stat  P-val  Sig
+Intercept     8.612   7.630    9.594  0.480  28  17.957    0.0  ***
+cond         12.520  11.131   13.909  0.678  28  18.459    0.0  ***
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pingouin</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pg</span>
+
+<span class="n">pg</span><span class="o">.</span><span class="n">ttest</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;cond&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;dv&#39;</span><span class="p">],</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;cond&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;dv&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>T</th>
+      <th>dof</th>
+      <th>tail</th>
+      <th>p-val</th>
+      <th>CI95%</th>
+      <th>cohen-d</th>
+      <th>BF10</th>
+      <th>power</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>T-test</th>
+      <td>-18.459</td>
+      <td>28</td>
+      <td>two-sided</td>
+      <td>3.284804e-17</td>
+      <td>[-13.91, -11.13]</td>
+      <td>6.74</td>
+      <td>8.033e+13</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/15"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#video-2-two-stage-random-effects-formaulation">Video 2: Two stage random effects formaulation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#t-test-equivalent">t-test equivalent</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Todd M. Gureckis
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
