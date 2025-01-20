@@ -37,44 +37,48 @@ parts:
   - file: chapters/21/00-ethics-irb
   - file: chapters/20/replication-crisis-in-psychology
   - file: chapters/13/00-linearregression
-  # - file: chapters/14/00-logisticregression
-  # - file: chapters/15/00-mixed-effect
+  - file: chapters/14/00-logisticregression
+  - file: chapters/15/00-mixed-effect
   - file: chapters/16/00-mentalsimulation
-  # - file: chapters/17/00-mri
-  # - file: chapters/19/00-writing
+  - file: chapters/17/00-mri
+  - file: chapters/19/00-writing
   - file: chapters/24/00-what-next
-- caption: Labs & Homeworks
+- caption: In-class Assignments
   chapters:
-  - file: homeworks/Homework1
-    title: Intro to Jupyter (HW1)
   - file: chapters/03/python-ica.ipynb
     title: Python ICA (Ch 4)
   - file: chapters/04/design-ica.ipynb
     title: Design ICA (Ch 5)
-  - file: homeworks/hw2/Homework2
-    title: Python for data (HW2)
   - file: chapters/05/data-ica-1.ipynb
     title: Data ICA (Ch 6)
   - file: chapters/06/plots-ica.ipynb
     title: Plotting ICA (Ch 6)
-  - file: homeworks/Homework3
-    title: Exploring Data Lab (HW3)
   - file: chapters/08/sampling-ica.ipynb
     title: Sampling ICA (Ch 9)
   - file: chapters/09/hypothesistesting-ica.ipynb
     title: Hypotheses ICA (Ch 10)
   - file: chapters/10/ttest-ica.ipynb
     title: t-test ICA (Ch 11)
-  - file: labs/LabSDT-Pt1.ipynb
-    title: Signal Detection Theory (Lab 1.1)
-  - file: labs/LabSDT-Pt2.ipynb
-    title: Signal Detection Theory (Lab 1.2)
-  - file: labs/LabReg-IntroToRegression-short.ipynb
-    title: Intro to Regression (Lab 2.1)
-  - file: labs/LabReg-AdvancedRegression.ipynb
-    title: Advanced Regression (Lab 2.2)
-  - file: labs/LabReg-MentalRotation.ipynb
-    title: Mental Rotation (Lab 2.2)
+- caption: Homeworks
+  chapters:
+  - file: homeworks/Homework1
+    # title: Homework 1 - Welcome to the class tools
+  - file: homeworks/hw2/Homework2
+    # title: Homework 2 - Python for data
+  - file: homeworks/Homework3
+    # title: Homework 3 - Exploring Data
+# - caption: Labs
+  # chapters:
+  # - file: labs/LabSDT-Pt1.ipynb
+  #   title: Signal Detection Theory (Lab 1.1)
+  # - file: labs/LabSDT-Pt2.ipynb
+  #   title: Signal Detection Theory (Lab 1.2)
+  # - file: labs/LabReg-IntroToRegression-short.ipynb
+  #   title: Intro to Regression (Lab 2.1)
+  # - file: labs/LabReg-AdvancedRegression.ipynb
+  #   title: Advanced Regression (Lab 2.2)
+  # - file: labs/LabReg-MentalRotation.ipynb
+  #   title: Mental Rotation (Lab 2.2)
 - caption: Tips & Tricks
   chapters:
   - file: tips/pythonresources
