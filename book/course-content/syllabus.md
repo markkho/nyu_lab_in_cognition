@@ -11,16 +11,16 @@
 
 **Professor**: [Noga Zaslavsky](https://www.nogsky.com/), PhD  
 **Email**: nogaz@nyu.edu  
-**Office Hours**: By appointment
-**Office**: TBD
+**Office Hours**: By appointment (sign up [here](https://calendar.app.google/EUD8F93VdMbYrzi17))  
+**Office**: Zoom or Meyer 587
 
 **Teaching Assistant**: Nathaniel Imel  
 **Email**: n.imel@nyu.edu  
-**Office Hours**: By appointment
+**Office Hours**: By appointment  
 **Office**: TBD  
 
 ### Place and Time
-Meyer Room 159  
+40 W 4th St (Tisch Hall), Room LC5  
 Mon/Wed, 11:00 AM - 12:15 PM
 
 
