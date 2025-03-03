@@ -1,0 +1,743 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>LAB IN COGNITION AND PERCEPTION &#8212; Lab in C&amp;P (Spring 2024)</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nyustyle.css?v=52070268" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'course-content/syllabus';</script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Schedule" href="schedule.html" />
+    <link rel="prev" title="Lab in Cognition and Perception" href="../intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/artificialintelligence.svg" class="logo__image only-light" alt="Lab in C&P (Spring 2024) - Home"/>
+    <img src="../_static/artificialintelligence.svg" class="logo__image only-dark pst-js-only" alt="Lab in C&P (Spring 2024) - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schedule.html">Schedule</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://psychua-46-spring.rcnyu.org/">JupyterHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://edstem.org/us/courses/73799/discussion">EdStem for section 001 (discussion)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://edstem.org/us/courses/73942/discussion">EdStem for section 002 (discussion)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/markkho/nyu_lab_in_cognition">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://vimeo.com/showcase/8224818">Video Lectures</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Textbook</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../chapters/00/00-cogsci.html">1. What is Cognitive Science and how do we study it?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/01/00-whystats.html">2. Why do we have to learn statistics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/02/00-jupyter.html">3. Introduction to Jupyter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/03/00-python.html">4. Intro to Python for Psychology Undergrads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/04/00-researchdesign.html">5. A brief introduction to research design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/05/00-data.html">6. The Format and Structure of Digital Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/06/00-plots.html">7. Visualizing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/07/00-describingdata.html">8. Describing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/08/01-sampling.html">9. Samples, populations and sampling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/09/00-hypothesistesting.html">10. Hypothesis testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/10/00-ttest.html">11. Comparing one or two means</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/11/00-inferences-from-behavior.html">12. Measuring Behavior</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/21/00-ethics-irb.html">13. Research Ethics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/20/replication-crisis-in-psychology.html">14. The Replication Crisis in Psychology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/13/00-linearregression.html">15. Linear regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/14/00-logisticregression.html">16. Logistic regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/15/00-mixed-effect.html">17. Linear Mixed Effect Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/16/00-mentalsimulation.html">18. Mental Imagery, Mental Simulation, and Mental Rotation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/17/00-mri.html">19. Magnetic Resonance Imaging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/19/00-writing.html">20. Writing and Publishing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/24/00-what-next.html">21. What Next?</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class Assignments</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../chapters/03/python-ica.html">Python ICA (Ch 4)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/04/design-ica.html">Design ICA (Ch 5)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/05/data-ica-1.html">Data ICA (Ch 6)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/08/sampling-ica.html">Sampling ICA (Ch 9)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/09/hypothesistesting-ica.html">Hypotheses ICA (Ch 10)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/10/ttest-ica.html">t-test ICA (Ch 11)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Homeworks</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/Homework1.html">Homework 1 - Welcome to the class tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2/Homework2.html">Homework 2 - Python for data analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/Homework3.html">Homework 3 - Exploring Data</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tips &amp; Tricks</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../tips/pythonresources.html">Python Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tips/plottingresources.html">Plotting in Python Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tips/fortyforloops.html">Intro to For loops</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../tips/nyu-jupyterhub.html">NYU JupyterHub Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tips/ultimate-guide-ttest-python.html">Ultimate t-test guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../LICENSE.html">License</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/course-content/syllabus.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>LAB IN COGNITION AND PERCEPTION</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#psych-ua-46-spring-2025">PSYCH-UA.46 - Spring 2025</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-01">Section 01</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instructors">Instructors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#place-and-time">Place and Time</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-02">Section 02</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Instructors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Place and Time</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-overview">Course Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-website">Class Website</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#credits-and-degree-progress">Credits and Degree Progress</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#textbook">Textbook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-environment">Computing Environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communication">Communication</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schedule">Schedule</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assignments">Assignments</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-participation-10-of-grade">Class Participation (10% of grade)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quizzes-10-of-grade">Quizzes (10% of grade)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#presentations-15-of-grade">Presentations (15% of grade)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-15-of-grade">Homework (15% of grade)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#labs-50-of-grade">Labs (50% of grade)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classroom-policies">Classroom Policies</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#attendance-and-tardiness">Attendance and tardiness</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#honor-code-and-plagarism">Honor code and plagarism</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#policy-on-use-of-generative-artificial-intelligence">Policy on Use of Generative Artificial Intelligence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#research-ethics-and-misconduct">Research Ethics and Misconduct</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-software">Statistical software</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accomodation">Accomodation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#late-assignments">Late Assignments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#technology">Technology</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disabilities">Disabilities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#religious-observances">Religious observances</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <!-- #region -->
+<section class="tex2jax_ignore mathjax_ignore" id="lab-in-cognition-and-perception">
+<h1>LAB IN COGNITION AND PERCEPTION<a class="headerlink" href="#lab-in-cognition-and-perception" title="Link to this heading">#</a></h1>
+<section id="psych-ua-46-spring-2025">
+<h2>PSYCH-UA.46 - Spring 2025<a class="headerlink" href="#psych-ua-46-spring-2025" title="Link to this heading">#</a></h2>
+</section>
+<section id="section-01">
+<h2>Section 01<a class="headerlink" href="#section-01" title="Link to this heading">#</a></h2>
+<section id="instructors">
+<h3>Instructors<a class="headerlink" href="#instructors" title="Link to this heading">#</a></h3>
+<p><strong>Professor</strong>: <a class="reference external" href="https://www.nogsky.com/">Noga Zaslavsky</a>, PhD<br />
+<strong>Email</strong>: nogaz&#64;nyu.edu<br />
+<strong>Office Hours</strong>: By appointment (sign up <a class="reference external" href="https://calendar.app.google/EUD8F93VdMbYrzi17">here</a>)<br />
+<strong>Office</strong>: Zoom or Meyer 587</p>
+<p><strong>Teaching Assistant</strong>: Nathaniel Imel<br />
+<strong>Email</strong>: n.imel&#64;nyu.edu<br />
+<strong>Office Hours</strong>: By appointment<br />
+<strong>Office</strong>: TBD</p>
+</section>
+<section id="place-and-time">
+<h3>Place and Time<a class="headerlink" href="#place-and-time" title="Link to this heading">#</a></h3>
+<p>40 W 4th St (Tisch Hall), Room LC5<br />
+Mon/Wed, 11:00 AM - 12:15 PM</p>
+</section>
+</section>
+<section id="section-02">
+<h2>Section 02<a class="headerlink" href="#section-02" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Instructors<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p><strong>Professor</strong>: <a class="reference external" href="https://codec-lab.github.io">Mark Ho</a>, PhD<br />
+<strong>Email</strong>: mark.ho&#64;nyu.edu<br />
+<strong>Office Hours</strong>: Wednesdays 4-6pm (sign up for appointments <a class="reference external" href="https://calendar.app.google/qoi3D36aHDfgVjNW8">here</a>)<br />
+<strong>Office</strong>: Zoom or Meyer 551</p>
+<p><strong>Teaching Assistant</strong>: Sixing Chen<br />
+<strong>Email</strong>: sc10264&#64;nyu.edu<br />
+<strong>Office Hours</strong>: By appointment
+<strong>Office</strong>: TBD</p>
+</section>
+<section id="id2">
+<h3>Place and Time<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>Meyer Room 159<br />
+Mon/Wed, 2:00 PM - 3:15 PM</p>
+</section>
+</section>
+<section id="course-overview">
+<h2>Course Overview<a class="headerlink" href="#course-overview" title="Link to this heading">#</a></h2>
+<p>This course provides hands-on experience with the tools and practices used in psychological research. Students learn how to use a computer to collect, analyze, and report psychological data concerning a variety aspects of human cognition and perception.  By the end of the course students will have an first hand understanding of how to run psychological experiments, collect and analyze data, and write research reports.</p>
+<p>In addition to methods, the course will expose students to key concepts in cognition and perception including intelligence, learning, memory, attention, visual perception, mental imagery and imagination, and cognitive neuroscience.  Data analyzed include choice data, reaction time, eye-movement data, and functional magnetic resonance imaging (fMRI).  The course culminates in an intensive final project involving the design and analysis of a novel experiment.</p>
+<p>This course is useful for undergraduate students interested in getting actively involved in research at NYU or another university.  In addition, this course provides a strong background for graduate work in psychological science, particularly cognitive science, cognitive neuroscience, and perception.  Even if you plan to not continue to do scientific research, the course should arm you with some of the necessary skills to be an effective worker in a world awash with data.</p>
+<section id="class-website">
+<h3>Class Website<a class="headerlink" href="#class-website" title="Link to this heading">#</a></h3>
+<p><a class="reference external" href="https://markkho.github.io/nyu_lab_in_cognition">https://markkho.github.io/nyu_lab_in_cognition</a></p>
+</section>
+<section id="credits-and-degree-progress">
+<h3>Credits and Degree Progress<a class="headerlink" href="#credits-and-degree-progress" title="Link to this heading">#</a></h3>
+<p>This class is worth four credit hours and applies to the lab requirement for the psychology major.</p>
+</section>
+<section id="textbook">
+<h3>Textbook<a class="headerlink" href="#textbook" title="Link to this heading">#</a></h3>
+<p>You are looking at it!  You will refer to this website for reading, lecture slides, videos, and other exercises.  Sometimes links will be provided to other websites and videos.</p>
+</section>
+<section id="prerequisites">
+<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">#</a></h3>
+<p>PSYCH-UA 10 (Statistical reasoning for the behavioral sciences), PSYCH-UA 11 (Adavance psychological statistics) and one of the following: PSYCH-UA 22 (Perception), PSYCH-UA 25 (Cognitive Neuroscience), or PSYCH-UA 29 (COGNITION). Permission of the instructor may be obtained in certain cases.</p>
+</section>
+</section>
+<section id="computing-environment">
+<h2>Computing Environment<a class="headerlink" href="#computing-environment" title="Link to this heading">#</a></h2>
+<p>The course will rely on a online computing environment called Jupyter.  Each student will have their own JupyterHub instance and can connect to this from a variety of devices over the internet.  The address of the class JupyterHub is <a class="reference external" href="https://psychua-46-spring.rcnyu.org/">https://psychua-46-spring.rcnyu.org/</a>.  You will log in with your normal NYUHome credentials.</p>
+</section>
+<section id="communication">
+<h2>Communication<a class="headerlink" href="#communication" title="Link to this heading">#</a></h2>
+<p>We will use <a class="reference internal" href="#"><span class="xref myst">Ed Discussion</span></a> to facilitate discussion outside of class.  You can post questions about any of the course content and the TA or instructor will try their best to respond quickly.  By asking your question on the public forum you can learn from the questions and answers of your fellow students.</p>
+</section>
+<section id="schedule">
+<h2>Schedule<a class="headerlink" href="#schedule" title="Link to this heading">#</a></h2>
+<p>Each class will be divided into several parts.  Sometimes there will be a short lecture, but often we will try to provide videos in advance to watch (a “flipped class”).  In class will focus on discussion, student presentations, group work, and practical exercises.  A link to the current schedule can be found <a class="reference internal" href="schedule.html"><span class="doc std std-doc">here</span></a>, but it may be updated as we go.</p>
+</section>
+<section id="assignments">
+<h2>Assignments<a class="headerlink" href="#assignments" title="Link to this heading">#</a></h2>
+<p>The grade in the course will be determined by the following categories:</p>
+<section id="class-participation-10-of-grade">
+<h3>Class Participation (10% of grade)<a class="headerlink" href="#class-participation-10-of-grade" title="Link to this heading">#</a></h3>
+<p>Attendance and participation in lectures and labs is essential given the hands on nature of the course.  Each class period we will record attendance based on responses to the in class-quick. Two “free”/”no excuse” absences are automatically granted.  You do not need to tell me the reason but connect with other students or the TA to find out what you missed.  Otherwise, please get in touch in advance if you expect to miss class.</p>
+</section>
+<section id="quizzes-10-of-grade">
+<h3>Quizzes (10% of grade)<a class="headerlink" href="#quizzes-10-of-grade" title="Link to this heading">#</a></h3>
+<p>Short quizzes over the assigned reading and videos will be assigned in class at the start of each lecture.</p>
+</section>
+<section id="presentations-15-of-grade">
+<h3>Presentations (15% of grade)<a class="headerlink" href="#presentations-15-of-grade" title="Link to this heading">#</a></h3>
+<p>Students will be assigned to working group through the entire semester.  Each group will present a summary of the reading/chapter assigned for class.  Presentations involve a few slides describing the overall content of the class, and a list of questions that your group had about the read that we can discuss.</p>
+</section>
+<section id="homework-15-of-grade">
+<h3>Homework (15% of grade)<a class="headerlink" href="#homework-15-of-grade" title="Link to this heading">#</a></h3>
+<p>In the first half of the semester, we will have several homework assignments to help reinforce basic ideas covered in class. These should not be too long or onerous and should let you develop your skill and practice material covered in class.  Often you will complete these assignments by filling out a webform or by completing some exercises on the class Jupyterhub instance and submitting your completed notebooks.  Some are written assignments which give you practice summarizing research results in paper form, writing the various parts of an academic paper, and communicating the results of statistical tests.</p>
+</section>
+<section id="labs-50-of-grade">
+<h3>Labs (50% of grade)<a class="headerlink" href="#labs-50-of-grade" title="Link to this heading">#</a></h3>
+<p>The main part of the course will consist of three multi-part labs.  These labs will expose key concepts in the psychology of cognition and perception and will consist of multiple exercises and reports.  Most of this work will take place in the Jupyterhub.</p>
+</section>
+</section>
+<section id="classroom-policies">
+<h2>Classroom Policies<a class="headerlink" href="#classroom-policies" title="Link to this heading">#</a></h2>
+<section id="attendance-and-tardiness">
+<h3>Attendance and tardiness<a class="headerlink" href="#attendance-and-tardiness" title="Link to this heading">#</a></h3>
+<p>Attendance at all classes is required.  The course is very cumulative and so that the information you learn on one day will be important for the following day’s learning.  Thus, it is not something you can catch up easily with notes from a friend.  If you have to be away for a class please let the instructor or TA know in advance.  Also, students should aim to arrive at class on time as much as possible.  Frequent tardiness will be relfected in the participation grade due to missed quizes.</p>
+</section>
+<section id="honor-code-and-plagarism">
+<h3>Honor code and plagarism<a class="headerlink" href="#honor-code-and-plagarism" title="Link to this heading">#</a></h3>
+<p>All work that students turn in must be their own work. For group assignments, all work must have been done by the students on the team and must include an acknowledgements section detailing the contribution of each team member. Any outside sources (articles, books, people) must be appropriately cited in written assignments. Turning in someone else’s work as your own is unacceptable and will result in a failing grade. Written assignments will be run through a website that checks for plagarism and we have code that compares the submitted responses across class members and to previous semesters (it is easy in python!). Most importantly, such behavior is academically dishonest and lazy. Submit only your own ideas and words.</p>
+</section>
+<section id="policy-on-use-of-generative-artificial-intelligence">
+<h3>Policy on Use of Generative Artificial Intelligence<a class="headerlink" href="#policy-on-use-of-generative-artificial-intelligence" title="Link to this heading">#</a></h3>
+<p>Students are only permitted to use generative artificial intelligence (e.g., Chat-GPT) for specific assignments as noted by the teacher, provided that students explicitly state when they used it (e.g., idea generation, generating text, debugging code, etc.). Any other usage of generative artificial intelligence will be considered a violation of the honor code as stated above.</p>
+</section>
+<section id="research-ethics-and-misconduct">
+<h3>Research Ethics and Misconduct<a class="headerlink" href="#research-ethics-and-misconduct" title="Link to this heading">#</a></h3>
+<p>Although the experiments performed in this class are for educational purposes, and therefore not covered by the usual informed consent regulations, we will try to treat the confidentiality of the data as if it were. Falsification of any data or analysis will result in a failing grade for the course. (Note that grades are not based in any way on getting statistical significance or any particular result!)</p>
+</section>
+<section id="statistical-software">
+<h3>Statistical software<a class="headerlink" href="#statistical-software" title="Link to this heading">#</a></h3>
+<p>Note that part of the class will be learning to use Python software packages for data analysis. We will be teaching these skills in the class. However, if you find that you need extra assistance, the Bobst library provide statistical consultants who are familiar with these packages. According to their webpage: Consultation information will be available on the 6th floor in rooms 620 and 621* via e- mail
+(data.service&#64;nyu.edu), telephone 212-998-3434, by appointment or on a walk-in basis. Staff and student consultants will offer free tutorials and workshops on a variety of statistical packages. Sign up for fall software tutorials on the library’s
+classes page: http://www.library.nyu.edu/forms/research/classes.html</p>
+</section>
+<section id="accomodation">
+<h3>Accomodation<a class="headerlink" href="#accomodation" title="Link to this heading">#</a></h3>
+<p>Students requesting academic accommodations are advised to reach out to the Moses Center for Students with Disabilities as early as possible in the semester for assistance.</p>
+<p>NYU’s Henry and Lucy Moses Center for Students with Disabilities.
+726 Broadway, 2nd Floor New York, NY 10003-6675
+Telephone: 212-998-4980
+Web site: http://www.nyu.edu/csd
+Email:  mosescsd&#64;nyu.edu
+For students who would benefit from assistive technology but don’t  wish to register with Moses CSD, please use: Info and links on CSD website.</p>
+</section>
+<section id="late-assignments">
+<h3>Late Assignments<a class="headerlink" href="#late-assignments" title="Link to this heading">#</a></h3>
+<p>All papers and presentations are due at the date and time specified.  Scores for late papers will be reduced by 10% for every 24-hour period a paper is late. No extensions will be granted due to computer failure, roommate difficulties, printing problems, etc.</p>
+</section>
+<section id="technology">
+<h3>Technology<a class="headerlink" href="#technology" title="Link to this heading">#</a></h3>
+<p>Due to the online nature of the course, we will use a variety of technical tools including Ed Discussion, Jupyter, etc… to facilitate our work together.  You will need to have a strong internet connection during class time and so I would recommend you try to work that out early on in the semester.  If you have internet connection issues let me know and we can discuss it and work together to find a solution because being online and in class is important.</p>
+</section>
+<section id="disabilities">
+<h3>Disabilities<a class="headerlink" href="#disabilities" title="Link to this heading">#</a></h3>
+<p>Any student with a documented disability needing academic adjustments or accommodations is requested to speak with me by the end of the second week of the term.</p>
+</section>
+<section id="religious-observances">
+<h3>Religious observances<a class="headerlink" href="#religious-observances" title="Link to this heading">#</a></h3>
+<p>Some students may wish to take part in religious observances that occur during this academic term. If you have a religious observance which conflicts with your participation in the course, please meet with me by the end of the second week of the term to discuss appropriate accommodations.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./course-content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Lab in Cognition and Perception</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="schedule.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Schedule</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#psych-ua-46-spring-2025">PSYCH-UA.46 - Spring 2025</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-01">Section 01</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#instructors">Instructors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#place-and-time">Place and Time</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#section-02">Section 02</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Instructors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Place and Time</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-overview">Course Overview</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-website">Class Website</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#credits-and-degree-progress">Credits and Degree Progress</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#textbook">Textbook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisites">Prerequisites</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-environment">Computing Environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communication">Communication</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schedule">Schedule</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#assignments">Assignments</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-participation-10-of-grade">Class Participation (10% of grade)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quizzes-10-of-grade">Quizzes (10% of grade)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#presentations-15-of-grade">Presentations (15% of grade)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-15-of-grade">Homework (15% of grade)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#labs-50-of-grade">Labs (50% of grade)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classroom-policies">Classroom Policies</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#attendance-and-tardiness">Attendance and tardiness</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#honor-code-and-plagarism">Honor code and plagarism</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#policy-on-use-of-generative-artificial-intelligence">Policy on Use of Generative Artificial Intelligence</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#research-ethics-and-misconduct">Research Ethics and Misconduct</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#statistical-software">Statistical software</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#accomodation">Accomodation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#late-assignments">Late Assignments</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#technology">Technology</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disabilities">Disabilities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#religious-observances">Religious observances</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Todd M. Gureckis
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
