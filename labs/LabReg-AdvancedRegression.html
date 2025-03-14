@@ -1,0 +1,666 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Lab 1B: Advanced Regression &#8212; Lab in C&amp;P (Spring 2024)</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/nyustyle.css?v=52070268" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'labs/LabReg-AdvancedRegression';</script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/artificialintelligence.svg" class="logo__image only-light" alt="Lab in C&P (Spring 2024) - Home"/>
+    <img src="../_static/artificialintelligence.svg" class="logo__image only-dark pst-js-only" alt="Lab in C&P (Spring 2024) - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../course-content/syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../course-content/schedule.html">Schedule</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://psychua-46-spring.rcnyu.org/">JupyterHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://edstem.org/us/courses/73799/discussion">EdStem for section 001 (discussion)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://edstem.org/us/courses/73942/discussion">EdStem for section 002 (discussion)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/markkho/nyu_lab_in_cognition">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://vimeo.com/showcase/8224818">Video Lectures</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Textbook</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../chapters/00/00-cogsci.html">1. What is Cognitive Science and how do we study it?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/01/00-whystats.html">2. Why do we have to learn statistics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/02/00-jupyter.html">3. Introduction to Jupyter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/03/00-python.html">4. Intro to Python for Psychology Undergrads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/04/00-researchdesign.html">5. A brief introduction to research design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/05/00-data.html">6. The Format and Structure of Digital Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/06/00-plots.html">7. Visualizing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/07/00-describingdata.html">8. Describing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/08/01-sampling.html">9. Samples, populations and sampling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/09/00-hypothesistesting.html">10. Hypothesis testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/10/00-ttest.html">11. Comparing one or two means</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/11/00-inferences-from-behavior.html">12. Measuring Behavior</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/21/00-ethics-irb.html">13. Research Ethics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/20/replication-crisis-in-psychology.html">14. The Replication Crisis in Psychology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/13/00-linearregression.html">15. Linear regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/14/00-logisticregression.html">16. Logistic regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/15/00-mixed-effect.html">17. Linear Mixed Effect Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/16/00-mentalsimulation.html">18. Mental Imagery, Mental Simulation, and Mental Rotation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/17/00-mri.html">19. Magnetic Resonance Imaging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/19/00-writing.html">20. Writing and Publishing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/24/00-what-next.html">21. What Next?</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class Assignments</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../chapters/03/python-ica.html">Python ICA (Ch 4)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/04/design-ica.html">Design ICA (Ch 5)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/05/data-ica-1.html">Data ICA (Ch 6)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/08/sampling-ica.html">Sampling ICA (Ch 9)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/09/hypothesistesting-ica.html">Hypotheses ICA (Ch 10)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/10/ttest-ica.html">t-test ICA (Ch 11)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Homeworks</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/Homework1.html">Homework 1 - Welcome to the class tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2/Homework2.html">Homework 2 - Python for data analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/Homework3.html">Homework 3 - Exploring Data</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tips &amp; Tricks</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../tips/pythonresources.html">Python Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tips/plottingresources.html">Plotting in Python Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tips/fortyforloops.html">Intro to For loops</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../tips/nyu-jupyterhub.html">NYU JupyterHub Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tips/ultimate-guide-ttest-python.html">Ultimate t-test guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../LICENSE.html">License</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://psychua-46-spring.rcnyu.org/hub/user-redirect/git-pull?repo=https%3A//github.com/markkho/nyu_lab_in_cognition&urlpath=tree/nyu_lab_in_cognition/book/labs/LabReg-AdvancedRegression.ipynb&branch=master" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on JupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="JupyterHub logo" src="../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/labs/LabReg-AdvancedRegression.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Lab 1B: Advanced Regression</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checking-assumptions">Checking assumptions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-regression">Multiple regression</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#colinearity">Colinearity</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.core.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">display</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy.random</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">npr</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">stats</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">statsmodels.formula.api</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">smf</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">ipywidgets</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">widgets</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="lab-1b-advanced-regression">
+<h1>Lab 1B: Advanced Regression<a class="headerlink" href="#lab-1b-advanced-regression" title="Link to this heading">#</a></h1>
+<p>Authored by <em>Todd Gureckis</em>, adapted by <em>Brenden Lake</em></p>
+<p>Aspects borrowed from <a class="reference external" href="https://github.com/justmarkham/DAT4">General Assembly’s Data Science</a> course which claims to have <em>adapted materials from Chapter 3 of <a class="reference external" href="http://www-bcf.usc.edu/~gareth/ISL/">An Introduction to Statistical Learning</a></em></p>
+<p>Congratulations, you made it through the first part of the lab, and now understand the basic of simple linear regression!  Before we move onto the actual analyses in this lab we need to cover a little further background on what we will call “advanced” topics in regression.  However, don’t be afraid!  This is not really “advanced” but more like “nuance, details, and stuff you’ll need later”.  So this isn’t an exercise in math or abstraction but additional practical skills it is useful to know about in order to be a savvy psychological data scientist!</p>
+<a class="reference internal image-reference" href="http://www.phdcomics.com/comics/archive/phd081310s.gif"><img alt="http://www.phdcomics.com/comics/archive/phd081310s.gif" src="http://www.phdcomics.com/comics/archive/phd081310s.gif" style="width: 500px;" /></a>
+<p>(replace years in grad school with “week in lab in cognition and perception”)</p>
+<section id="checking-assumptions">
+<h2>Checking assumptions<a class="headerlink" href="#checking-assumptions" title="Link to this heading">#</a></h2>
+<p>As mentioned in the reading, there are a variety of “assumptions” that need to be met in order for some of the interpretation of regression fits to be valid.  Mostly this has to do with interpreting things like the <span class="math notranslate nohighlight">\(p\)</span>-values associated with the regression line itself or with the estimated coefficients.  In the realm of just using a fitted model to make predictions, these assumptions matter somewhat less because it will be painfully obvious if your model is wrong: you’ll do poorly at prediction!  It is the interpretation of coefficients which always sounds kind of reasonable when you just report the p-value or 95% confidence intervals but can be completely wrong if the assumptions are not met.</p>
+<p>One of the more important assumption of linear regression is that the relationship between the predictor and outcome variable is roughly <strong>linear</strong>.  Seems obvious right?  But remember the examples mentioned in Chapter 4 called the anscomb quartet which were examples which have exactly the same correlation value (<span class="math notranslate nohighlight">\(r\)</span>) but are clearly showing quite different things?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;ticks&quot;</span><span class="p">)</span>
+
+<span class="c1"># Load the example dataset for Anscombe&#39;s quartet</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;anscombe&quot;</span><span class="p">)</span>
+
+<span class="c1"># Show the results of a linear regression within each dataset</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">lmplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s2">&quot;dataset&quot;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;dataset&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>
+           <span class="n">col_wrap</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">ci</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;muted&quot;</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
+           <span class="n">scatter_kws</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;s&quot;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span> <span class="s2">&quot;alpha&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>In each of these examples, you can see a nice line fit to each one but the underlying data is quite different.  This illustrates a nice exmaple of data that might “violate” the assumptions of a regression in some way.</p>
+<div class="alert alert-info" role="alert">
+  <strong>Question 1</strong> <br>
+    The cell below shows how to extract the data for each of these examples from the larger data frame.  Using your statsmodels skills conduct a linear regression between x and y for each of these dataset and verify that they have the same overall R~2 value.
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># as a reminder to select only data for dataset I we sub-select from the original data frame:</span>
+<span class="n">df1</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">dataset</span><span class="o">==</span><span class="s1">&#39;I&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-warning" role="alert">
+  <strong>Your Answer</strong> <br>
+  Delete this text and put your answer here.  The text and/or code for your analysis should appear in the cells below.
+</div><div class="alert alert-info" role="alert">
+  <strong>Question 2</strong> <br>
+    Dataset II, III, and IV have odd patterns which appear to violate one or more of the assumptions of the linear regression.  Referring back to the chapter on regression, provide python code to demonstrate at least one of these violations. As a reminder, the assumption appear in the section "Assumptions of regression" and include normality, linearity, homogeneity or variance, uncorrelated predictors, residuals are independent of each other, and no "bad" outlier. You will find it helpful to peek at the code provided in the textbook along with the various plots.
+</div><div class="alert alert-warning" role="alert">
+  <strong>Your Answer</strong> <br>
+ Delete this text and put your answer here.  The text and/or code for your analysis should appear in the cells below.</div></section>
+<section id="multiple-regression">
+<h2>Multiple regression<a class="headerlink" href="#multiple-regression" title="Link to this heading">#</a></h2>
+<p>All of the examples we considered in the last notebook use a regression equation that looked something like this:</p>
+<div class="math notranslate nohighlight">
+\[y = \beta_0 + \beta_1x\]</div>
+<p>which is often known as simple linear regression.  What makes it simple is that there is a single predictor (<span class="math notranslate nohighlight">\(x\)</span>) and it enter into the linear equation in a very standard way.</p>
+<a class="reference internal image-reference" href="https://pvsmt99345.i.lithium.com/t5/image/serverpage/image-id/9784i6F28C15930EDC179/image-dimensions/1700?v=1.0&amp;px=-1"><img alt="https://pvsmt99345.i.lithium.com/t5/image/serverpage/image-id/9784i6F28C15930EDC179/image-dimensions/1700?v=1.0&amp;px=-1" src="https://pvsmt99345.i.lithium.com/t5/image/serverpage/image-id/9784i6F28C15930EDC179/image-dimensions/1700?v=1.0&amp;px=-1" style="width: 350px;" /></a>
+<p>As described in the text, simple linear regression can easily be extended to include multiple features. This is called <strong>multiple linear regression</strong>:</p>
+<p><span class="math notranslate nohighlight">\(y = \beta_0 + \beta_1x_1 + ... + \beta_nx_n\)</span></p>
+<p>Each <span class="math notranslate nohighlight">\(x\)</span> represents a different feature, and each feature has its own coefficient. For example, for the advertising data we considered in the previous lab:</p>
+<p><span class="math notranslate nohighlight">\(y = \beta_0 + \beta_1 \times TV + \beta_2 \times Radio + \beta_3 \times Newspaper\)</span></p>
+<p>Let’s use Statsmodels to estimate these coefficients:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ad_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://cims.nyu.edu/~brenden/courses/labincp/data/advertising.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create a fitted model with all three features</span>
+<span class="n">lm</span> <span class="o">=</span> <span class="n">smf</span><span class="o">.</span><span class="n">ols</span><span class="p">(</span><span class="n">formula</span><span class="o">=</span><span class="s1">&#39;sales ~ tv + radio + newspaper&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">ad_data</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
+
+<span class="c1"># print the coefficients</span>
+<span class="n">lm</span><span class="o">.</span><span class="n">params</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lm</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>What are a few key things we learn from this output?</p>
+<ul class="simple">
+<li><p>TV and Radio have significant <strong>p-values</strong>, whereas Newspaper does not. Thus we reject the null hypothesis for TV and Radio (that there is no association between those features and Sales), and fail to reject the null hypothesis for Newspaper.</p></li>
+<li><p>TV and Radio ad spending are both <strong>positively associated</strong> with Sales, whereas Newspaper ad spending is <strong>slightly negatively associated</strong> with Sales. (However, this is irrelevant since we have failed to reject the null hypothesis for Newspaper.)</p></li>
+<li><p>This model has a higher <strong>R-squared</strong> (0.897) than the simpler models we considered in the last lab section, which means that this model provides a better fit to the data than a model that only includes TV.  However, remember that this is a case where comparing <strong>adjusted R-squared</strong> values might be more appropriate.  This is because our more complex model (with more predictors) is more flexible too. The adjusted R-squared helps with this but trying to compare the quality of the fit, controlling for the number of predictors.</p></li>
+</ul>
+<div class="alert alert-info" role="alert">
+  <strong>Question 3</strong> <br>
+    Return to the parenthood data set we considered in the last lab (<b>https://cims.nyu.edu/~brenden/courses/labincp/data/parenthood.csv</b>).  Re-read this data in (you have a new notebook and kernel now) and conduct a multiple regression that predict grumpiness using by dad sleep and baby sleep.  Following the text in the chapter and the example above interpret the coefficients and p-value for this model.
+</div><div class="alert alert-warning" role="alert">
+  <strong>Your Answer</strong> <br>
+ Delete this text and put your answer here.  The text and/or code for your analysis should appear in the cells below.
+</div></section>
+<section id="colinearity">
+<h2>Colinearity<a class="headerlink" href="#colinearity" title="Link to this heading">#</a></h2>
+<p>Colinearity is a situation that arises only in multiple regression.  Here it means that some of the information contained in the various predictors you enter into your multiple regression model can be reconstructes as a linear combination of some of the other predictors.</p>
+<p>Remember that the coefficients in multiple regression measure the effect of a unit increase of predictor X with all other predictors held constant.  However, it is impossible to measure this effect if one of the other predictors is highly correlated or perhaps even identical to X.  The effect that this has on regression estimates is that the coefficients have more uncertainty about them (i.e., the 95% confidence intervals are wider).</p>
+<a class="reference internal image-reference" href="https://pvsmt99345.i.lithium.com/t5/image/serverpage/image-id/9785i42EAC94692C75AD3/image-dimensions/1700?v=1.0&amp;px=-1"><img alt="https://pvsmt99345.i.lithium.com/t5/image/serverpage/image-id/9785i42EAC94692C75AD3/image-dimensions/1700?v=1.0&amp;px=-1" src="https://pvsmt99345.i.lithium.com/t5/image/serverpage/image-id/9785i42EAC94692C75AD3/image-dimensions/1700?v=1.0&amp;px=-1" style="width: 400px;" /></a>
+<p>The following four dataset (provided in a nice blog post about colinearity by <a class="reference external" href="https://janhove.github.io/analysis/2019/09/11/collinearity">Jan Vanhove</a>) give examples of a strong, weak, non, or nonlinear pattern of colinearity between to predictors.  In each case we are interested in the multiple linear regression between the two predictors and the outcome.</p>
+<div class="math notranslate nohighlight">
+\[outcome=\beta_1Ã—predictor1+\beta_2Ã—predictor2+\beta_0\]</div>
+<p>Strong - “https://janhove.github.io/datasets/strong_collinearity.csv”<br />
+Weak - “https://janhove.github.io/datasets/weak_collinearity.csv”<br />
+None - “https://janhove.github.io/datasets/no_collinearity.csv”<br />
+Nonlinear - “https://janhove.github.io/datasets/nonlinearity.csv”</p>
+<div class="alert alert-info" role="alert">
+  <strong>Question 4</strong> <br>
+    This exercise asks you to use the internet to solve a problem which we haven't explicitly taught you how to solve yet.  Thus it is ok to have trouble but also you learn a lot by solving things yourself.  Read about the function `PairGrid()` on the seaborn website.  The PairGrid() is one method of showing the relationship between different variabels in a dataframe.  Plot a pairgrid for each of the four datasets above.  What do you notice about the relationship between the predictors.  Which ones are likely to have a problem with colinearity when the outcome variable is predicted using the predictors and why?
+</div><div class="alert alert-warning" role="alert">
+  <strong>Your Answer</strong> <br>
+ Delete this text and put your answer here.  The text and/or code for your analysis should appear in the cells below.</div><div class="alert alert-info" role="alert">
+  <strong>Question 5</strong> <br>
+    Fit a regression to each of the example and extract both the parameters/coefficients and the 95% confidence intervals.  Report them in a single table (you might find it helpful to create a new pandas dataframe to do this) comparing the estimates values and 95% confidence intervals.  What is different across the datasets?
+</div><div class="alert alert-warning" role="alert">
+  <strong>Your Answer</strong> <br>
+ Delete this text and put your answer here.  The text and/or code for your analysis should appear in the cells below.</div></section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./labs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#checking-assumptions">Checking assumptions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-regression">Multiple regression</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#colinearity">Colinearity</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Todd M. Gureckis
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

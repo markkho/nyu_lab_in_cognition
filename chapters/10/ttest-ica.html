@@ -1,0 +1,1263 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Differences between means (review) &#8212; Lab in C&amp;P (Spring 2024)</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nyustyle.css?v=52070268" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/10/ttest-ica';</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Homework 1 - Welcome to the class tools" href="../../homeworks/Homework1.html" />
+    <link rel="prev" title="In Class Activity - Hypothesis testing" href="../09/hypothesistesting-ica.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/artificialintelligence.svg" class="logo__image only-light" alt="Lab in C&P (Spring 2024) - Home"/>
+    <img src="../../_static/artificialintelligence.svg" class="logo__image only-dark pst-js-only" alt="Lab in C&P (Spring 2024) - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../course-content/syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../course-content/schedule.html">Schedule</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://psychua-46-spring.rcnyu.org/">JupyterHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://edstem.org/us/courses/73799/discussion">EdStem for section 001 (discussion)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://edstem.org/us/courses/73942/discussion">EdStem for section 002 (discussion)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/markkho/nyu_lab_in_cognition">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://vimeo.com/showcase/8224818">Video Lectures</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Textbook</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../00/00-cogsci.html">1. What is Cognitive Science and how do we study it?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/00-whystats.html">2. Why do we have to learn statistics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/00-jupyter.html">3. Introduction to Jupyter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/00-python.html">4. Intro to Python for Psychology Undergrads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/00-researchdesign.html">5. A brief introduction to research design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/00-data.html">6. The Format and Structure of Digital Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/00-plots.html">7. Visualizing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/00-describingdata.html">8. Describing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/01-sampling.html">9. Samples, populations and sampling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/00-hypothesistesting.html">10. Hypothesis testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00-ttest.html">11. Comparing one or two means</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/00-inferences-from-behavior.html">12. Measuring Behavior</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../21/00-ethics-irb.html">13. Research Ethics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20/replication-crisis-in-psychology.html">14. The Replication Crisis in Psychology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13/00-linearregression.html">15. Linear regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14/00-logisticregression.html">16. Logistic regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../15/00-mixed-effect.html">17. Linear Mixed Effect Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16/00-mentalsimulation.html">18. Mental Imagery, Mental Simulation, and Mental Rotation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../17/00-mri.html">19. Magnetic Resonance Imaging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../19/00-writing.html">20. Writing and Publishing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../24/00-what-next.html">21. What Next?</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class Assignments</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03/python-ica.html">Python ICA (Ch 4)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/design-ica.html">Design ICA (Ch 5)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/data-ica-1.html">Data ICA (Ch 6)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/sampling-ica.html">Sampling ICA (Ch 9)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/hypothesistesting-ica.html">Hypotheses ICA (Ch 10)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">t-test ICA (Ch 11)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Homeworks</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/Homework1.html">Homework 1 - Welcome to the class tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw2/Homework2.html">Homework 2 - Python for data analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/Homework3.html">Homework 3 - Exploring Data</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tips &amp; Tricks</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../tips/pythonresources.html">Python Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tips/plottingresources.html">Plotting in Python Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tips/fortyforloops.html">Intro to For loops</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../tips/nyu-jupyterhub.html">NYU JupyterHub Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tips/ultimate-guide-ttest-python.html">Ultimate t-test guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../LICENSE.html">License</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://psychua-46-spring.rcnyu.org/hub/user-redirect/git-pull?repo=https%3A//github.com/markkho/nyu_lab_in_cognition&urlpath=tree/nyu_lab_in_cognition/book/chapters/10/ttest-ica.ipynb&branch=master" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on JupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="JupyterHub logo" src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/10/ttest-ica.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Differences between means (review)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-bootstrapping-the-t-distribution">Exercise 1: Bootstrapping the t-distribution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-relationship-between-p-and-t-values">Exercise 2: Relationship between p and t values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-computing-a-one-sample-t-test-by-hand">Exercise 3: Computing a one sample t-test by hand</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-using-pingouin-to-do-a-on-sample-ttest">Exercise 4: Using <code class="docutils literal notranslate"><span class="pre">pingouin</span></code> to do a on sample <code class="docutils literal notranslate"><span class="pre">ttest()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-melting-data">Exercise 5: Melting data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-paired-t-test-example">Exercise 6: Paired t-test example</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#study-description">STUDY DESCRIPTION</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#baseline-phase-conduct-a-one-sample-t-test">Baseline phase: Conduct a one sample t-test</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="cell tag_hide_input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.core.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">display</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy.random</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">npr</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">stats</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">statsmodels.formula.api</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">smf</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pingouin</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pg</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">ipywidgets</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">widgets</span>
+
+<span class="c1"># Enable plots inside the Jupyter Notebook</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="differences-between-means-review">
+<h1>Differences between means (review)<a class="headerlink" href="#differences-between-means-review" title="Link to this heading">#</a></h1>
+<p>Authored by <em>Todd Gureckis</em> with input from <em>Matt Crump</em>.</p>
+<section id="exercise-1-bootstrapping-the-t-distribution">
+<h2>Exercise 1: Bootstrapping the t-distribution<a class="headerlink" href="#exercise-1-bootstrapping-the-t-distribution" title="Link to this heading">#</a></h2>
+<div class="alert alert-info" role="alert">
+  <strong>Exercise 1</strong> <br>
+    Create a plot of the sampling distribution of the t statistic for 10,000 random normal samples of size 6 and 500.
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ts</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10000</span><span class="p">):</span> <span class="c1"># repeat 10000 times</span>
+    <span class="n">r_sample</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="n">XXX</span><span class="p">)</span> <span class="c1">#set size size according to instruction</span>
+    <span class="n">sem</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">r_sample</span><span class="p">,</span><span class="n">ddof</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">r_sample</span><span class="p">))</span>
+    <span class="n">t_stat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">r_sample</span><span class="p">)</span><span class="o">/</span><span class="n">sem</span>
+    <span class="n">ts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">t_stat</span><span class="p">)</span>
+    
+<span class="n">ts2</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10000</span><span class="p">):</span>
+    <span class="n">r_sample</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="n">XXXX</span><span class="p">)</span> <span class="c1">#set size according to instructions</span>
+    <span class="n">sem</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">r_sample</span><span class="p">,</span><span class="n">ddof</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">r_sample</span><span class="p">))</span>
+    <span class="n">t_stat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">r_sample</span><span class="p">)</span><span class="o">/</span><span class="n">sem</span>
+    <span class="n">ts2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">t_stat</span><span class="p">)</span>
+    
+<span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">ts</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">ts2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-success" role="alert">
+  <strong>Stop and think</strong> <br>
+    Do these distibutions look identical?  What is different and why?
+</div></section>
+<section id="exercise-2-relationship-between-p-and-t-values">
+<h2>Exercise 2: Relationship between p and t values<a class="headerlink" href="#exercise-2-relationship-between-p-and-t-values" title="Link to this heading">#</a></h2>
+<div class="alert alert-info" role="alert">
+  <strong>Exercise 2</strong> <br>
+    Using the following interactive widget, explore the critical value of t shown for different degrees of freedom (sample sizes) and alpha levels.  Report in a cell below the critical p values for a t-distribution with 9 degrees of freedom and alpha is 0.05, a t-distribution with 50 degrees of freedom and alpha 0.05 and a the critical value of a t-distribution with 25 degrees of freedom and alpha = 0.4.
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nd">@widgets</span><span class="o">.</span><span class="n">interact</span><span class="p">(</span><span class="n">dof</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">IntSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mi">53</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">10</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">FloatSlider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mf">0.2</span><span class="p">))</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">plot_t_onsided</span><span class="p">(</span><span class="n">dof</span><span class="p">,</span> <span class="n">alpha</span><span class="p">):</span>
+    <span class="n">fix</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+
+    <span class="n">x</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mf">3.5</span><span class="p">,</span><span class="mf">3.5</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">stats</span><span class="o">.</span><span class="n">t</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">df</span><span class="o">=</span><span class="n">dof</span><span class="p">)</span>
+    <span class="n">t_crit</span><span class="o">=</span><span class="n">stats</span><span class="o">.</span><span class="n">t</span><span class="o">.</span><span class="n">ppf</span><span class="p">(</span><span class="mf">1.0</span><span class="o">-</span><span class="n">alpha</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">dof</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">t_crit</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;probability&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;value of t statistic&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;One Sided Test&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">where</span><span class="o">=</span><span class="n">x</span><span class="o">&gt;</span><span class="n">t_crit</span><span class="p">,</span><span class="n">interpolate</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;lightblue&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span><span class="n">hatch</span><span class="o">=</span><span class="s1">&#39;/&#39;</span><span class="p">,</span><span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="n">t_crit</span><span class="p">])</span>
+    <span class="c1">#ax.set_yticklabels([])</span>
+
+
+    <span class="n">sns</span><span class="o">.</span><span class="n">despine</span><span class="p">(</span><span class="n">top</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "703d7efbbe234a2ab8b1f23c92658f5d", "version_major": 2, "version_minor": 0}</script></div>
+</div>
+<div class="alert alert-success" role="alert">
+  <strong>Stop and think</strong> <br>
+    How does the critical p-value change based on sample size?
+</div></section>
+<section id="exercise-3-computing-a-one-sample-t-test-by-hand">
+<h2>Exercise 3: Computing a one sample t-test by hand<a class="headerlink" href="#exercise-3-computing-a-one-sample-t-test-by-hand" title="Link to this heading">#</a></h2>
+<div class="alert alert-info" role="alert">
+  <strong>Exercise 3</strong> <br>
+    The following cell defines a small dataset as a numpy array.  Compute the t-value for this array under the null hypothesis that the true mean is 0.25.  You will find the functions np.mean(), np.std(), and np.sqrt() useful.  Print the t-value out in a cell by itself.  Then use the stats.t.cdf() function to compute the p-value associated with that t using a one sided test. 
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scores</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">.5</span><span class="p">,</span><span class="mf">.56</span><span class="p">,</span><span class="mf">.76</span><span class="p">,</span><span class="mf">.8</span><span class="p">,</span><span class="mf">.9</span><span class="p">])</span>  <span class="c1"># here is your data</span>
+<span class="c1"># compute the &quot;effect&quot; (i.e., difference between the mean of the values and the null hypothesis)</span>
+<span class="c1"># compute the error (i.e., the standard error of the mean)</span>
+<span class="c1"># Pay attention to the degrees of freedom!!</span>
+<span class="c1"># compute the t-value</span>
+<span class="c1"># use stats.t.cdf() to compute the area in the dail of the correct t-distribution for a one sided test.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-success" role="alert">
+  <strong>Stop and think</strong> <br>
+    If you have trouble try Googling these functions to find information about the arguments!
+</div></section>
+<section id="exercise-4-using-pingouin-to-do-a-on-sample-ttest">
+<h2>Exercise 4: Using <code class="docutils literal notranslate"><span class="pre">pingouin</span></code> to do a on sample <code class="docutils literal notranslate"><span class="pre">ttest()</span></code><a class="headerlink" href="#exercise-4-using-pingouin-to-do-a-on-sample-ttest" title="Link to this heading">#</a></h2>
+<div class="alert alert-info" role="alert">
+  <strong>Exercise 4</strong> <br>
+    The following cell shows how to do a one sample t-test from a numpy array.  Repeat this for the null hypothesis of 0.25, 0.5, and 0.75.  All tests should be one-sided.  Write one sentence below each t-test to describe how you would report the test in a paper.
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pingouin</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pg</span>
+<span class="n">scores</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">.5</span><span class="p">,</span><span class="mf">.56</span><span class="p">,</span><span class="mf">.76</span><span class="p">,</span><span class="mf">.8</span><span class="p">,</span><span class="mf">.9</span><span class="p">])</span>
+<span class="n">pg</span><span class="o">.</span><span class="n">ttest</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">scores</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">tail</span><span class="o">=</span><span class="s1">&#39;one-sided&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>T</th>
+      <th>dof</th>
+      <th>tail</th>
+      <th>p-val</th>
+      <th>CI95%</th>
+      <th>cohen-d</th>
+      <th>BF10</th>
+      <th>power</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>T-test</th>
+      <td>6.037</td>
+      <td>4</td>
+      <td>greater</td>
+      <td>0.001898</td>
+      <td>[0.29, inf]</td>
+      <td>2.7</td>
+      <td>28.44</td>
+      <td>0.999</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="exercise-5-melting-data">
+<h2>Exercise 5: Melting data<a class="headerlink" href="#exercise-5-melting-data" title="Link to this heading">#</a></h2>
+<div class="alert alert-info" role="alert">
+  <strong>Exercise 5</strong> <br>
+    The cell below sets up a simple pandas dataframe like the one in my slides.  Is this data frame tidy or wide? 
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">exp_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;subjects&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="s2">&quot;level_A&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="s2">&quot;level_B&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">]})</span>
+<span class="n">exp_df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>subjects</th>
+      <th>level_A</th>
+      <th>level_B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>4</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>3</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>6</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>5</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="alert alert-info" role="alert">
+The pandas `melt()` function convert from a wide representation to the tidy representation.   Try playing with different settings of the id_vars, var_name, and value_name. 
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tidy_exp_df</span><span class="o">=</span><span class="n">exp_df</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span><span class="s1">&#39;subjects&#39;</span><span class="p">,</span> <span class="n">var_name</span><span class="o">=</span><span class="s1">&#39;level&#39;</span><span class="p">,</span> <span class="n">value_name</span><span class="o">=</span><span class="s1">&#39;test_value&#39;</span><span class="p">)</span>
+<span class="n">tidy_exp_df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>subjects</th>
+      <th>level</th>
+      <th>test_value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>level_A</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>level_A</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>level_A</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>level_A</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>level_A</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1</td>
+      <td>level_B</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>2</td>
+      <td>level_B</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>3</td>
+      <td>level_B</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>4</td>
+      <td>level_B</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>5</td>
+      <td>level_B</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="alert alert-info" role="alert">
+The pandas `pivot()` function convert from a tidy representation to the wide representation.   Try playing with different settings of the index, columns, and values to see what they do. 
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tidy_exp_df</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;subjects&#39;</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;level&#39;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s1">&#39;test_value&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>level</th>
+      <th>subjects</th>
+      <th>level_A</th>
+      <th>level_B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>4</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>3</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>6</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>5</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="alert alert-info" role="alert">
+    Using the tidy format add a new column to the dataframe called 'differences' that is the difference between level B and level A for each subject.  Show this new dataframe below.
+</div><div class="alert alert-info" role="alert">
+    Follow along with the steps in the lecture to compute the paired t-test.
+</div></section>
+<section id="exercise-6-paired-t-test-example">
+<h2>Exercise 6: Paired t-test example<a class="headerlink" href="#exercise-6-paired-t-test-example" title="Link to this heading">#</a></h2>
+<section id="study-description">
+<h3>STUDY DESCRIPTION<a class="headerlink" href="#study-description" title="Link to this heading">#</a></h3>
+<p>Parents often sing to their children and, even as infants, children listen to and look at their parents while they are singing. Research by Mehr, Song, and Spelke (2016) sought to explore the psychological function that music has for parents and infants, by examining the hypothesis that particular melodies convey important social information to infants. Specifically, melodies convey information about social affiliation.</p>
+<p>The authors argue that melodies are shared within social groups. Whereas children growing up in one culture may be exposed to certain songs as infants (e.g., “Rock-a-bye Baby”), children growing up in other cultures (or even other groups within a culture) may be exposed to different songs. Thus, when a novel person (someone who the infant has never seen before) sings a familiar song, it may signal to the infant that this new person is a member of their social group.</p>
+<p>To test this hypothesis, the researchers recruited 32 infants and their parents to complete an experiment. During their first visit to the lab, the parents were taught a new lullaby (one that neither they nor their infants had heard before). The experimenters asked the parents to sing the new lullaby to their child every day for the next 1-2 weeks.</p>
+<p>Following this 1-2 week exposure period, the parents and their infant returned to the lab to complete the experimental portion of the study. Infants were first shown a screen with side-by-side videos of two unfamiliar people, each of whom were silently smiling and looking at the infant.The researchers recorded the looking behavior (or gaze) of the infants during this ‘baseline’ phase. Next, one by one, the two unfamiliar people on the screen sang either the lullaby that the parents learned or a different lullaby (that had the same lyrics and rhythm, but a different melody).  Finally, the infants saw the same silent video used at baseline, and the researchers again recorded the looking behavior of the infants during this ‘test’ phase.For more details on the experiment’s methods, please refer to Mehr et al. (2016) Experiment 1.</p>
+<p>The first thing to do is download the .csv formatted data file, using the link above, or just click <a class="reference external" href="http://gureckislab.org/courses/fall19/labincp/data/MehrSongSpelke2016.csv">here</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get the baby data frame</span>
+<span class="n">baby_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;http://gureckislab.org/courses/fall19/labincp/data/MehrSongSpelke2016.csv&#39;</span><span class="p">)</span>
+<span class="c1"># filter to only have the data from experiment 1</span>
+<span class="n">experiment_one_df</span> <span class="o">=</span> <span class="n">baby_df</span><span class="p">[</span><span class="n">baby_df</span><span class="p">[</span><span class="s1">&#39;exp1&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">experiment_one_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>study_code</th>
+      <th>exp1</th>
+      <th>exp2</th>
+      <th>exp3</th>
+      <th>exp4</th>
+      <th>exp5</th>
+      <th>dob</th>
+      <th>dot1</th>
+      <th>dot2</th>
+      <th>...</th>
+      <th>dtword13</th>
+      <th>dtnoword13</th>
+      <th>totsing14</th>
+      <th>babylike14</th>
+      <th>singcomf14</th>
+      <th>totrecord14</th>
+      <th>othersong14</th>
+      <th>dtword14</th>
+      <th>dtnoword14</th>
+      <th>filter_$</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>101</td>
+      <td>"LUL"</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+      <td>09oct2012</td>
+      <td>29mar2013</td>
+      <td>05apr2013</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>102</td>
+      <td>"LUL"</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+      <td>16nov2012</td>
+      <td>10may2013</td>
+      <td>17may2013</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>103</td>
+      <td>"LUL"</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+      <td>26nov2012</td>
+      <td>11may2013</td>
+      <td>20may2013</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>104</td>
+      <td>"LUL"</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+      <td>19nov2012</td>
+      <td>11may2013</td>
+      <td>18may2013</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>105</td>
+      <td>"LUL"</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+      <td>29nov2012</td>
+      <td>15may2013</td>
+      <td>29may2013</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 153 columns</p>
+</div></div></div>
+</div>
+</section>
+<section id="baseline-phase-conduct-a-one-sample-t-test">
+<h3>Baseline phase: Conduct a one sample t-test<a class="headerlink" href="#baseline-phase-conduct-a-one-sample-t-test" title="Link to this heading">#</a></h3>
+<p>You first want to show that infants’ looking behavior did not differ from chance during the baseline trial. The baseline trial was 16 seconds long. During the baseline, infants watched a video of two unfamiliar people, one of the left and one on the right. There was no sound during the baseline. Both of the actors in the video smiled directly at the infant.</p>
+<p>The important question was to determine whether the infant looked more or less to either person. If they showed no preference, the infant should look at both people about 50% of the time. How could we determine whether the infant looked at both people about 50% of the time?</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">experiment_one_df</span></code> data frame has a column called <code class="docutils literal notranslate"><span class="pre">Baseline_Proportion_Gaze_to_Singer</span></code>. All of these values show how the proportion of time that the infant looked to the person who would later sing the familiar song to them. If the average of these proportion is .5 across the infants, then we would have some evidence that the infants were not biased at the beginning of the experiment. However, if the infants on average had a bias toward the singer, then the average proportion of the looking time should be different than .5.</p>
+<p>Using a one-sample t-test, we can test the hypothesis that our sample mean for the <code class="docutils literal notranslate"><span class="pre">Baseline_Proportion_Gaze_to_Singer</span></code> was not different from .5.</p>
+<div class="alert alert-info" role="alert">
+  <strong>Exercise 6</strong> <br>
+    The cell below shows how to get the looking time proportions from the baseline phase.  Conduct a one-sample t-test using pinguoin to see if this data is different than a null hypothesis of 0.5 (no preference).</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># here is how to get the column</span>
+<span class="n">experiment_one_df</span><span class="p">[</span><span class="s1">&#39;Baseline_Proportion_Gaze_to_Singer&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     0.437126
+1     0.412533
+2     0.754491
+3     0.438878
+4     0.474645
+5     0.870902
+6     0.236715
+7     0.759259
+8     0.416335
+9     0.799534
+10    0.378676
+11    0.697892
+12    0.593407
+13    0.614907
+14    0.614907
+15    0.316832
+16    0.310417
+17    0.504367
+18    0.469340
+19    0.504082
+20    0.564033
+21    0.256637
+22    0.700000
+23    0.382353
+24    0.371859
+25    0.284464
+26    0.767816
+27    0.473786
+28    0.821218
+29    0.590164
+30    0.422037
+31    0.435484
+Name: Baseline_Proportion_Gaze_to_Singer, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<p>Remember how the experiment went. Infants watched silent video recordings of two women (Baseline). Then each person sung a song, one was familiar to the infant (their parents sung the song to them many times), and one was unfamiliar (singing phase). After the singing phase, the infants watched the silent video of the two singers again (test phase). The critical question was whether the infants would look more to the person who sung the familiar song compared to the person who sun the unfamiliar song. If the infants did this, they should look more than 50% of the time to the singer who sang the familiar song. We have the data, we can do another one sample t-test to find out.</p>
+<div class="alert alert-info" role="alert">
+    The cell below shows how to get the looking time proportions from the test phase.  First conduct a one sample t-test on this test data compared to a null hypothesis of 0.5.  What do you find?  Finally, conduct a paired t-test between the baseline and test phase using pinguoin to see if this data is different than a null hypothesis of 0.0 (no difference).
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># here is how to get the column</span>
+<span class="n">experiment_one_df</span><span class="p">[</span><span class="s1">&#39;Test_Proportion_Gaze_to_Singer&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0     0.602740
+1     0.683027
+2     0.724138
+3     0.281654
+4     0.498542
+5     0.950920
+6     0.417755
+7     0.938202
+8     0.500000
+9     0.586294
+10    0.472623
+11    0.508380
+12    0.811189
+13    0.571802
+14    0.777448
+15    0.262846
+16    0.507937
+17    0.436975
+18    0.542105
+19    0.600897
+20    0.418675
+21    0.789474
+22    0.760108
+23    0.623894
+24    0.366412
+25    0.461539
+26    0.899521
+27    0.531100
+28    0.541899
+29    0.700389
+30    0.762963
+31    0.460274
+Name: Test_Proportion_Gaze_to_Singer, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-info" role="alert">
+Alright. What did we find? You should take a stab at writing down what we found. You can use the same kind of language that I used from the first one sample-test. You should state the mean proportion, the t-value, the dfs, and the p-value. You should be able to answer the question, did the infants look longer at the singer who sang the familiar song? And, did they look longer than would be consist with chance at 50%.
+    </div></section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/10"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../09/hypothesistesting-ica.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">In Class Activity - Hypothesis testing</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../homeworks/Homework1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Homework 1 - Welcome to the class tools</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-bootstrapping-the-t-distribution">Exercise 1: Bootstrapping the t-distribution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-relationship-between-p-and-t-values">Exercise 2: Relationship between p and t values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-computing-a-one-sample-t-test-by-hand">Exercise 3: Computing a one sample t-test by hand</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-using-pingouin-to-do-a-on-sample-ttest">Exercise 4: Using <code class="docutils literal notranslate"><span class="pre">pingouin</span></code> to do a on sample <code class="docutils literal notranslate"><span class="pre">ttest()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-melting-data">Exercise 5: Melting data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-paired-t-test-example">Exercise 6: Paired t-test example</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#study-description">STUDY DESCRIPTION</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#baseline-phase-conduct-a-one-sample-t-test">Baseline phase: Conduct a one sample t-test</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Todd M. Gureckis
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
