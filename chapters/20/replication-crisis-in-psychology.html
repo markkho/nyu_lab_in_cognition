@@ -1,0 +1,704 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>14. The Replication Crisis in Psychology &#8212; Lab in C&amp;P (Spring 2024)</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nyustyle.css?v=52070268" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/20/replication-crisis-in-psychology';</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="15. Linear regression" href="../13/00-linearregression.html" />
+    <link rel="prev" title="13. Research Ethics" href="../21/00-ethics-irb.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/artificialintelligence.svg" class="logo__image only-light" alt="Lab in C&P (Spring 2024) - Home"/>
+    <img src="../../_static/artificialintelligence.svg" class="logo__image only-dark pst-js-only" alt="Lab in C&P (Spring 2024) - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../course-content/syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../course-content/schedule.html">Schedule</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://psychua-46-spring.rcnyu.org/">JupyterHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://edstem.org/us/courses/73799/discussion">EdStem for section 001 (discussion)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://edstem.org/us/courses/73942/discussion">EdStem for section 002 (discussion)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/markkho/nyu_lab_in_cognition">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://vimeo.com/showcase/8224818">Video Lectures</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Textbook</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../00/00-cogsci.html">1. What is Cognitive Science and how do we study it?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/00-whystats.html">2. Why do we have to learn statistics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/00-jupyter.html">3. Introduction to Jupyter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/00-python.html">4. Intro to Python for Psychology Undergrads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/00-researchdesign.html">5. A brief introduction to research design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/00-data.html">6. The Format and Structure of Digital Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/00-plots.html">7. Visualizing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/00-describingdata.html">8. Describing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/01-sampling.html">9. Samples, populations and sampling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/00-hypothesistesting.html">10. Hypothesis testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/00-ttest.html">11. Comparing one or two means</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/00-inferences-from-behavior.html">12. Measuring Behavior</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../21/00-ethics-irb.html">13. Research Ethics</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">14. The Replication Crisis in Psychology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13/00-linearregression.html">15. Linear regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14/00-logisticregression.html">16. Logistic regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../15/00-mixed-effect.html">17. Linear Mixed Effect Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16/00-mentalsimulation.html">18. Mental Imagery, Mental Simulation, and Mental Rotation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../17/00-mri.html">19. Magnetic Resonance Imaging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../19/00-writing.html">20. Writing and Publishing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../24/00-what-next.html">21. What Next?</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class Assignments</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03/python-ica.html">Python ICA (Ch 4)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/design-ica.html">Design ICA (Ch 5)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/data-ica-1.html">Data ICA (Ch 6)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/sampling-ica.html">Sampling ICA (Ch 9)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/hypothesistesting-ica.html">Hypotheses ICA (Ch 10)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/ttest-ica.html">t-test ICA (Ch 11)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Homeworks</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/Homework1.html">Homework 1 - Welcome to the class tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw2/Homework2.html">Homework 2 - Python for data analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/Homework3.html">Homework 3 - Exploring Data</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tips &amp; Tricks</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../tips/pythonresources.html">Python Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tips/plottingresources.html">Plotting in Python Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tips/fortyforloops.html">Intro to For loops</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../tips/nyu-jupyterhub.html">NYU JupyterHub Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tips/ultimate-guide-ttest-python.html">Ultimate t-test guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../LICENSE.html">License</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/20/replication-crisis-in-psychology.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>The Replication Crisis in Psychology</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">14.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-disturbing-problem">14.2. The Disturbing Problem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-replication">14.3. What is Replication?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enormity-of-the-current-crisis">14.4. Enormity of the Current Crisis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-non-replications-in-psychology">14.5. Examples of Non-replications in Psychology</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reasons-for-non-replication">14.6. Reasons for Non-replication</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-defense-of-replication-attempts">14.7. In Defense of Replication Attempts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solutions-to-the-problem">14.8. Solutions to the Problem</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dissemination-of-replication-attempts">14.8.1. Dissemination of Replication Attempts</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#more-systematic-programs-of-scientific-research">14.8.2. More Systematic Programs of Scientific Research</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#textbooks-and-journals">14.9. Textbooks and Journals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outside-resources">14.10. Outside Resources</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion-questions">14.11. Discussion Questions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vocabulary">14.12. Vocabulary</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptual-replication">14.12.1. Conceptual Replication</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confederate">14.12.2. Confederate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exact-replication">14.12.3. Exact Replication</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#falsified-data">14.12.4. Falsified data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priming">14.12.5. Priming</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-size">14.12.6. Sample Size</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">14.13. References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="the-replication-crisis-in-psychology">
+<h1><span class="section-number">14. </span>The Replication Crisis in Psychology<a class="headerlink" href="#the-replication-crisis-in-psychology" title="Link to this heading">#</a></h1>
+<p>In science, replication is the process of repeating research to determine the extent to which findings generalize across time and across situations. Recently, the science of psychology has come under criticism because a number of research findings do not replicate. In this module we discuss reasons for non-replication, the impact this phenomenon has on the field, and suggest solutions to the problem.</p>
+<section id="learning-objectives">
+<h2><span class="section-number">14.1. </span>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Define “replication”</p></li>
+<li><p>Explain the difference between exact and conceptual replication</p></li>
+<li><p>List 4 explanations for non-replication</p></li>
+<li><p>Name 3 potential solutions to the replication crisis</p></li>
+</ul>
+</section>
+<section id="the-disturbing-problem">
+<h2><span class="section-number">14.2. </span>The Disturbing Problem<a class="headerlink" href="#the-disturbing-problem" title="Link to this heading">#</a></h2>
+<p>If you were driving down the road and you saw a pirate standing at an intersection you might not believe your eyes. But if you continued driving and saw a second, and then a third, you might become more confident in your observations. The more pirates you saw the less likely the first sighting would be a false positive (you were driving fast and the person was just wearing an unusual hat and billowy shirt) and the more likely it would be the result of a logical reason (there is a pirate themed conference in town). This somewhat absurd example is a real-life illustration of replication: the repeated findings of the same results.</p>
+<p><img alt="pirate" src="../../_images/pirate.jpg" /></p>
+<p><em>If you saw a pirate you might not believe it; but if you saw another one you would feel more confident in your observation. In science, this is the process of replication. [Image: Dave Hamster, https://goo.gl/xg5QKi, CC BY 2.0, https://goo.gl/BRvSA7]</em></p>
+<p>The replication of findings is one of the defining hallmarks of science. Scientists must be able to replicate the results of studies or their findings do not become part of scientific knowledge. Replication protects against false positives (seeing a result that is not really there) and also increases confidence that the result actually exists. If you collect satisfaction data among homeless people living in Kolkata, India, for example, it might seem strange that they would report fairly high satisfaction with their food (which is exactly what we found in Biswas-Diener &amp; Diener, 2001). If you find the exact same result, but at a <em>different</em> time, and with a <em>different</em> sample of homeless people living in Kolkata, however, you can feel more confident that this result is true (as we did in Biswas-Diener &amp; Diener, 2006).</p>
+<p>In modern times, the science of psychology is facing a crisis. It turns out that many studies in psychology””including many highly cited studies””do not replicate. In an era where news is instantaneous, the failure to replicate research raises important questions about the scientific process in general and psychology specifically. People have the right to know if they can trust research evidence. For our part, psychologists also have a vested interest in ensuring that our methods and findings are as trustworthy as possible.</p>
+<p>Psychology is not alone in coming up short on replication. There have been notable failures to replicate findings in other scientific fields as well. For instance, in 1989 scientists reported that they had produced “cold fusion,” achieving nuclear fusion at room temperatures. This could have been an enormous breakthrough in the advancement of clean energy. However, other scientists were unable to replicate the findings. Thus, the potentially important results did not become part of the scientific canon, and a new energy source did not materialize. In medical science as well, a number of findings have been found not to replicate””which is of vital concern to all of society. The non-reproducibility of medical findings suggests that some treatments for illness could be ineffective. One example of non-replication has emerged in the study of genetics and diseases: when replications were attempted to determine whether certain gene-disease findings held up, only about 4% of the findings consistently did so.</p>
+<p>The non-reproducibility of findings is disturbing because it suggests the possibility that the original research was done sloppily. Even worse is the suspicion that the research may have been falsified. In science, faking results is the <em>biggest</em> of sins, the unforgivable sin, and for this reason the field of psychology has been thrown into an uproar. However, as we will discuss, there are a number of explanations for non-replication, and not all are bad</p>
+</section>
+<section id="what-is-replication">
+<h2><span class="section-number">14.3. </span>What is Replication?<a class="headerlink" href="#what-is-replication" title="Link to this heading">#</a></h2>
+<p>There are different types of replication. First, there is a type called “exact replication” (also called “direct replication”). In this form, a scientist attempts to exactly recreate the scientific methods used in conditions of an earlier study to determine whether the results come out the same. If, for instance, you wanted to exactly replicate Asch’s (1956) classic findings on conformity, you would follow the original methodology: you would use only male participants, you would use groups of 8, and you would present the same stimuli (lines of differing lengths) in the same order. The second type of replication is called “conceptual replication.” This occurs when, instead of an exact replication, which reproduces the methods of the earlier study as closely as possible, a scientist tries to confirm the previous findings using a different set of specific methods that test the same idea. The same hypothesis is tested, but using a different set of methods and measures. A conceptual replication of Asch’s research might involve both male and female <strong>confederates</strong> purposefully misidentifying types of fruit to investigate <strong>conformity</strong> rather than only males misidentifying line lengths.</p>
+<p>Both exact and conceptual replications are important because they each tell us something new. Exact replications tell us whether the original findings are true, at least under the exact conditions tested. Conceptual replications help confirm whether the theoretical idea behind the findings is true, and under what conditions these findings will occur. In other words, conceptual replication offers insights into how generalizable the findings are.</p>
+<p><img alt="Asch" src="../../_images/asch.jpg" />
+<em>Example of direct replication and conceptual replication of Asch’s conformity experiment.</em></p>
+</section>
+<section id="enormity-of-the-current-crisis">
+<h2><span class="section-number">14.4. </span>Enormity of the Current Crisis<a class="headerlink" href="#enormity-of-the-current-crisis" title="Link to this heading">#</a></h2>
+<p>Recently, there has been growing concern as psychological research fails to replicate. To give you an idea of the extent of non-replicability of psychology findings, below are data reported in 2015 by the Open Science Collaboration project, led by University of Virginia psychologist Brian Nosek (Open Science Collaboration, 2015). Because these findings were reported in the prestigious journal, Science, they received widespread attention from the media. Here are the percentages of research that replicated””selected from several highly prestigious journals:</p>
+<p>Clearly, there is a very large problem when only about 1/3 of the psychological studies in premier journals replicate! It appears that this problem is particularly pronounced for social psychology but even the 53% replication level of cognitive psychology is cause for concern.</p>
+<p>The situation in psychology has grown so worrisome that the Nobel Prize-winning psychologist Daniel Kahneman called on social psychologists to clean up their act (Kahneman, 2012). The Nobel laureate spoke bluntly of doubts about the integrity of psychology research, calling the current situation in the field a “mess.” His missive was pointed primarily at researchers who study social “priming,” but in light of the non-replication results that have since come out, it might be more aptly directed at the behavioral sciences in general.</p>
+<p><img alt="Table 1: The Reproducibility of Psychological Science" src="../../_images/table-1.png" />
+<em>Table 1: The Reproducibility of Psychological Science</em></p>
+</section>
+<section id="examples-of-non-replications-in-psychology">
+<h2><span class="section-number">14.5. </span>Examples of Non-replications in Psychology<a class="headerlink" href="#examples-of-non-replications-in-psychology" title="Link to this heading">#</a></h2>
+<p>A large number of scientists have attempted to replicate studies on what might be called “metaphorical priming,” and
+more often than not these replications have failed. <strong>Priming</strong> is the process by which a recent reference (often a subtle, subconscious cue) can increase the accessibility of a trait. For example, if your instructor says, “Please put aside your books, take out a clean sheet of paper, and write your name at the top,” you might find your pulse quickening. Over time, you have learned that this cue means you are about to be given a pop quiz. This phrase primes all the features associated with pop quizzes: they are anxiety-provoking, they are tricky, your performance matters.</p>
+<p><img alt="Prof" src="../../_images/prof.jpg" />
+<em>In one study, researchers enhanced test performance by priming participants with stereotypes of intelligence. But subsequent studies have not been able to replicate those results. [Image: CC0 Public Domain, https://goo.gl/m25gce]</em></p>
+<p>One example of a priming study that, at least in some cases, does not replicate, is the priming of the idea of intelligence. In theory, it might be possible to prime people to actually become more intelligent (or perform better on tests, at least). For instance, in one study, priming students with the idea of a stereotypical professor versus soccer hooligans led participants in the “professor” condition to earn higher scores on a trivia game (Dijksterhuis &amp; van Knippenberg, 1998). Unfortunately, in several follow-up instances this finding has not replicated (Shanks et al, 2013). This is unfortunate for all of us because it would be a very easy way to raise our test scores and general intelligence. If only it were true.</p>
+<p>Another example of a finding that seems not to replicate consistently is the use of spatial distance cues to prime people’s feelings of emotional closeness to their families (Williams &amp; Bargh, 2008). In this type of study, participants are asked to plot points on graph paper, either close together or far apart. The participants are then asked to rate how close they are to their family members. Although the original researchers found that people who plotted close-together points on graph paper reported being closer to their relatives, studies reported on PsychFileDrawer, an internet repository of replication attempts, suggest that the findings frequently do not replicate. Again, this is unfortunate because it would be a handy way to help people feel closer to their families.</p>
+<p>As one can see from the examples, some of the studies that fail to replicate report extremely interesting findings””even counterintuitive findings that appear to offer new insights into the human mind. Critics claim that psychologists have become too enamored with such newsworthy, surprising “discoveries” that receive a lot of media attention. Which raises the question of timing: might the current crisis of non-replication be related to the modern, media-hungry context in which psychological research (indeed, all research) is conducted? Put another way: is the non-replication crisis new?</p>
+<p>Nobody has tried to systematically replicate studies from the past, so we do not know if published studies are becoming less replicable over time. In 1990, however, Amir and Sharon were able to successfully replicate most of the main effects of six studies from another culture, though they did fail to replicate many of the interactions. This particular shortcoming in their overall replication may suggest that published studies are becoming less replicable over time, but we cannot be certain. What we can be sure of is that there is a significant problem with replication in psychology, and it’s a trend the field needs to correct. Without replicable findings, nobody will be able to believe in scientific psychology.</p>
+</section>
+<section id="reasons-for-non-replication">
+<h2><span class="section-number">14.6. </span>Reasons for Non-replication<a class="headerlink" href="#reasons-for-non-replication" title="Link to this heading">#</a></h2>
+<p>When findings do not replicate, the original scientists sometimes become indignant and defensive, offering reasons or excuses for non-replication of their findings””including, at times, attacking those attempting the replication. They sometimes claim that the scientists attempting the replication are unskilled or unsophisticated, or do not have sufficient experience to replicate the findings. This, of course, might be true, and it is one possible reason for non-replication.</p>
+<p>One reason for defensive responses is the unspoken implication that the original results might have been falsified. Faked results are only one reason studies may not replicate, but it is the most disturbing reason. We hope faking is rare, but in the past decade a number of shocking cases have turned up. Perhaps the most well-known come from  social psychology. Diederik Stapel, a renowned social psychologist in the Netherlands, admitted to faking the results of a number of studies. Marc Hauser, a popular professor at Harvard, apparently faked results on morality    and cognition. Karen Ruggiero at the University of Texas was also found to have <strong>falsified</strong> a number of her results (proving that bad behavior doesn’t have a gender bias). Each of these psychologists, and there are quite a few more examples, was believed to have faked data. Subsequently, they all were disgraced and lost their jobs.</p>
+<p>Another reason for non-replication is that, in studies with small <strong>sample sizes</strong>, statistically-significant results may often be the result of chance. For example, if you ask five people if they believe that aliens from other planets visit Earth and regularly abduct humans, you may get three people who agree with this notion””simply by chance. Their answers may, in fact, not be at all representative of the larger population. On the other hand, if you survey one thousand people, there is a higher probability that their belief in alien abductions reflects the actual attitudes of society. Now consider this scenario in the context of replication: if you try to replicate the first study, the one in which you interviewed only five people, there is only a small chance that you will randomly draw five new people with exactly the same (or similar) attitudes. It’s far more likely that you will be able to replicate the findings using another large sample, because it is simply more likely that the findings are accurate.</p>
+<p>Another reason for non-replication is that, while the findings in an original study may be true, they may only be true for some people in some circumstances and not necessarily universal or enduring. Imagine that a survey in the 1950s found a strong majority of respondents to have trust in government officials. Now imagine the same survey administered today, with vastly different results. This example of non-replication does not invalidate the original results. Rather, it suggests that attitudes have shifted over time.</p>
+<p>A final reason for non-replication relates to the quality of the replication rather than the quality of the original study. Non-replication might be the product of scientist-error, with the newer investigation not following the original procedures closely enough. Similarly, the attempted replication study might, itself, have too small a sample size or insufficient statistical power to find significant results.</p>
+</section>
+<section id="in-defense-of-replication-attempts">
+<h2><span class="section-number">14.7. </span>In Defense of Replication Attempts<a class="headerlink" href="#in-defense-of-replication-attempts" title="Link to this heading">#</a></h2>
+<p>Failures in replication are not all bad and, in fact, some non-replication should be expected in science. Original studies are conducted when an answer to a question is uncertain. That is to say, scientists are venturing into new territory. In such cases we should expect some answers to be uncovered that will not pan out in the long run. Furthermore, we hope that scientists take on challenging new topics that come with some amount of risk. After all, if scientists were only to publish safe results that were easy to replicate, we might have very boring studies that do not advance our knowledge very quickly. But, with such risks, some non-replication of results is to be expected.</p>
+<p><img alt="Researcher" src="../../_images/researcher.jpg" />
+<em>Researchers use specialized statistical software to store, analyze, and share data. Saving data over time and sharing data with others can be useful in conducting replications. [Image: Kwantlen Polytechnic University Psychology Department, CC BY 2.0, https://goo.gl/BRvSA7]</em></p>
+<p>A recent example of risk-taking can be seen in the research of social psychologist Daryl Bem. In 2011, Bem published an article claiming he had found in a number of studies that future events could influence the past. His proposition turns the nature of time, which is assumed by virtually everyone except science fiction writers to run in one direction, on its head. Needless to say, attacks on Bem’s article came fast and furious, including attacks on his statistics and methodology (Ritchie, Wiseman &amp; French, 2012). There were attempts at replication and most of them failed, but not all. A year after Bem’s article came out, the prestigious journal where it was published, <em>Journal of Personality and Social Psychology</em>, published another paper in which a scientist failed to replicate Bem’s findings in a number of studies very similar to the originals (Galak, Lebeouf, Nelson &amp; Simmons, 2012).</p>
+<p>Some people viewed the publication of Bem’s (2011) original study as a failure in the system of science. They argued that the paper should not have been published. But the editor and reviewers of the article had moved forward with publication because, although they might have thought the findings provocative and unlikely, they did not see obvious flaws in the methodology. We see the publication of the Bem paper, and the ensuing debate, as a strength of science. We are willing to consider unusual ideas if there is evidence to support them: we are open-minded. At the same time, we are critical and believe in replication. Scientists should be willing to consider unusual or risky hypotheses but ultimately allow good evidence to have the final say, not people’s opinions.</p>
+</section>
+<section id="solutions-to-the-problem">
+<h2><span class="section-number">14.8. </span>Solutions to the Problem<a class="headerlink" href="#solutions-to-the-problem" title="Link to this heading">#</a></h2>
+<section id="dissemination-of-replication-attempts">
+<h3><span class="section-number">14.8.1. </span>Dissemination of Replication Attempts<a class="headerlink" href="#dissemination-of-replication-attempts" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Psychfiledrawer.org: Archives attempted replications of specific studies and whether replication was achieved.</p></li>
+<li><p>Center for Open Science: Psychologist Brian Nosek, a champion of replication in psychology, has created the Open Science Framework, where replications can be reported.</p></li>
+<li><p>Association of Psychological Science: Has registered replications of studies, with the overall results published in Perspectives on Psychological Science.</p></li>
+<li><p>Plos One: Public Library of Science””publishes a broad range of articles, including failed replications, and there are occasional summaries of replication attempts in specific areas.</p></li>
+<li><p>The Replication Index: Created in 2014 by Ulrich Schimmack, the so-called “R Index” is a statistical tool for estimating the replicability of studies, of journals, and even of specific researchers. Schimmack describes it as a “doping test”.</p></li>
+</ul>
+<p>The fact that replications, including failed replication attempts, now have outlets where they can be communicated to other researchers is a very encouraging development, and should strengthen the science considerably. One problem for many decades has been the near-impossibility of publishing replication attempts, regardless of whether they’ve been positive or negative.</p>
+</section>
+<section id="more-systematic-programs-of-scientific-research">
+<h3><span class="section-number">14.8.2. </span>More Systematic Programs of Scientific Research<a class="headerlink" href="#more-systematic-programs-of-scientific-research" title="Link to this heading">#</a></h3>
+<p>The reward structure in academia has served to discourage replication. Many psychologists””especially those who work full time at universities””are often rewarded at work””with promotions, pay raises, tenure, and prestige””through their research. Replications of one’s own earlier work, or the work of others, is typically discouraged because it does not represent original thinking. Instead, academics are rewarded for high numbers of publications, and flashy studies are often given prominence in media reports of published studies.</p>
+<p><img alt="Principles of open science" src="../../_images/open-science.jpg" />
+<em>Figure 1: 6 Principles of Open Science - adapted from openscienceASAP. [Underlying Image: Greg Emmerich, https://goo.gl/UmVaoD, CC BY-SA 2.0, https://goo.gl/rxiUsF]</em></p>
+<p>Psychological scientists need to carefully pursue programmatic research. Findings from a single study are rarely adequate, and should be followed up by additional studies using varying methodologies. Thinking about research this way””as if it were a program rather than a single study””can help. We would recommend that laboratories conduct careful sets of interlocking studies, where important findings are followed up using various methods. It is not sufficient to find some surprising outcome, report it, and then move on. When findings are important enough to be published, they are often important enough to prompt further, more conclusive research. In this way scientists will discover whether their findings are replicable, and how broadly generalizable they are. If the findings do not always replicate, but do sometimes, we will learn the conditions in which the pattern does or doesn’t hold. This is an important part of science””to discover how generalizable the findings are.</p>
+<p>When researchers criticize others for being unable to replicate the original findings, saying that the conditions in the follow-up study were changed, this is important to pay attention to as well. Not all criticism is knee-jerk defensiveness or resentment. The replication crisis has stirred heated emotions among research psychologists and the public, but it is time for us to calm down and return to a more scientific attitude and system of programmatic research.</p>
+</section>
+</section>
+<section id="textbooks-and-journals">
+<h2><span class="section-number">14.9. </span>Textbooks and Journals<a class="headerlink" href="#textbooks-and-journals" title="Link to this heading">#</a></h2>
+<p>Some psychologists blame the trend toward non-replication on specific journal policies, such as the policy of <em>Psychological Science</em> to publish short single studies. When single studies are published we do not know whether even the authors themselves can replicate their findings. The journal <em>Psychological Science</em> has come under perhaps the harshest criticism. Others blame the rash of nonreplicable studies on a tendency of some fields for surprising and counterintuitive findings that grab the public interest. The irony here is that such counterintuitive findings are in fact less likely to be true precisely because they are so strange””so they should perhaps warrant more scrutiny and further analysis.</p>
+<p>The criticism of journals extends to textbooks as well. In our opinion, psychology textbooks should stress true science, based on findings that have been demonstrated to be replicable. There are a number of inaccuracies that persist across common psychology textbooks, including small mistakes in common coverage of the most famous studies, such as the Stanford Prison Experiment (Griggs &amp; Whitehead, 2014) and the Milgram studies (Griggs &amp; Whitehead, 2015). To some extent, the inclusion of non-replicated studies in textbooks is the product of market forces. Textbook publishers are under pressure to release new editions of their books, often far more frequently than advances in psychological science truly justify. As a result, there is pressure to include “sexier” topics such as controversial studies.</p>
+<p>Ultimately, people also need to learn to be intelligent consumers of science. Instead of getting overly-excited by findings from a single study, it’s wise to wait for replications. When a corpus of studies is built on a phenomenon, we can begin to trust the findings. Journalists must be educated about this too, and learn not to readily broadcast and promote findings from single flashy studies. If the results of a study seem too good to be true, maybe they are. Everyone needs to take a more skeptical view of scientific findings, until they have been replicated.</p>
+</section>
+<section id="outside-resources">
+<h2><span class="section-number">14.10. </span>Outside Resources<a class="headerlink" href="#outside-resources" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Article: New Yorker article on the “replication crisis”
+http://www.newyorker.com/tech/elements/the-crisis-in-social-psychology-that-isnt</p></li>
+<li><p>Web: Collaborative Replications and Education Project - This is a replication project where students are encouraged to conduct replications as part of their courses.
+https://osf.io/wfc6u/</p></li>
+<li><p>Web: Commentary on what makes for a convincing replication.
+http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2283856</p></li>
+<li><p>Web: Open Science Framework - The Open Science Framework is an open source software project that facilitates open collaboration in science research.
+https://osf.io/</p></li>
+<li><p>Web: Psych File Drawer - A website created to address “the file drawer problem”. PsychFileDrawer.org allows users to upload results of serious replication attempts in all research areas of psychology.
+http://psychfiledrawer.org/</p></li>
+</ul>
+</section>
+<section id="discussion-questions">
+<h2><span class="section-number">14.11. </span>Discussion Questions<a class="headerlink" href="#discussion-questions" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Why do scientists see replication by other laboratories as being so crucial to advances in science?</p></li>
+<li><p>Do the failures of replication shake your faith in what you have learned about psychology? Why or why not?</p></li>
+<li><p>Can you think of any psychological findings that you think might not replicate?</p></li>
+<li><p>What findings are so important that you think they should be replicated?</p></li>
+<li><p>Why do you think quite a few studies do not replicate?</p></li>
+<li><p>How frequently do you think faking results occurs? Why? How might we prevent that?</p></li>
+</ol>
+</section>
+<section id="vocabulary">
+<h2><span class="section-number">14.12. </span>Vocabulary<a class="headerlink" href="#vocabulary" title="Link to this heading">#</a></h2>
+<section id="conceptual-replication">
+<h3><span class="section-number">14.12.1. </span>Conceptual Replication<a class="headerlink" href="#conceptual-replication" title="Link to this heading">#</a></h3>
+<p>A scientific attempt to copy the scientific hypothesis used in an earlier study in an effort to determine whether the results will generalize to different samples, times, or situations. The same””or similar””results are an indication that the findings are generalizable.</p>
+</section>
+<section id="confederate">
+<h3><span class="section-number">14.12.2. </span>Confederate<a class="headerlink" href="#confederate" title="Link to this heading">#</a></h3>
+<p>An actor working with the researcher. Most often, this individual is used to deceive unsuspecting research participants. Also known as a “stooge.”</p>
+</section>
+<section id="exact-replication">
+<h3><span class="section-number">14.12.3. </span>Exact Replication<a class="headerlink" href="#exact-replication" title="Link to this heading">#</a></h3>
+<p>A scientific attempt to exactly copy the scientific methods used in an earlier study in an effort to determine whether the results are consistent. The same””or similar””results are an indication that the findings are accurate.</p>
+</section>
+<section id="falsified-data">
+<h3><span class="section-number">14.12.4. </span>Falsified data<a class="headerlink" href="#falsified-data" title="Link to this heading">#</a></h3>
+<p>Data that are fabricated, or made up, by researchers intentionally trying to pass off research results that are inaccurate. This is a serious ethical breach and can even be a criminal offense.</p>
+</section>
+<section id="priming">
+<h3><span class="section-number">14.12.5. </span>Priming<a class="headerlink" href="#priming" title="Link to this heading">#</a></h3>
+<p>The process by which exposing people to one stimulus makes certain thoughts, feelings or behaviors more salient.</p>
+</section>
+<section id="sample-size">
+<h3><span class="section-number">14.12.6. </span>Sample Size<a class="headerlink" href="#sample-size" title="Link to this heading">#</a></h3>
+<p>The number of participants in a study. Sample size is important because it can influence the confidence scientists have in the accuracy and generalizability of their results.</p>
+</section>
+</section>
+<section id="references">
+<h2><span class="section-number">14.13. </span>References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/20"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../21/00-ethics-irb.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">13. </span>Research Ethics</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../13/00-linearregression.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">15. </span>Linear regression</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">14.1. Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-disturbing-problem">14.2. The Disturbing Problem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-replication">14.3. What is Replication?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enormity-of-the-current-crisis">14.4. Enormity of the Current Crisis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-non-replications-in-psychology">14.5. Examples of Non-replications in Psychology</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reasons-for-non-replication">14.6. Reasons for Non-replication</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-defense-of-replication-attempts">14.7. In Defense of Replication Attempts</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solutions-to-the-problem">14.8. Solutions to the Problem</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dissemination-of-replication-attempts">14.8.1. Dissemination of Replication Attempts</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#more-systematic-programs-of-scientific-research">14.8.2. More Systematic Programs of Scientific Research</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#textbooks-and-journals">14.9. Textbooks and Journals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outside-resources">14.10. Outside Resources</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#discussion-questions">14.11. Discussion Questions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vocabulary">14.12. Vocabulary</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptual-replication">14.12.1. Conceptual Replication</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confederate">14.12.2. Confederate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exact-replication">14.12.3. Exact Replication</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#falsified-data">14.12.4. Falsified data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priming">14.12.5. Priming</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-size">14.12.6. Sample Size</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">14.13. References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Todd M. Gureckis
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
