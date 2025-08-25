@@ -22,6 +22,8 @@ To deploy, from the root directory:
 $ cd book
 $ make deploy
 ```
+Note that this force commits to a `gh-pages` branch on the repo with the compiled
+book contents.
 
 ## Course resources
 - JupyterHub for notebooks (email Instructional-Tools-For-Coding@nyu.edu)
