@@ -7,6 +7,8 @@ parts:
     title: Syllabus
   - file: course-content/schedule
     title: Schedule
+  - file: course-content/schedule-03
+    title: Schedule (03)
 - caption: Resources
   chapters:
   - url: https://psychua-46-spring.rcnyu.org/ 

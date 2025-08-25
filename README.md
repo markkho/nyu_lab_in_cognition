@@ -22,3 +22,8 @@ To deploy, from the root directory:
 $ cd book
 $ make deploy
 ```
+
+## Course resources
+- JupyterHub for notebooks (email Instructional-Tools-For-Coding@nyu.edu)
+- Gradescope for assignments
+- Ed discussion for annoucements
