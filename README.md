@@ -17,6 +17,12 @@ $ cd book
 $ make book
 ```
 
+To serve locally, from the root directory:
+```bash
+$ cd book
+$ make serve
+```
+
 To deploy, from the root directory:
 ```bash
 $ cd book

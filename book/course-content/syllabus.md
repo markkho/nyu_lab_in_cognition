@@ -10,17 +10,17 @@
 ### Instructors
 
 **Professor**: [Andrew Hilford](https://as.nyu.edu/psychology/people/faculty.andrew-hilford.html), PhD  
-**Email**: andy.hilford@nyu.edu 
-**Office Hours**: TBD 
-**Office**: TBD
+**Email**: andy.hilford@nyu.edu  
+**Office Hours**: TBD  
+**Office**: TBD  
 
-**Teaching Assistant**: TBD
-**Email**: TBD
-**Office Hours**:  TBD
+**Teaching Assistant**: TBD  
+**Email**: TBD  
+**Office Hours**: TBD  
 **Office**: TBD  
 
 ### Place and Time
-TBD
+TBD  
 Tues/Thurs 11:00 AM - 12:15 PM
 
 ## Section 02
@@ -28,17 +28,17 @@ Tues/Thurs 11:00 AM - 12:15 PM
 ### Instructors
 
 **Professor**: [Michael Landy](https://wp.nyu.edu/landylab/landy-bio/), PhD  
-**Email**: landy@nyu.edu 
-**Office Hours**: TBD 
-**Office**: TBD
+**Email**: landy@nyu.edu  
+**Office Hours**: TBD  
+**Office**: TBD  
 
-**Teaching Assistant**: TBD
-**Email**: TBD
-**Office Hours**:  TBD
+**Teaching Assistant**: TBD  
+**Email**: TBD  
+**Office Hours**: TBD  
 **Office**: TBD  
 
 ### Place and Time
-TBD
+TBD  
 Mon 2:00 PM - 4:30 PM
 
 ## Section 03
@@ -48,15 +48,15 @@ Mon 2:00 PM - 4:30 PM
 **Professor**: [Mark Ho](https://codec-lab.github.io), PhD  
 **Email**: mark.ho@nyu.edu  
 **Office Hours**: Thursdays 10am-1pm (sign up for appointments [here](https://calendly.com/markkho/15-min-meetings-clone))  
-**Office**: Zoom or Meyer 552
+**Office**: Zoom or Meyer 552  
 
 **Teaching Assistant**: Panos Alefantis  
-**Email**: pa77@nyu.edu
-**Office Hours**: By appointment
+**Email**: pa77@nyu.edu  
+**Office Hours**: By appointment  
 **Office**: TBD  
 
 ### Place and Time
-TBD
+TBD  
 Wed, 11:00 AM - 1:30 PM
 
 
