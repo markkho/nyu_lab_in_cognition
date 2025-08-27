@@ -35,3 +35,6 @@ book contents.
 - JupyterHub for notebooks (email Instructional-Tools-For-Coding@nyu.edu)
 - Gradescope for assignments
 - Ed discussion for annoucements
+
+## TODO
+- Fix images in Ch 9 on sampling
