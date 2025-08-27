@@ -38,3 +38,4 @@ book contents.
 
 ## TODO
 - Fix images in Ch 9 on sampling
+- Add Ch 8 on describing data ICA
