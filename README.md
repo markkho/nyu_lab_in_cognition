@@ -17,8 +17,24 @@ $ cd book
 $ make book
 ```
 
+To serve locally, from the root directory:
+```bash
+$ cd book
+$ make serve
+```
+
 To deploy, from the root directory:
 ```bash
 $ cd book
 $ make deploy
 ```
+Note that this force commits to a `gh-pages` branch on the repo with the compiled
+book contents.
+
+## Course resources
+- JupyterHub for notebooks (email Instructional-Tools-For-Coding@nyu.edu)
+- Gradescope for assignments
+- Ed discussion for annoucements
+
+## TODO
+- Fix images in Ch 9 on sampling

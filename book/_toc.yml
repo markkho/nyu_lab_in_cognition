@@ -5,16 +5,22 @@ parts:
   chapters:
   - file: course-content/syllabus
     title: Syllabus
-  - file: course-content/schedule
-    title: Schedule
+  - file: course-content/schedule-01
+    title: Schedule (Section 001)
+  - file: course-content/schedule-02
+    title: Schedule (Section 002)
+  - file: course-content/schedule-03
+    title: Schedule (Section 003)
 - caption: Resources
   chapters:
   - url: https://psychua-46-spring.rcnyu.org/ 
     title: JupyterHub
-  - url: https://edstem.org/us/courses/73799/discussion
+  - url: https://edstem.org/
     title: EdStem for section 001 (discussion)
-  - url: https://edstem.org/us/courses/73942/discussion
+  - url: https://edstem.org/
     title: EdStem for section 002 (discussion)
+  - url: https://edstem.org/
+    title: EdStem for section 003 (discussion)
   - url: https://github.com/markkho/nyu_lab_in_cognition
     title: GitHub
   - url: https://vimeo.com/showcase/8224818
@@ -51,8 +57,8 @@ parts:
     title: Design ICA (Ch 5)
   - file: chapters/05/data-ica-1.ipynb
     title: Data ICA (Ch 6)
-  - file: chapters/06/plots-ica.ipynb
-    title: Plotting ICA (Ch 6)
+  - file: chapters/06/viz-ica-1.ipynb
+    title: Visualization ICA (Ch 7)
   - file: chapters/08/sampling-ica.ipynb
     title: Sampling ICA (Ch 9)
   - file: chapters/09/hypothesistesting-ica.ipynb

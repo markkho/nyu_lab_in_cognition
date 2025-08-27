@@ -2,45 +2,62 @@
 
 # LAB IN COGNITION AND PERCEPTION
 
-## PSYCH-UA.46 - Spring 2025
+## PSYCH-UA.46 - Fall 2025
 
 
 ## Section 01
 
 ### Instructors
 
-**Professor**: [Noga Zaslavsky](https://www.nogsky.com/), PhD  
-**Email**: nogaz@nyu.edu  
-**Office Hours**: By appointment (sign up [here](https://calendar.app.google/EUD8F93VdMbYrzi17))  
-**Office**: Zoom or Meyer 587
+**Professor**: [Andrew Hilford](https://as.nyu.edu/psychology/people/faculty.andrew-hilford.html), PhD  
+**Email**: andy.hilford@nyu.edu  
+**Office Hours**: TBD  
+**Office**: TBD  
 
-**Teaching Assistant**: Nathaniel Imel  
-**Email**: n.imel@nyu.edu  
-**Office Hours**: By appointment  
+**Teaching Assistant**: TBD  
+**Email**: TBD  
+**Office Hours**: TBD  
 **Office**: TBD  
 
 ### Place and Time
-40 W 4th St (Tisch Hall), Room LC5  
-Mon/Wed, 11:00 AM - 12:15 PM
-
+TBD  
+Tues/Thurs 11:00 AM - 12:15 PM
 
 ## Section 02
 
 ### Instructors
 
-**Professor**: [Mark Ho](https://codec-lab.github.io), PhD  
-**Email**: mark.ho@nyu.edu  
-**Office Hours**: Wednesdays 4-6pm (sign up for appointments [here](https://calendar.app.google/qoi3D36aHDfgVjNW8))  
-**Office**: Zoom or Meyer 551
+**Professor**: [Michael Landy](https://wp.nyu.edu/landylab/landy-bio/), PhD  
+**Email**: landy@nyu.edu  
+**Office Hours**: TBD  
+**Office**: TBD  
 
-**Teaching Assistant**: Sixing Chen  
-**Email**: sc10264@nyu.edu  
-**Office Hours**: By appointment
+**Teaching Assistant**: TBD  
+**Email**: TBD  
+**Office Hours**: TBD  
 **Office**: TBD  
 
 ### Place and Time
-Meyer Room 159  
-Mon/Wed, 2:00 PM - 3:15 PM
+TBD  
+Mon 2:00 PM - 4:30 PM
+
+## Section 03
+
+### Instructors
+
+**Professor**: [Mark Ho](https://codec-lab.github.io), PhD  
+**Email**: mark.ho@nyu.edu  
+**Office Hours**: Thursdays 10am-1pm (sign up for appointments [here](https://calendly.com/markkho/15-min-meetings-clone))  
+**Office**: Zoom or Meyer 552  
+
+**Teaching Assistant**: Panos Alefantis  
+**Email**: pa77@nyu.edu  
+**Office Hours**: By appointment  
+**Office**: TBD  
+
+### Place and Time
+TBD  
+Wed, 11:00 AM - 1:30 PM
 
 
 
