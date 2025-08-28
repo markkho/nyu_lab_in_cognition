@@ -81,7 +81,7 @@ You are looking at it!  You will refer to this website for reading, lecture slid
 PSYCH-UA 10 (Statistical reasoning for the behavioral sciences), PSYCH-UA 11 (Adavance psychological statistics) and one of the following: PSYCH-UA 22 (Perception), PSYCH-UA 25 (Cognitive Neuroscience), or PSYCH-UA 29 (COGNITION). Permission of the instructor may be obtained in certain cases.
 
 ## Computing Environment
-The course will rely on a online computing environment called Jupyter.  Each student will have their own JupyterHub instance and can connect to this from a variety of devices over the internet.  The address of the class JupyterHub is [https://psychua-46-spring.rcnyu.org/](https://psychua-46-spring.rcnyu.org/).  You will log in with your normal NYUHome credentials.
+The course will rely on a online computing environment called Jupyter.  Each student will have their own JupyterHub instance and can connect to this from a variety of devices over the internet.  The address of the class JupyterHub is [https://psychua-46-fall.rcnyu.org/](https://psychua-46-fall.rcnyu.org/).  You will log in with your normal NYUHome credentials.
 
 ## Communication
 We will use [Ed Discussion]() to facilitate discussion outside of class.  You can post questions about any of the course content and the TA or instructor will try their best to respond quickly.  By asking your question on the public forum you can learn from the questions and answers of your fellow students. 
