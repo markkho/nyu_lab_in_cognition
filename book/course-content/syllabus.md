@@ -20,7 +20,7 @@
 **Office**: TBD  
 
 ### Place and Time
-TBD  
+Tisch Hall, Room LC13  
 Tues/Thurs 11:00 AM - 12:15 PM
 
 ## Section 02
@@ -29,16 +29,16 @@ Tues/Thurs 11:00 AM - 12:15 PM
 
 **Professor**: [Michael Landy](https://wp.nyu.edu/landylab/landy-bio/), PhD  
 **Email**: landy@nyu.edu  
-**Office Hours**: TBD  
-**Office**: TBD  
+**Office Hours**: By appointment  
+**Office**: Meyer 961 (ring at 957)  
 
-**Teaching Assistant**: TBD  
+**Teaching Assistant**: Sixing Chen  
 **Email**: TBD  
 **Office Hours**: TBD  
 **Office**: TBD  
 
 ### Place and Time
-TBD  
+Meyer 465  
 Mon 2:00 PM - 4:30 PM
 
 ## Section 03
@@ -56,7 +56,7 @@ Mon 2:00 PM - 4:30 PM
 **Office**: TBD  
 
 ### Place and Time
-TBD  
+Meyer 102  
 Wed, 11:00 AM - 1:30 PM
 
 
