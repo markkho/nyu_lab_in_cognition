@@ -17,7 +17,7 @@ parts:
     title: JupyterHub
   - url: https://edstem.org/
     title: EdStem for section 001 (discussion)
-  - url: https://edstem.org/
+  - url: https://edstem.org/us/courses/85450/discussion
     title: EdStem for section 002 (discussion)
   - url: https://edstem.org/us/courses/85309/discussion
     title: EdStem for section 003 (discussion)
