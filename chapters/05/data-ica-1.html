@@ -1,0 +1,899 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>In Class Activity - Data and Dataframes (Pandas) &#8212; Lab in C&amp;P (Fall 2025)</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nyustyle.css?v=52070268" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/05/data-ica-1';</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="In Class Activity - Visualizing Data with Matplotlib and Seaborn" href="../06/viz-ica-1.html" />
+    <link rel="prev" title="In Class Activity - Evaluating Research Designs" href="../04/design-ica.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/artificialintelligence.svg" class="logo__image only-light" alt="Lab in C&P (Fall 2025) - Home"/>
+    <img src="../../_static/artificialintelligence.svg" class="logo__image only-dark pst-js-only" alt="Lab in C&P (Fall 2025) - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../course-content/syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../course-content/schedule-01.html">Schedule (Section 001)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../course-content/schedule-02.html">Schedule (Section 002)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../course-content/schedule-03.html">Schedule (Section 003)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://psychua-46-fall.rcnyu.org/">JupyterHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://edstem.org/">EdStem for section 001 (discussion)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://edstem.org/us/courses/85450/discussion">EdStem for section 002 (discussion)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://edstem.org/us/courses/85309/discussion">EdStem for section 003 (discussion)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/markkho/nyu_lab_in_cognition">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.youtube.com/playlist?list=PLZmnZklqQaZzCYidAh1AxcttQIPCkBhBO">Video Lectures</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Textbook</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../00/00-cogsci.html">1. What is Cognitive Science and how do we study it?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/00-whystats.html">2. Why do we have to learn statistics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/00-jupyter.html">3. Introduction to Jupyter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/00-python.html">4. Intro to Python for Psychology Undergrads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/00-researchdesign.html">5. A brief introduction to research design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00-data.html">6. The Format and Structure of Digital Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/00-plots.html">7. Visualizing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/00-describingdata.html">8. Describing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/01-sampling.html">9. Samples, populations and sampling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/00-hypothesistesting.html">10. Hypothesis testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/00-ttest.html">11. Comparing one or two means</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/00-inferences-from-behavior.html">12. Measuring Behavior</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../21/00-ethics-irb.html">13. Research Ethics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20/replication-crisis-in-psychology.html">14. The Replication Crisis in Psychology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13/00-linearregression.html">15. Linear regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14/00-logisticregression.html">16. Logistic regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../15/00-mixed-effect.html">17. Linear Mixed Effect Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16/00-mentalsimulation.html">18. Mental Imagery, Mental Simulation, and Mental Rotation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../17/00-mri.html">19. Magnetic Resonance Imaging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../19/00-writing.html">20. Writing and Publishing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../24/00-what-next.html">21. What Next?</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class Assignments</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03/python-ica.html">Python ICA (Ch 4)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04/design-ica.html">Design ICA (Ch 5)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Data ICA (Ch 6)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/viz-ica-1.html">Visualization ICA (Ch 7)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/sampling-ica.html">Sampling ICA (Ch 9)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/hypothesistesting-ica.html">Hypotheses ICA (Ch 10)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/ttest-ica.html">t-test ICA (Ch 11)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Homeworks</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/Homework1.html">Homework 1 - Welcome to the class tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw2/Homework2.html">Homework 2 - Python for data analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/Homework3.html">Homework 3 - Exploring Data</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tips &amp; Tricks</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../tips/pythonresources.html">Python Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tips/plottingresources.html">Plotting in Python Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tips/fortyforloops.html">Intro to For loops</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../tips/nyu-jupyterhub.html">NYU JupyterHub Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tips/ultimate-guide-ttest-python.html">Ultimate t-test guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../LICENSE.html">License</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://psychua-46-fall.rcnyu.org/hub/user-redirect/git-pull?repo=https%3A//github.com/markkho/nyu_lab_in_cognition&urlpath=tree/nyu_lab_in_cognition/book/chapters/05/data-ica-1.ipynb&branch=master" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on JupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="JupyterHub logo" src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/05/data-ica-1.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>In Class Activity - Data and Dataframes (Pandas)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pandas">Pandas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-data">Loading Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ways-to-check-the-dataframe">Ways to check the dataframe</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#indexing-and-slicing">Indexing and slicing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dealing-with-missing-values">Dealing with missing values</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#describing-the-data">Describing the data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#manipulating-data-in-groups">Manipulating data in Groups</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#combining-datasets-pd-concat">Combining datasets - pd.concat</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="in-class-activity-data-and-dataframes-pandas">
+<h1>In Class Activity - Data and Dataframes (Pandas)<a class="headerlink" href="#in-class-activity-data-and-dataframes-pandas" title="Link to this heading">#</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This exercise authored by <a class="reference external" href="http://gureckislab.org/~gureckis">Todd M. Gureckis</a> is released under the <a class="reference internal" href="#/LICENSE.html"><span class="xref myst">license</span></a>.  <em>Based on a notebook written by Jin Cheong &amp; Luke Chang</em></p>
+</div>
+<p>In this lab we are going to learn how to load and manipulate datasets in a dataframe format using Pandas and create beautiful plots using Matplotlib and Seaborn. Pandas is akin to a data frame in R and provides an intuitive way to interact with data in a 2D data frame. Matplotlib is a standard plotting library that is similar in functionality to Matlab’s object oriented plotting. Seaborn is also a plotting library built on the Matplotlib framework which carries useful pre-configured plotting schemes.</p>
+<p>After the tutorial you will have the chance to apply the methods to a new set of data.</p>
+<p>Also, <a class="reference external" href="https://github.com/jakevdp/PythonDataScienceHandbook">here is a great set of notebooks</a> that also covers the topic.  In addition, here is a brief <a class="reference external" href="https://neurohackademy.org/course/complex-data-structures/">video</a> providing a useful introduction to pandas.</p>
+<p>First, we load the basic packages we will be using in this tutorial.  Notice how we import the modules using an abbreviated name.  This is to reduce the amount of text we type when we use the functions.</p>
+<p><strong>Note</strong>: <code class="docutils literal notranslate"><span class="pre">%matplotlib</span> <span class="pre">inline</span></code> is an example of ‘cell magic’ and enables plotting <em>within</em> the notebook and not opening a separate window. In addition, you may want to try using <code class="docutils literal notranslate"><span class="pre">%matplotlib</span> <span class="pre">notebook</span></code>, which will allow more interactive plotting.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline 
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The first part of this exercise you just have to go through each cell and execute it.  However, read the surrounding explanation and thing about what each line of the code is doing.  This is a great way to learn.  You can ask your group members if you don’t understand anything and also feel free to change the code slightly to experiment with what happens if you repeat an analysis on a different column, etc…</p>
+<section id="pandas">
+<h2>Pandas<a class="headerlink" href="#pandas" title="Link to this heading">#</a></h2>
+<section id="loading-data">
+<h3>Loading Data<a class="headerlink" href="#loading-data" title="Link to this heading">#</a></h3>
+<p>We use the pd.read_csv() to load a .csv file into a dataframe.
+Note that read_csv() has many options that can be used to make sure you load the data correctly.</p>
+<p>Pandas has many ways to read data different data formats into a dataframe.  Here we will use the <code class="docutils literal notranslate"><span class="pre">pd.read_csv</span></code> function.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+    <span class="s2">&quot;https://markkho.github.io/nyu_lab_in_cognition/data/salary.csv&quot;</span><span class="p">,</span>
+    <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">,</span>
+    <span class="n">header</span><span class="o">=</span><span class="s2">&quot;infer&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can always use the <code class="docutils literal notranslate"><span class="pre">?</span></code> to access the docstring for a function for more information about the inputs and general useage guidelines.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>pd.read_csv<span class="o">?</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="ways-to-check-the-dataframe">
+<h3>Ways to check the dataframe<a class="headerlink" href="#ways-to-check-the-dataframe" title="Link to this heading">#</a></h3>
+<p>There are many ways to examine your dataframe. One easy way is to execute the dataframe itself.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>However, often the dataframes can be large and we may be only interested in seeing the first few rows.  <code class="docutils literal notranslate"><span class="pre">df.head()</span></code> is useful for this purpose.  <code class="docutils literal notranslate"><span class="pre">shape</span></code> is another useful method for getting the dimensions of the matrix.  We will print the number of rows and columns in this data set by using output formatting.  Use the <code class="docutils literal notranslate"><span class="pre">%</span></code> sign to indicate the type of data (e.g., <code class="docutils literal notranslate"><span class="pre">%i</span></code>=integer, <code class="docutils literal notranslate"><span class="pre">%d</span></code>=float, <code class="docutils literal notranslate"><span class="pre">%s</span></code>=string), then use the <code class="docutils literal notranslate"><span class="pre">%</span></code> followed by a tuple of the values you would like to insert into the text.  See <a class="reference external" href="https://pyformat.info/">here</a> for more info about formatting text.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;There are </span><span class="si">%i</span><span class="s2"> rows and </span><span class="si">%i</span><span class="s2"> columns in this data set&quot;</span> <span class="o">%</span> <span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>On the top row, you have column names, that can be called like a dictionary (a dataframe can be essentially thought of as a dictionary with column names as the keys). The left most column (0,1,2,3,4…) is called the index of the dataframe. The default index is sequential integers, but it can be set to anything as long as each row is unique (e.g., subject IDs)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Indexes&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Columns&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Columns are like keys of a dictionary&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can access the values of a column by calling it directly. Double bracket returns a dataframe</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s2">&quot;salary&quot;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Single bracket returns a Series</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;salary&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can also call a column like an attribute if the column name is a string</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">salary</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can create new columns to fit your needs.
+For instance you can set initialize a new column with zeros.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;pubperyear&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Here we can create a new column pubperyear, which is the ratio of the number of papers published per year</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;pubperyear&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;publications&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;years&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="indexing-and-slicing">
+<h3>Indexing and slicing<a class="headerlink" href="#indexing-and-slicing" title="Link to this heading">#</a></h3>
+<p>Indexing in Pandas can be tricky. There are four ways to index: loc, iloc, and explicit indexing(useful for booleans).</p>
+<p>First, we will try using <code class="docutils literal notranslate"><span class="pre">.loc</span></code>.  This method references the explicit index. it works for both index names and also column names.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;salary&quot;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Next we wil try <code class="docutils literal notranslate"><span class="pre">.iloc</span></code>.  This method references the implicit python index (starting from 0, exclusive of last number).  You can think of this like row by column indexing using integers.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s make a new data frame with just Males and another for just Females. Notice, how we added the <code class="docutils literal notranslate"><span class="pre">.reset_index(drop=True)</span></code> method?   This is because assigning a new dataframe based on indexing another dataframe will retain the <em>original</em> index.  We need to explicitly tell pandas to reset the index if we want it to start from zero.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">male_df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;gender == 0&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">female_df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;gender == 1&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Boolean or logical indexing is useful if you need to sort the data based on some True or False value.</p>
+<p>For instance, who are the people with salaries greater than 90K but lower than 100K ?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;salary &gt; 90000 &amp; salary &lt; 100000&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="dealing-with-missing-values">
+<h3>Dealing with missing values<a class="headerlink" href="#dealing-with-missing-values" title="Link to this heading">#</a></h3>
+<p>It is easy to quickly count the number of missing values for each column in the dataset using the <code class="docutils literal notranslate"><span class="pre">isnull()</span></code> method.  One thing that is  nice about Python is that you can chain commands, which means that the output of one method can be the input into the next method.  This allows us to write intuitive and concise code.  Notice how we take the <code class="docutils literal notranslate"><span class="pre">sum()</span></code> of all of the null cases.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">isnull()</span></code> method will return a dataframe with True/False values on whether a datapoint is null or not a number (nan).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can chain the <code class="docutils literal notranslate"><span class="pre">.null()</span></code> and <code class="docutils literal notranslate"><span class="pre">.sum()</span></code> methods to see how many null values are added up.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can use the boolean indexing once again to see the datapoints that have missing values. We chained the method <code class="docutils literal notranslate"><span class="pre">.any()</span></code> which will check if there are any True values for a given axis.  Axis=0 indicates rows, while Axis=1 indicates columns.  So here we are creating a boolean index for row where <em>any</em> column has a missing value.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You may look at where the values are not null. Note that indexes 18, and 24 are missing.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="o">~</span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>There are different techniques for dealing with missing data.  An easy one is to simply remove rows that have any missing values using the <code class="docutils literal notranslate"><span class="pre">dropna()</span></code> method.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now we can check to make sure the missing rows are removed.  Let’s also check the new dimensions of the dataframe.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;There are </span><span class="si">%i</span><span class="s2"> rows and </span><span class="si">%i</span><span class="s2"> columns in this data set&quot;</span> <span class="o">%</span> <span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="describing-the-data">
+<h3>Describing the data<a class="headerlink" href="#describing-the-data" title="Link to this heading">#</a></h3>
+<p>We can use the <code class="docutils literal notranslate"><span class="pre">.describe()</span></code> method to get a quick summary of the continuous values of the data frame. We will <code class="docutils literal notranslate"><span class="pre">.transpose()</span></code> the output to make it slightly easier to read.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can also get quick summary of a pandas series, or specific column of a pandas dataframe.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">departm</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="manipulating-data-in-groups">
+<h3>Manipulating data in Groups<a class="headerlink" href="#manipulating-data-in-groups" title="Link to this heading">#</a></h3>
+<p>One manipulation we often do is look at variables in groups.
+One way to do this is to usethe <code class="docutils literal notranslate"><span class="pre">.groupby(key)</span></code> method.
+The key is a column that is used to group the variables together.
+For instance, if we want to group the data by gender and get group means, we perform the following.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;gender&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Other default aggregation methods include .count(), .mean(), .median(), .min(), .max(), .std(), .var(), and .sum()</p>
+<p>Before we move on, it looks like there were more than 2 genders specified in our data.
+This is likely an error in the data collection process so let recap on how we might remove this datapoint.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;gender==1&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>replace original dataframe without the miscoded data</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;gender!=2&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now we have a corrected dataframe!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;gender&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Another powerful tool in Pandas is the split-apply-combine method.
+For instance, let’s say we also want to look at how much each professor is earning in respect to the department.
+Let’s say we want to subtract the departmental mean from professor and divide it by the departmental standard deviation.
+We can do this by using the <code class="docutils literal notranslate"><span class="pre">groupby(key)</span></code> method chained with the <code class="docutils literal notranslate"><span class="pre">.transform(function)</span></code> method.
+It will group the dataframe by the key column, perform the “function” transformation of the data and return data in same format.
+To learn more, see link <a class="reference external" href="http://nbviewer.jupyter.org/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/03.08-Aggregation-and-Grouping.ipynb">here</a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># key: We use the departm as the grouping factor.</span>
+<span class="n">key</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;departm&quot;</span><span class="p">]</span>
+
+<span class="c1"># Let&#39;s create an anonmyous function for calculating zscores using lambda:</span>
+<span class="c1"># We want to standardize salary for each department.</span>
+<span class="n">zscore</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">x</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="o">/</span> <span class="n">x</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+
+<span class="c1"># Now let&#39;s calculate zscores separately within each department</span>
+<span class="n">transformed</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">key</span><span class="p">)</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">zscore</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;salary_in_departm&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">transformed</span><span class="p">[</span><span class="s2">&quot;salary&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now we have <code class="docutils literal notranslate"><span class="pre">salary_in_departm</span></code> column showing standardized salary per department.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="combining-datasets-pd-concat">
+<h3>Combining datasets - pd.concat<a class="headerlink" href="#combining-datasets-pd-concat" title="Link to this heading">#</a></h3>
+<p>Recall that we sliced the dataframes into male and female dataframe in 2.3 Indexing and Slicing. Now we will learn how to put dataframes together which is done by the pd.concat method. Note how the index of this output retains the old index.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">female_df</span><span class="p">,</span> <span class="n">male_df</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can reset the index to start at zero using the .reset_index() method</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">male_df</span><span class="p">,</span> <span class="n">female_df</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/05"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../04/design-ica.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">In Class Activity - Evaluating Research Designs</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../06/viz-ica-1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">In Class Activity - Visualizing Data with Matplotlib and Seaborn</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pandas">Pandas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#loading-data">Loading Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ways-to-check-the-dataframe">Ways to check the dataframe</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#indexing-and-slicing">Indexing and slicing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dealing-with-missing-values">Dealing with missing values</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#describing-the-data">Describing the data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#manipulating-data-in-groups">Manipulating data in Groups</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#combining-datasets-pd-concat">Combining datasets - pd.concat</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Todd M. Gureckis
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

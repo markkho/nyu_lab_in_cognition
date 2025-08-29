@@ -1,0 +1,530 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>In Class Activity - Evaluating Research Designs &#8212; Lab in C&amp;P (Fall 2025)</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/nyustyle.css?v=52070268" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/04/design-ica';</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="In Class Activity - Data and Dataframes (Pandas)" href="../05/data-ica-1.html" />
+    <link rel="prev" title="In Class Activity - Python" href="../03/python-ica.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/artificialintelligence.svg" class="logo__image only-light" alt="Lab in C&P (Fall 2025) - Home"/>
+    <img src="../../_static/artificialintelligence.svg" class="logo__image only-dark pst-js-only" alt="Lab in C&P (Fall 2025) - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../course-content/syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../course-content/schedule-01.html">Schedule (Section 001)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../course-content/schedule-02.html">Schedule (Section 002)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../course-content/schedule-03.html">Schedule (Section 003)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://psychua-46-fall.rcnyu.org/">JupyterHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://edstem.org/">EdStem for section 001 (discussion)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://edstem.org/us/courses/85450/discussion">EdStem for section 002 (discussion)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://edstem.org/us/courses/85309/discussion">EdStem for section 003 (discussion)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/markkho/nyu_lab_in_cognition">GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.youtube.com/playlist?list=PLZmnZklqQaZzCYidAh1AxcttQIPCkBhBO">Video Lectures</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Textbook</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../00/00-cogsci.html">1. What is Cognitive Science and how do we study it?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01/00-whystats.html">2. Why do we have to learn statistics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02/00-jupyter.html">3. Introduction to Jupyter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03/00-python.html">4. Intro to Python for Psychology Undergrads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00-researchdesign.html">5. A brief introduction to research design</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/00-data.html">6. The Format and Structure of Digital Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/00-plots.html">7. Visualizing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07/00-describingdata.html">8. Describing Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/01-sampling.html">9. Samples, populations and sampling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/00-hypothesistesting.html">10. Hypothesis testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/00-ttest.html">11. Comparing one or two means</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11/00-inferences-from-behavior.html">12. Measuring Behavior</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../21/00-ethics-irb.html">13. Research Ethics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../20/replication-crisis-in-psychology.html">14. The Replication Crisis in Psychology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13/00-linearregression.html">15. Linear regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14/00-logisticregression.html">16. Logistic regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../15/00-mixed-effect.html">17. Linear Mixed Effect Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16/00-mentalsimulation.html">18. Mental Imagery, Mental Simulation, and Mental Rotation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../17/00-mri.html">19. Magnetic Resonance Imaging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../19/00-writing.html">20. Writing and Publishing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../24/00-what-next.html">21. What Next?</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class Assignments</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03/python-ica.html">Python ICA (Ch 4)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Design ICA (Ch 5)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05/data-ica-1.html">Data ICA (Ch 6)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06/viz-ica-1.html">Visualization ICA (Ch 7)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08/sampling-ica.html">Sampling ICA (Ch 9)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09/hypothesistesting-ica.html">Hypotheses ICA (Ch 10)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10/ttest-ica.html">t-test ICA (Ch 11)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Homeworks</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/Homework1.html">Homework 1 - Welcome to the class tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw2/Homework2.html">Homework 2 - Python for data analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/Homework3.html">Homework 3 - Exploring Data</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tips &amp; Tricks</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../tips/pythonresources.html">Python Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tips/plottingresources.html">Plotting in Python Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tips/fortyforloops.html">Intro to For loops</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../../tips/nyu-jupyterhub.html">NYU JupyterHub Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tips/ultimate-guide-ttest-python.html">Ultimate t-test guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../LICENSE.html">License</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://psychua-46-fall.rcnyu.org/hub/user-redirect/git-pull?repo=https%3A//github.com/markkho/nyu_lab_in_cognition&urlpath=tree/nyu_lab_in_cognition/book/chapters/04/design-ica.ipynb&branch=master" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on JupyterHub"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="JupyterHub logo" src="../../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="btn__text-container">JupyterHub</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/chapters/04/design-ica.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>In Class Activity - Evaluating Research Designs</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="in-class-activity-evaluating-research-designs">
+<h1>In Class Activity - Evaluating Research Designs<a class="headerlink" href="#in-class-activity-evaluating-research-designs" title="Link to this heading">#</a></h1>
+<p>Evaluating research designs.  In the lecture and reading this week we talked about various aspects of research design and measurement.  In particular, much of the discussion was about assessing things that possibly can affect the validity of a research study.</p>
+<p>Psychological Science is one of the more “flashy” journals in the field of Psychology.  The journal website is <a class="reference external" href="https://journals.sagepub.com/home/pss">here</a> where, if you are logged into NYU, you can access the PDFs of papers published by the journal.</p>
+<p>In this in class activity you will find a paper your group things is interesting from a recent publication in the journal.  Then you will assess the following about the paper:</p>
+<ul class="simple">
+<li><p>Is the design and experimental or observational study?</p></li>
+<li><p>What is the main dependent measure (outcome) and what are the various indepdenent measures (predictors)?</p></li>
+<li><p>Do the authors report anything about the reliability of their measurement?  Is there reason to be concerned about it?</p></li>
+<li><p>What are some factors that might impact the validity of the study?  Please discuss why these might be an issue and how serious they might be.</p></li>
+</ul>
+<p>You <em>don’t</em> have to read the paper line by line to answer these questions typically.  Papers are organized into subsections like “Intro”, “Methods”, “Conclusion” which can help you jump around and access the relevant information.</p>
+<p>You will summarize your findings and present them to the class.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./chapters/04"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../03/python-ica.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">In Class Activity - Python</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../05/data-ica-1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">In Class Activity - Data and Dataframes (Pandas)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Todd M. Gureckis
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
