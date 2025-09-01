@@ -23,13 +23,7 @@ $ cd book
 $ make serve
 ```
 
-To deploy, from the root directory:
-```bash
-$ cd book
-$ make deploy
-```
-Note that this force commits to a `gh-pages` branch on the repo with the compiled
-book contents.
+Deployment is handled from this repository using github actions.
 
 ## Course resources
 - JupyterHub for notebooks (email Instructional-Tools-For-Coding@nyu.edu)
