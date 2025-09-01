@@ -11,8 +11,8 @@
 
 **Professor**: [Andrew Hilford](https://as.nyu.edu/psychology/people/faculty.andrew-hilford.html), PhD  
 **Email**: andy.hilford@nyu.edu  
-**Office Hours**: TBD  
-**Office**: TBD  
+**Office Hours**: Thursday, 4pm  
+**Office**: 429, Meyer 
 
 **Teaching Assistant**: TBD  
 **Email**: TBD  
