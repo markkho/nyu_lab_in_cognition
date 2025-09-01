@@ -28,6 +28,3 @@ clean:
 
 serve:
 	python -m http.server 8000 --directory _build/html
-
-deploy:
-	ghp-import --no-jekyll --no-history --push _build/html
