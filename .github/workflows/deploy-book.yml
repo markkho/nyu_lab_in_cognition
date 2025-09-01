@@ -32,8 +32,11 @@ jobs:
         python-version: '3.11'
         cache: pip # Implicitly uses requirements.txt for cache key
 
-    - name: Install dependencies
-      run: pip install -r requirements.txt
+    # - name: Install dependencies
+      # run: pip install -r requirements.txt
+    - name: Install jupyter-book
+      run: |
+        pip install jupyter-book==1.0.3
 
     # (optional) Cache your executed notebooks between runs
     # if you have config:
