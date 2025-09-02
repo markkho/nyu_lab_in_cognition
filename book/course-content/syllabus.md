@@ -14,10 +14,10 @@
 **Office Hours**: Thursday, 4pm  
 **Office**: 429, Meyer 
 
-**Teaching Assistant**: Moufan Li
-**Email**: moufan.li@nyu.edu
-**Office Hours**: By appointment (sign up [here](https://calendly.com/ml8736-nyu/lab-in-c-p-ta-office-hours))
-**Office**: Room 856A, Meyer Hall (enter the open space through the door at the side of the restrooms)
+**Teaching Assistant**: Moufan Li  
+**Email**: moufan.li@nyu.edu  
+**Office Hours**: By appointment (sign up [here](https://calendly.com/ml8736-nyu/lab-in-c-p-ta-office-hours))  
+**Office**: Room 856A, Meyer Hall (enter the open space through the door at the side of the restrooms)  
 
 ### Place and Time
 Tisch Hall, Room LC13  
@@ -33,9 +33,9 @@ Tues/Thurs 11:00 AM - 12:15 PM
 **Office**: Meyer 961 (ring at 957)  
 
 **Teaching Assistant**: Sixing Chen  
-**Email**: sixing.chen@nyu.edu
-**Office Hours**: By appointment
-**Office**: Room 856A, Meyer Hall
+**Email**: sixing.chen@nyu.edu  
+**Office Hours**: By appointment  
+**Office**: Room 856A, Meyer Hall  
 
 ### Place and Time
 Meyer 465  
@@ -53,7 +53,7 @@ Mon 2:00 PM - 4:30 PM
 **Teaching Assistant**: Panos Alefantis  
 **Email**: pa77@nyu.edu  
 **Office Hours**: By appointment  
-**Office**: Room 856A, Meyer Hall
+**Office**: Room 856A, Meyer Hall  
 
 ### Place and Time
 Meyer 102  
