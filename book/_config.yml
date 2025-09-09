@@ -26,7 +26,7 @@ bibtex_bibfiles:
 repository:
   url: https://github.com/markkho/nyu_lab_in_cognition
   path_to_book: book/
-  branch: master
+  branch: main
 
 
 launch_buttons:
