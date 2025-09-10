@@ -21,6 +21,7 @@ book:
 	cp chapters/24/zipall.ipynb _build/html/chapters/24/
 	cp -r chapters/24/images _build/html/chapters/24/
 	cp -r labs/images _build/html/labs/
+	cp -r tips/images _build/html/tips/images
 	chmod -R ugo+r _build/html/
 
 clean:
