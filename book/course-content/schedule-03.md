@@ -27,7 +27,7 @@ a particular date it says watch a video, that is for next time!
 
 ### Wed, Sep 17
 - Agenda
-  - Group presentation on {doc}`Ch 4: Introduction to Python for Psychology Undergraduates <../chapters/03/00-python>`
+  - Group 1 presentation on {doc}`Ch 4: Introduction to Python for Psychology Undergraduates <../chapters/03/00-python>`
   - Do {doc}`Ch 4 ICA: Python <../chapters/03/python-ica>`
   - Discuss {doc}`Intro to for-loops <../tips/fortyforloops>`
 - Assignments
@@ -39,7 +39,7 @@ a particular date it says watch a video, that is for next time!
 
 ### Wed, Sep 24
 - Agenda
-  - Group presentation on {doc}`Ch 5: A brief introduction to research design <../chapters/04/00-researchdesign>`
+  - Group 2 presentation on {doc}`Ch 5: A brief introduction to research design <../chapters/04/00-researchdesign>`
   - Do {doc}`Ch 5 ICA: Evaluating research designs <../chapters/04/design-ica>`
   - Begin {doc}`HW 2: Python for data analysis <../homeworks/hw2/Homework2>` in class
 - Assignments
@@ -47,7 +47,7 @@ a particular date it says watch a video, that is for next time!
 
 ### Wed, Oct 01
 - Agenda
-  - Group presentation on {doc}`Ch 6: Format and structure of digital data <../chapters/05/00-data>`
+  - Group 3 presentation on {doc}`Ch 6: Format and structure of digital data <../chapters/05/00-data>`
   - Do {doc}`Ch 6 ICA: Data and Dataframes <../chapters/05/data-ica-1>`
   - Do {doc}`HW 2 <../homeworks/hw2/Homework2>` in class
 - Assignments
@@ -55,7 +55,7 @@ a particular date it says watch a video, that is for next time!
 
 ### Wed, Oct 08
 - Agenda
-  - Group presentation on {doc}`Ch 7: Visualizing data <../chapters/06/00-plots>`
+  - Group 4 presentation on {doc}`Ch 7: Visualizing data <../chapters/06/00-plots>`
   - Do {doc}`Ch 7 ICA: Visualizing data <../chapters/06/viz-ica-1>`
   - Do {doc}`HW 2 <../homeworks/hw2/Homework2>`
 - Assignments
@@ -68,8 +68,8 @@ a particular date it says watch a video, that is for next time!
 
 ### Wed, Oct 15
 - Agenda
-  - Group presentation on {doc}`Ch 8: Describing data <../chapters/07/00-describingdata>`
-  - Group presentation on {doc}`Ch 9: Samples, populations, and sampling <../chapters/08/01-sampling>`
+  - Group 5 presentation on {doc}`Ch 8: Describing data <../chapters/07/00-describingdata>`
+  - Group 1 presentation on {doc}`Ch 9: Samples, populations, and sampling <../chapters/08/01-sampling>`
   - Work on {doc}`Ch 9 ICA: Sampling <../chapters/08/sampling-ica>`
   - Work on {doc}`HW 3: Exploring Data <../homeworks/Homework3>`
 - Assignments
@@ -78,9 +78,9 @@ a particular date it says watch a video, that is for next time!
 
 ### Wed, Oct 22
 - Agenda
-  - Group presentation on {doc}`Ch 10: Hypothesis Testing <../chapters/09/00-hypothesistesting>`
+  - Group 2 presentation on {doc}`Ch 10: Hypothesis Testing <../chapters/09/00-hypothesistesting>`
   - Work on {doc}`Ch 10 ICA: Hypothesis testing <../chapters/09/hypothesistesting-ica>`
-  - Group presentation on {doc}`Ch 11: Comparing one or two means <../chapters/10/00-ttest>`
+  - Group 3 presentation on {doc}`Ch 11: Comparing one or two means <../chapters/10/00-ttest>`
   - Work on {doc}`Ch 11 ICA: Differences between means <../chapters/10/ttest-ica>`
 - Assignments
   - Read/watch {doc}`Ch 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
