@@ -20,7 +20,7 @@ a particular date it says watch a video, that is for next time!
 - Agenda
   - Discuss Ch 1, 2 and 3
   - JupyterHub introduction
-  - {doc}`HW 1 <../homeworks/Homework1>`
+  - Work on {doc}`HW 1 <../homeworks/Homework1>`
 - Assignments
   - Read/watch {doc}`Ch 4: Introduction to Python for Psychology Undergraduates <../chapters/03/00-python>`
   - Read through {doc}`Intro to for-loops <../tips/fortyforloops>`
@@ -28,6 +28,7 @@ a particular date it says watch a video, that is for next time!
 ### Wed, Sep 17
 - Agenda
   - Group 1 presentation on {doc}`Ch 4: Introduction to Python for Psychology Undergraduates <../chapters/03/00-python>`
+  - Work on {doc}`HW 1 <../homeworks/Homework1>`
   - Do {doc}`Ch 4 ICA: Python <../chapters/03/python-ica>`
   - Discuss {doc}`Intro to for-loops <../tips/fortyforloops>`
 - Assignments
