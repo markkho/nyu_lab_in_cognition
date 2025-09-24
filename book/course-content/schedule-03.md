@@ -30,7 +30,6 @@ a particular date it says watch a video, that is for next time!
   - Group 1 presentation on {doc}`Ch 4: Introduction to Python for Psychology Undergraduates <../chapters/03/00-python>`
   - Work on {doc}`HW 1 <../homeworks/Homework1>`
   - Do {doc}`Ch 4 ICA: Python <../chapters/03/python-ica>`
-  - Discuss {doc}`Intro to for-loops <../tips/fortyforloops>`
 - Assignments
   - Read/watch {doc}`Ch 5: A brief introduction to research design <../chapters/04/00-researchdesign>`
 
@@ -42,6 +41,7 @@ a particular date it says watch a video, that is for next time!
 - Agenda
   - Group 2 presentation on {doc}`Ch 5: A brief introduction to research design <../chapters/04/00-researchdesign>`
   - Do {doc}`Ch 5 ICA: Evaluating research designs <../chapters/04/design-ica>`
+  - Discuss {doc}`Intro to for-loops <../tips/fortyforloops>`
   - Begin {doc}`HW 2: Python for data analysis <../homeworks/hw2/Homework2>` in class
 - Assignments
   - Read/watch {doc}`Ch 6: Format and structure of digital data <../chapters/05/00-data>`
@@ -50,7 +50,7 @@ a particular date it says watch a video, that is for next time!
 - Agenda
   - Group 3 presentation on {doc}`Ch 6: Format and structure of digital data <../chapters/05/00-data>`
   - Do {doc}`Ch 6 ICA: Data and Dataframes <../chapters/05/data-ica-1>`
-  - Do {doc}`HW 2 <../homeworks/hw2/Homework2>` in class
+  - Work on {doc}`HW 2 <../homeworks/hw2/Homework2>` in class
 - Assignments
   - Read/watch {doc}`Ch 7: Visualizing data <../chapters/06/00-plots>`
 
@@ -58,7 +58,7 @@ a particular date it says watch a video, that is for next time!
 - Agenda
   - Group 4 presentation on {doc}`Ch 7: Visualizing data <../chapters/06/00-plots>`
   - Do {doc}`Ch 7 ICA: Visualizing data <../chapters/06/viz-ica-1>`
-  - Do {doc}`HW 2 <../homeworks/hw2/Homework2>`
+  - Work on {doc}`HW 2 <../homeworks/hw2/Homework2>`
 - Assignments
   - Read/watch {doc}`Ch 8: Describing data <../chapters/07/00-describingdata>`
   - Read/watch {doc}`Ch 9: Samples, populations, and sampling <../chapters/08/01-sampling>`
