@@ -91,60 +91,63 @@ a particular date it says watch a video, that is for next time!
   - **Homework 3 Due**
 
 ### Wed, Oct 29
-<!-- - Agenda
-  - Group presentation on {doc}`Chapter 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
+- Agenda
+  - Group 4 presentation on {doc}`Chapter 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
   - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`, {doc}`part 2 <../labs/LabSDT-Pt2>`)
 - Assignments
   - Read/watch {doc}`Chapter 13: Research Ethics <../chapters/21/00-ethics-irb>`
-  - Read/watch {doc}`Chapter 14: Replication Crisis in Psychology <../chapters/20/replication-crisis-in-psychology>` -->
+  - Read/watch {doc}`Chapter 14: Replication Crisis in Psychology <../chapters/20/replication-crisis-in-psychology>`
 
 ### Wed, Nov 05
-<!-- - Agenda
-  - Group presentation on {doc}`Chapter 13: Research Ethics <../chapters/21/00-ethics-irb>`
-  - Group presentation on {doc}`Chapter 14: Replication Crisis in Psychology <../chapters/20/replication-crisis-in-psychology>`
+- Agenda
+  - Group 5 presentation on {doc}`Chapter 13: Research Ethics <../chapters/21/00-ethics-irb>`
+  - Group 1 presentation on {doc}`Chapter 14: Replication Crisis in Psychology <../chapters/20/replication-crisis-in-psychology>`
   - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`, {doc}`part 2 <../labs/LabSDT-Pt2>`)
 - Assignments
-  - Read/watch {doc}`Chapter 15: Linear Regression <../chapters/13/00-linearregression>` -->
+  - Read/watch {doc}`Chapter 15: Linear Regression <../chapters/13/00-linearregression>`
 
 ### Wed, Nov 12
-<!-- - Agenda
-  - Group presentation on {doc}`Chapter 15: Linear Regression <../chapters/13/00-linearregression>`
+- Agenda
+  - Group 2 presentation on {doc}`Chapter 15: Linear Regression <../chapters/13/00-linearregression>`
   - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`, {doc}`part 2 <../labs/LabSDT-Pt2>`)
 - Assignments
-  - Read {doc}`Chapter 17: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>` -->
+  - Read {doc}`Chapter 17: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>`
+
+### Fri, Nov 14 (No class)
+- Assignments
+  - **Signal Detection Theory lab due**
 
 ### Wed, Nov 19
-<!-- - Agenda
-  - Group presentation on {doc}`Chapter 17: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>`
-  - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`, {doc}`part 2 <../labs/LabSDT-Pt2>`)
+- Agenda
+  - Group 3 presentation on {doc}`Chapter 17: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>`
   - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`, {doc}`part 2 <../labs/LabReg-AdvancedRegression>`, {doc}`part 3 <../labs/LabReg-MentalRotation>`)
 - Assignments
-  - Read {doc}`Chapter 18: Mental Imagery, Mental Simulation, and Mental Rotation <../chapters/16/00-mentalsimulation>` -->
-
-<!-- ### Fri, Nov 21 (No class)
-- Assignments
-  - **Signal Detection Theory lab due** -->
+  - Read {doc}`Chapter 18: Mental Imagery, Mental Simulation, and Mental Rotation <../chapters/16/00-mentalsimulation>`
 
 ### Wed, Nov 26 (No class, Legislative Friday)
 - Agenda
   - **No class (Legislative Friday)**
 
 ### Wed, Dec 03
-<!-- - Agenda
-  - Group presentation on {doc}`Chapter 18: Mental Imagery, Mental Simulation, and Mental Rotation <../chapters/16/00-mentalsimulation>`
+- Agenda
+  - Group 4 presentation on {doc}`Chapter 18: Mental Imagery, Mental Simulation, and Mental Rotation <../chapters/16/00-mentalsimulation>`
   - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`, {doc}`part 2 <../labs/LabReg-AdvancedRegression>`, {doc}`part 3 <../labs/LabReg-MentalRotation>`)
   - **EXTRA CREDIT:** Functional Magnetic Resonance Imaging lab ({doc}`part 1 <../labs/LabReg-MRI-Pt1>`, {doc}`part 2 <../labs/LabReg-MRI-Pt2>`)
 - Assignments
+  - Read {doc}`Chapter 19: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
   - Read/watch {doc}`Chapter 21: What's Next? <../chapters/24/00-what-next>`
-  - **OPTIONAL**: Read {doc}`Chapter 19: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>` -->
 
 ### Wed, Dec 10
-<!-- - Agenda
+- Agenda
+  - Group 5 presentation on {doc}`Chapter 19: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
   - Final Discussion
   - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`, {doc}`part 2 <../labs/LabReg-AdvancedRegression>`, {doc}`part 3 <../labs/LabReg-MentalRotation>`)
-  - **EXTRA CREDIT:** Group presentation on {doc}`Chapter 19: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
-  - **EXTRA CREDIT:** Functional Magnetic Resonance Imaging lab ({doc}`part 1 <../labs/LabReg-MRI-Pt1>`, {doc}`part 2 <../labs/LabReg-MRI-Pt2>`) -->
+  - **EXTRA CREDIT:** Functional Magnetic Resonance Imaging lab ({doc}`part 1 <../labs/LabReg-MRI-Pt1>`, {doc}`part 2 <../labs/LabReg-MRI-Pt2>`)
 
-<!-- ### Fri, Dec 12 (No class)
+### Fri, Dec 12 (No class)
 - Assignments
-  - **Linear regression lab due** -->
+  - **Linear regression lab due**
+
+### Mon, Dec 15 (No class)
+- Assignments
+  - **fMRI extra credit lab due**
