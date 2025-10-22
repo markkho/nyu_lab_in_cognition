@@ -86,7 +86,7 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - Read/watch {doc}`Ch 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
 
-### Fri, Oct 24 (No class)
+### Mon, Oct 27 (No class)
 - Assignments
   - **Homework 3 Due**
 
