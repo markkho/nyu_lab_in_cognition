@@ -40,6 +40,7 @@ parts:
   - file: chapters/09/00-hypothesistesting
   - file: chapters/10/00-ttest
   - file: chapters/11/00-inferences-from-behavior
+  - file: chapters/12/00-correlation
   - file: chapters/21/00-ethics-irb
   - file: chapters/20/replication-crisis-in-psychology
   - file: chapters/13/00-linearregression
