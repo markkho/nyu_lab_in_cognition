@@ -136,7 +136,7 @@ a particular date it says watch a video, that is for next time!
   - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`, {doc}`part 2 <../labs/LabReg-AdvancedRegression>`, {doc}`part 3 <../labs/LabReg-MentalRotation>`)
   - **EXTRA CREDIT:** Functional Magnetic Resonance Imaging lab ({doc}`part 1 <../labs/LabReg-MRI-Pt1>`, {doc}`part 2 <../labs/LabReg-MRI-Pt2>`)
 - Assignments
-  - Read/watch {doc}`Chapter 22: What's Next? <../chapters/24/00-what-next>`
+  - Read/watch {doc}`Chapter 21: What's Next? <../chapters/24/00-what-next>`
   - **OPTIONAL**: Read {doc}`Chapter 19: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
 
 ### Mon, Dec 08

@@ -210,7 +210,7 @@ a particular date it says watch a video, that is for next time!
   - **EXTRA CREDIT:** Group presentation on {doc}`Chapter 20: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`  
   - **EXTRA CREDIT:** Functional Magnetic Resonance Imaging lab ({doc}`part 1 <../labs/LabReg-MRI-Pt1>`, {doc}`part 2 <../labs/LabReg-MRI-Pt2>`)
 - Assignments  
-  - Read/watch {doc}`Chapter 22: What's Next? <../chapters/24/00-what-next>`
+  - Read/watch {doc}`Chapter 21: What's Next? <../chapters/24/00-what-next>`
 
 ### Tue, Dec 09
 - Agenda  

@@ -48,7 +48,6 @@ parts:
   - file: chapters/15/00-mixed-effect
   - file: chapters/16/00-mentalsimulation
   - file: chapters/17/00-mri
-  - file: chapters/19/00-writing
   - file: chapters/24/00-what-next
 - caption: In-class Assignments
   chapters:
