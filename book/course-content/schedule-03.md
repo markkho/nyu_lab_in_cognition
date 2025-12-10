@@ -148,6 +148,6 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - **Linear regression lab due**
 
-### Mon, Dec 15 (No class)
+### Fri, Dec 19 (No class)
 - Assignments
   - **fMRI extra credit lab due**
