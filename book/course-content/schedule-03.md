@@ -20,22 +20,32 @@ a particular date it says watch a video, that is for next time!
   - Set up JupyterHub
 - Assignments
   - Read/watch {doc}`Ch 2: Why do we have to learn statistics? <../chapters/01/00-whystats>` by next class
-  - Read/watch {doc}`Ch 3: Introduction to Jupyter <../chapters/02/00-jupyter>` by next class
     
 ### Tues, Jan 27
 - Agenda
-  - Discuss Ch 1, 2 and 3
+  - Discuss Ch 2
+  - JupyterHub introduction
+- Assignments
+  - Read/watch {doc}`Ch 3: Introduction to Jupyter <../chapters/02/00-jupyter>` by next class
+
+### Thurs, Jan 29
+- Agenda
+  - Discuss Ch 3
   - JupyterHub introduction
   - Work on {doc}`HW 1 <../homeworks/Homework1>`
 - Assignments
   - Read/watch {doc}`Ch 4: Introduction to Python for Psychology Undergraduates <../chapters/03/00-python>`
-  - Read through {doc}`Intro to for-loops <../tips/fortyforloops>`
 
 ### Tues, Feb 3
 - Agenda
   - Group 1 presentation on {doc}`Ch 4: Introduction to Python for Psychology Undergraduates <../chapters/03/00-python>`
-  - Work on {doc}`HW 1 <../homeworks/Homework1>`
   - Do {doc}`Ch 4 ICA: Python <../chapters/03/python-ica>`
+- Assignments
+    - Read through {doc}`Intro to for-loops <../tips/fortyforloops>`
+
+### Thurs, Feb 5
+- Agenda
+  - Work on {doc}`HW 1 <../homeworks/Homework1>`
 - Assignments
   - Read/watch {doc}`Ch 5: A brief introduction to research design <../chapters/04/00-researchdesign>`
 
