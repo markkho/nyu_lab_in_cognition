@@ -6,16 +6,22 @@ links to the lecture will be provided here for easy reference to the calendar.
 The assignments refer to the homework **following** a class meeting. So if on
 a particular date it says watch a video, that is for next time! 
 
-### Wed, Sep 03
+### Tuesday, January 20
 - Agenda
   - Introduction to course
   - Form groups, set up JupyterHub
   - {doc}`Intro to Cognitive Science ICA <../chapters/00/cogsci-ica>`
 - Assignments
   - Read/watch {doc}`Ch 1: What is Cognitive Science and how do we study it? <../chapters/00/00-cogsci>`
+
+### Thursday, January 22
+- Agenda
+  - Discuss Ch 1
+  - Set up JupyterHub
+- Assignments
   - Read/watch {doc}`Ch 2: Why do we have to learn statistics? <../chapters/01/00-whystats>` by next class
   - Read/watch {doc}`Ch 3: Introduction to Jupyter <../chapters/02/00-jupyter>` by next class
-
+    
 ### Wed, Sep 10
 - Agenda
   - Discuss Ch 1, 2 and 3
