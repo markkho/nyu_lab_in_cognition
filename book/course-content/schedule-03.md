@@ -53,7 +53,7 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - **Homework 1 Due**
 
-### Tues, Feb 10
+### Tues & Thurs, Feb 10 & 12
 - Agenda
   - Group 2 presentation on {doc}`Ch 5: A brief introduction to research design <../chapters/04/00-researchdesign>`
   - Do {doc}`Ch 5 ICA: Evaluating research designs <../chapters/04/design-ica>`
@@ -66,7 +66,7 @@ a particular date it says watch a video, that is for next time!
 - Agenda
   - **No class (Legislative Monday)**
     
-### Thurs, Feb 19
+### Thurs & Tues, Feb 19 & 21
 - Agenda
   - Group 3 presentation on {doc}`Ch 6: Format and structure of digital data <../chapters/05/00-data>`
   - Do {doc}`Ch 6 ICA: Data and Dataframes <../chapters/05/data-ica-1>`
@@ -75,7 +75,7 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - Read/watch {doc}`Ch 7: Visualizing data <../chapters/06/00-plots>`
 
-### Thurs, Feb 26
+### Thurs & Tues, Feb 26 & Mar 3
 - Agenda
   - Group 4 presentation on {doc}`Ch 7: Visualizing data <../chapters/06/00-plots>`
   - Do {doc}`Ch 7 ICA: Visualizing data <../chapters/06/viz-ica-1>`
@@ -88,7 +88,7 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - **Homework 2 Due**
 
-### Thurs, Mar 5
+### Thurs & Tues, Mar 5 & 10
 - Agenda
   - Group 5 presentation on {doc}`Ch 8: Describing data <../chapters/07/00-describingdata>`
   - Group 1 presentation on {doc}`Ch 9: Samples, populations, and sampling <../chapters/08/01-sampling>`
@@ -98,7 +98,7 @@ a particular date it says watch a video, that is for next time!
   - Read/watch {doc}`Ch 10: Hypothesis testing <../chapters/09/00-hypothesistesting>`
   - Read/watch {doc}`Ch 11: Comparing one or two means <../chapters/10/00-ttest>`
 
-### Thurs, Mar 12
+### Thurs & Tues, Mar 12 & 24
 - Agenda
   - Group 2 presentation on {doc}`Ch 10: Hypothesis Testing <../chapters/09/00-hypothesistesting>`
   - Work on {doc}`Ch 10 ICA: Hypothesis testing <../chapters/09/hypothesistesting-ica>`
@@ -111,7 +111,7 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - **Homework 3 Due**
 
-### Thurs, Mar 26
+### Thurs & Tues, Mar 26 & 31
 - Agenda
   - Group 4 presentation on {doc}`Chapter 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
   - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`, {doc}`part 2 <../labs/LabSDT-Pt2>`)
@@ -119,7 +119,7 @@ a particular date it says watch a video, that is for next time!
   - Read/watch {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
   - Read/watch {doc}`Chapter 15: Replication Crisis in Psychology <../chapters/20/replication-crisis-in-psychology>`
 
-### Thurs, Apr 2
+### Thurs & Tues, Apr 2 & 7
 - Agenda
   - Group 5 presentation on {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
   - Group 1 presentation on {doc}`Chapter 15: Replication Crisis in Psychology <../chapters/20/replication-crisis-in-psychology>`
@@ -127,7 +127,7 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - Read/watch {doc}`Chapter 16: Linear Regression <../chapters/13/00-linearregression>`
 
-### Thurs, Apr 9
+### Thurs & Tues, Apr 9 & 14
 - Agenda
   - Group 2 presentation on {doc}`Chapter 16: Linear Regression <../chapters/13/00-linearregression>`
   - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`, {doc}`part 2 <../labs/LabSDT-Pt2>`)
@@ -138,14 +138,14 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - **Signal Detection Theory lab due**
 
-### Thurs, Apr 16
+### Thurs & Tues, Apr 16 & 21
 - Agenda
   - Group 3 presentation on {doc}`Chapter 18: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>`
   - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`, {doc}`part 2 <../labs/LabReg-AdvancedRegression>`, {doc}`part 3 <../labs/LabReg-MentalRotation>`)
 - Assignments
   - Read {doc}`Chapter 19: Mental Imagery, Mental Simulation, and Mental Rotation <../chapters/16/00-mentalsimulation>`
 
-### Thurs, Apr 23
+### Thurs & Tues, Apr 23 & 28
 - Agenda
   - Group 4 presentation on {doc}`Chapter 19: Mental Imagery, Mental Simulation, and Mental Rotation <../chapters/16/00-mentalsimulation>`
   - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`, {doc}`part 2 <../labs/LabReg-AdvancedRegression>`, {doc}`part 3 <../labs/LabReg-MentalRotation>`)
@@ -153,12 +153,8 @@ a particular date it says watch a video, that is for next time!
   - Read {doc}`Chapter 20: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
   - Read/watch {doc}`Chapter 21: What's Next? <../chapters/24/00-what-next>`
 
-### Thurs, Apr 30
+### Thurs & Tues, Apr 30 & May 5
 - Agenda
   - Group 5 presentation on {doc}`Chapter 20: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
   - Final Discussion
   - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`, {doc}`part 2 <../labs/LabReg-AdvancedRegression>`, {doc}`part 3 <../labs/LabReg-MentalRotation>`)
-
-### Tues, May 5
-- Agenda
-  - TBD
