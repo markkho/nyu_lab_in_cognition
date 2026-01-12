@@ -6,7 +6,7 @@ links to the lecture will be provided here for easy reference to the calendar.
 The assignments refer to the homework **following** a class meeting. So if on
 a particular date it says watch a video, that is for next time! 
 
-### Tuesday, January 20
+### Tues, January 20
 - Agenda
   - Introduction to course
   - Form groups, set up JupyterHub
@@ -14,7 +14,7 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - Read/watch {doc}`Ch 1: What is Cognitive Science and how do we study it? <../chapters/00/00-cogsci>`
 
-### Thursday, January 22
+### Thurs, Jan 22
 - Agenda
   - Discuss Ch 1
   - Set up JupyterHub
@@ -22,7 +22,7 @@ a particular date it says watch a video, that is for next time!
   - Read/watch {doc}`Ch 2: Why do we have to learn statistics? <../chapters/01/00-whystats>` by next class
   - Read/watch {doc}`Ch 3: Introduction to Jupyter <../chapters/02/00-jupyter>` by next class
     
-### Wed, Sep 10
+### Tues, Jan 27
 - Agenda
   - Discuss Ch 1, 2 and 3
   - JupyterHub introduction
@@ -31,7 +31,7 @@ a particular date it says watch a video, that is for next time!
   - Read/watch {doc}`Ch 4: Introduction to Python for Psychology Undergraduates <../chapters/03/00-python>`
   - Read through {doc}`Intro to for-loops <../tips/fortyforloops>`
 
-### Wed, Sep 17
+### Tues, Feb 3
 - Agenda
   - Group 1 presentation on {doc}`Ch 4: Introduction to Python for Psychology Undergraduates <../chapters/03/00-python>`
   - Work on {doc}`HW 1 <../homeworks/Homework1>`
@@ -39,11 +39,11 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - Read/watch {doc}`Ch 5: A brief introduction to research design <../chapters/04/00-researchdesign>`
 
-### Fri, Sep 19 (No class)
+### Fri, Feb 6 (No class)
 - Assignments
   - **Homework 1 Due**
 
-### Wed, Sep 24
+### Tues, Feb 10
 - Agenda
   - Group 2 presentation on {doc}`Ch 5: A brief introduction to research design <../chapters/04/00-researchdesign>`
   - Do {doc}`Ch 5 ICA: Evaluating research designs <../chapters/04/design-ica>`
@@ -51,7 +51,12 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - Read/watch {doc}`Ch 6: Format and structure of digital data <../chapters/05/00-data>`
 
-### Wed, Oct 01
+
+### Tues, Feb 17 (No class, Legislative Monday)
+- Agenda
+  - **No class (Legislative Monday)**
+    
+### Thurs, Feb 19
 - Agenda
   - Group 3 presentation on {doc}`Ch 6: Format and structure of digital data <../chapters/05/00-data>`
   - Do {doc}`Ch 6 ICA: Data and Dataframes <../chapters/05/data-ica-1>`
@@ -60,7 +65,7 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - Read/watch {doc}`Ch 7: Visualizing data <../chapters/06/00-plots>`
 
-### Wed, Oct 08
+### Thurs, Feb 26
 - Agenda
   - Group 4 presentation on {doc}`Ch 7: Visualizing data <../chapters/06/00-plots>`
   - Do {doc}`Ch 7 ICA: Visualizing data <../chapters/06/viz-ica-1>`
@@ -69,11 +74,11 @@ a particular date it says watch a video, that is for next time!
   - Read/watch {doc}`Ch 8: Describing data <../chapters/07/00-describingdata>`
   - Read/watch {doc}`Ch 9: Samples, populations, and sampling <../chapters/08/01-sampling>`
 
-### Fri, Oct 10 (No class)
+### Fri, Feb 27 (No class)
 - Assignments
   - **Homework 2 Due**
 
-### Wed, Oct 15
+### Thurs, Mar 5
 - Agenda
   - Group 5 presentation on {doc}`Ch 8: Describing data <../chapters/07/00-describingdata>`
   - Group 1 presentation on {doc}`Ch 9: Samples, populations, and sampling <../chapters/08/01-sampling>`
@@ -83,7 +88,7 @@ a particular date it says watch a video, that is for next time!
   - Read/watch {doc}`Ch 10: Hypothesis testing <../chapters/09/00-hypothesistesting>`
   - Read/watch {doc}`Ch 11: Comparing one or two means <../chapters/10/00-ttest>`
 
-### Wed, Oct 22
+### Thurs, Mar 12
 - Agenda
   - Group 2 presentation on {doc}`Ch 10: Hypothesis Testing <../chapters/09/00-hypothesistesting>`
   - Work on {doc}`Ch 10 ICA: Hypothesis testing <../chapters/09/hypothesistesting-ica>`
@@ -92,11 +97,11 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - Read/watch {doc}`Ch 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
 
-### Mon, Oct 27 (No class)
+### Mon, Mar 23 (No class)
 - Assignments
   - **Homework 3 Due**
 
-### Wed, Oct 29
+### Thurs, Mar 26
 - Agenda
   - Group 4 presentation on {doc}`Chapter 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
   - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`, {doc}`part 2 <../labs/LabSDT-Pt2>`)
@@ -104,7 +109,7 @@ a particular date it says watch a video, that is for next time!
   - Read/watch {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
   - Read/watch {doc}`Chapter 15: Replication Crisis in Psychology <../chapters/20/replication-crisis-in-psychology>`
 
-### Wed, Nov 05
+### Thurs, Apr 2
 - Agenda
   - Group 5 presentation on {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
   - Group 1 presentation on {doc}`Chapter 15: Replication Crisis in Psychology <../chapters/20/replication-crisis-in-psychology>`
@@ -112,48 +117,38 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - Read/watch {doc}`Chapter 16: Linear Regression <../chapters/13/00-linearregression>`
 
-### Wed, Nov 12
+### Thurs, Apr 9
 - Agenda
   - Group 2 presentation on {doc}`Chapter 16: Linear Regression <../chapters/13/00-linearregression>`
   - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`, {doc}`part 2 <../labs/LabSDT-Pt2>`)
 - Assignments
   - Read {doc}`Chapter 18: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>`
 
-### Fri, Nov 14 (No class)
+### Fri, Apr 10 (No class)
 - Assignments
   - **Signal Detection Theory lab due**
 
-### Wed, Nov 19
+### Thurs, Apr 16
 - Agenda
   - Group 3 presentation on {doc}`Chapter 18: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>`
   - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`, {doc}`part 2 <../labs/LabReg-AdvancedRegression>`, {doc}`part 3 <../labs/LabReg-MentalRotation>`)
 - Assignments
   - Read {doc}`Chapter 19: Mental Imagery, Mental Simulation, and Mental Rotation <../chapters/16/00-mentalsimulation>`
 
-### Wed, Nov 26 (No class, Legislative Friday)
-- Agenda
-  - **No class (Legislative Friday)**
-
-### Wed, Dec 03
+### Thurs, Apr 23
 - Agenda
   - Group 4 presentation on {doc}`Chapter 19: Mental Imagery, Mental Simulation, and Mental Rotation <../chapters/16/00-mentalsimulation>`
   - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`, {doc}`part 2 <../labs/LabReg-AdvancedRegression>`, {doc}`part 3 <../labs/LabReg-MentalRotation>`)
-  - **EXTRA CREDIT:** Functional Magnetic Resonance Imaging lab ({doc}`part 1 <../labs/LabReg-MRI-Pt1>`, {doc}`part 2 <../labs/LabReg-MRI-Pt2>`)
 - Assignments
   - Read {doc}`Chapter 20: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
   - Read/watch {doc}`Chapter 21: What's Next? <../chapters/24/00-what-next>`
 
-### Wed, Dec 10
+### Thurs, Apr 30
 - Agenda
   - Group 5 presentation on {doc}`Chapter 20: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
   - Final Discussion
   - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`, {doc}`part 2 <../labs/LabReg-AdvancedRegression>`, {doc}`part 3 <../labs/LabReg-MentalRotation>`)
-  - **EXTRA CREDIT:** Functional Magnetic Resonance Imaging lab ({doc}`part 1 <../labs/LabReg-MRI-Pt1>`, {doc}`part 2 <../labs/LabReg-MRI-Pt2>`)
 
-### Fri, Dec 12 (No class)
-- Assignments
-  - **Linear regression lab due**
-
-### Fri, Dec 19 (No class)
-- Assignments
-  - **fMRI extra credit lab due**
+### Tues, May 5
+- Agenda
+  - TBD
