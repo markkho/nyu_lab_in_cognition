@@ -2,7 +2,7 @@
 
 # LAB IN COGNITION AND PERCEPTION
 
-## PSYCH-UA.46 - Fall 2025
+## PSYCH-UA.46 - Spring 2026
 
 
 ## Section 01
@@ -45,19 +45,19 @@ Mon 2:00 PM - 4:30 PM
 
 ### Instructors
 
-**Professor**: [Mark Ho](https://codec-lab.github.io), PhD  
-**Email**: mark.ho@nyu.edu  
-**Office Hours**: Thursdays 10am-1pm (sign up for appointments [here](https://calendly.com/markkho/15-min-meetings-clone))  
-**Office**: Zoom or Meyer 552  
+**Professor**: [Bob Rehder](https://as.nyu.edu/faculty/robert-e-rehder.html), PhD  
+**Email**: bob.rehder@nyu.edu
+**Office Hours**: Tuesday, 12:30-2:30
+**Office**: Zoom or Meyer 586  
 
-**Teaching Assistant**: Panos Alefantis  
-**Email**: pa77@nyu.edu  
+**Teaching Assistant**: Zoe Dunn  
+**Email**: zd2213@nyu.edu
 **Office Hours**: By appointment  
-**Office**: Room 856A, Meyer Hall  
+**Office**: Room ???, Meyer Hall  
 
 ### Place and Time
 Meyer 102  
-Wed, 11:00 AM - 1:30 PM
+Tues/Thurs, 11:00 AM - 12:15 PM
 
 
 
