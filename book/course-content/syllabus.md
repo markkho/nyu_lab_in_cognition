@@ -4,43 +4,6 @@
 
 ## PSYCH-UA.46 - Spring 2026
 
-
-## Section 01
-
-### Instructors
-
-**Professor**: [Andrew Hilford](https://as.nyu.edu/psychology/people/faculty.andrew-hilford.html), PhD  
-**Email**: andy.hilford@nyu.edu  
-**Office Hours**: Thursday, 4pm  
-**Office**: 429, Meyer 
-
-**Teaching Assistant**: Moufan Li  
-**Email**: moufan.li@nyu.edu  
-**Office Hours**: By appointment (sign up [here](https://calendly.com/ml8736-nyu/lab-in-c-p-ta-office-hours))  
-**Office**: Room 856A, Meyer Hall (enter the open space through the door at the side of the restrooms)  
-
-### Place and Time
-Tisch Hall, Room LC13  
-Tues/Thurs 11:00 AM - 12:15 PM
-
-## Section 02
-
-### Instructors
-
-**Professor**: [Michael Landy](https://wp.nyu.edu/landylab/landy-bio/), PhD  
-**Email**: landy@nyu.edu  
-**Office Hours**: By appointment  
-**Office**: Meyer 961 (ring at 957)  
-
-**Teaching Assistant**: Sixing Chen  
-**Email**: sixing.chen@nyu.edu  
-**Office Hours**: By appointment  
-**Office**: Room 856A, Meyer Hall  
-
-### Place and Time
-Meyer 465  
-Mon 2:00 PM - 4:30 PM
-
 ## Section 03
 
 ### Instructors
@@ -56,7 +19,7 @@ Mon 2:00 PM - 4:30 PM
 **Office**: Room ???, Meyer Hall  
 
 ### Place and Time
-Meyer 102  
+Silver 618  
 Tues/Thurs, 11:00 AM - 12:15 PM
 
 
