@@ -13,10 +13,10 @@
 **Office Hours**: Tuesday, 12:30-2:30
 **Office**: Zoom or Meyer 586  
 
-**Teaching Assistant**: Zoe Dunn  
+**Teaching Assistant**: Zoe Duan  
 **Email**: zd2213@nyu.edu
 **Office Hours**: By appointment  
-**Office**: Room ???, Meyer Hall  
+**Office**: Room 888, Meyer Hall  
 
 ### Place and Time
 Silver 618  
