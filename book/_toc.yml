@@ -13,7 +13,7 @@ parts:
     title: Schedule (Section 003)
 - caption: Resources
   chapters:
-  - url: https://psychua-46-fall.rcnyu.org/
+  - url: https://psychua-46-spring.rcnyu.org/
     title: JupyterHub
   - url: https://edstem.org/
     title: EdStem for section 001 (discussion)
