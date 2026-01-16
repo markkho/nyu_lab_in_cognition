@@ -1,5 +1,5 @@
 # Book settings
-title: Lab in C&P (Fall 2025)
+title: Lab in C&P (Spring 2026)
 author: Todd M. Gureckis
 logo: images/logo/artificialintelligence.svg
 
@@ -31,5 +31,5 @@ repository:
 
 launch_buttons:
   notebook_interface: "classic"
-  jupyterhub_url: "https://psychua-46-fall.rcnyu.org/"  # The URL for your JupyterHub. (e.g., https://datahub.berkeley.edu)
+  jupyterhub_url: "https://psychua-46-spring.rcnyu.org/"  # The URL for your JupyterHub. (e.g., https://datahub.berkeley.edu)
   binderhub_url: ""
