@@ -31,5 +31,5 @@ repository:
 
 launch_buttons:
   notebook_interface: "classic"
-  jupyterhub_url: "https://psychua-ua46-spring.rcnyu.org/"  # The URL for your JupyterHub. (e.g., https://datahub.berkeley.edu)
+  jupyterhub_url: "https://psych-ua46-spring.rcnyu.org/"  # The URL for your JupyterHub. (e.g., https://datahub.berkeley.edu)
   binderhub_url: ""
