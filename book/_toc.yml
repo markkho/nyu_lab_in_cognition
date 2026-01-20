@@ -5,22 +5,12 @@ parts:
   chapters:
   - file: course-content/syllabus
     title: Syllabus
-  - file: course-content/schedule-01
-    title: Schedule (Section 001)
-  - file: course-content/schedule-02
-    title: Schedule (Section 002)
   - file: course-content/schedule-03
     title: Schedule (Section 003)
 - caption: Resources
   chapters:
   - url: https://psych-ua46-spring.rcnyu.org/
     title: JupyterHub
-  - url: https://edstem.org/
-    title: EdStem for section 001 (discussion)
-  - url: https://edstem.org/us/courses/85450/discussion
-    title: EdStem for section 002 (discussion)
-  - url: https://edstem.org/us/courses/85309/discussion
-    title: EdStem for section 003 (discussion)
   - url: https://github.com/markkho/nyu_lab_in_cognition
     title: GitHub
   - url: https://www.youtube.com/playlist?list=PLZmnZklqQaZzCYidAh1AxcttQIPCkBhBO 

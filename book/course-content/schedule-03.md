@@ -9,15 +9,15 @@ a particular date it says watch a video, that is for next time!
 ### Tues, January 20
 - Agenda
   - Introduction to course
-  - Form groups, set up JupyterHub
-  - {doc}`Intro to Cognitive Science ICA <../chapters/00/cogsci-ica>`
+  - Form working groups
+  - Initial test of JupyterHub
 - Assignments
   - Read/watch {doc}`Ch 1: What is Cognitive Science and how do we study it? <../chapters/00/00-cogsci>`
 
 ### Thurs, Jan 22
 - Agenda
   - Discuss Ch 1
-  - Set up JupyterHub
+  - {doc}`Intro to Cognitive Science ICA <../chapters/00/cogsci-ica>`
 - Assignments
   - Read/watch {doc}`Ch 2: Why do we have to learn statistics? <../chapters/01/00-whystats>` by next class
     
