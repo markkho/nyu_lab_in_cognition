@@ -45,7 +45,7 @@ PSYCH-UA 10 (Statistical reasoning for the behavioral sciences), PSYCH-UA 11 (Ad
 The course will rely on a online computing environment called Jupyter.  Each student will have their own JupyterHub instance and can connect to this from a variety of devices over the internet.  The address of the class JupyterHub is [https://psych-ua46-spring.rcnyu.org/](https://psych-ua46-spring.rcnyu.org/).  You will log in with your normal NYUHome credentials.
 
 ## Communication
-We will use **Ed Discussion** to facilitate discussion outside of class (see the links on the left for your section).  You can post questions about any of the course content and the TA or instructor will try their best to respond quickly.  By asking your question on the public forum you can learn from the questions and answers of your fellow students. 
+We will use **Brightspace** to facilitate discussion outside of class.  You can post questions about any of the course content and the TA or instructor will try their best to respond quickly.  By asking your question on the public forum you can learn from the questions and answers of your fellow students. 
 
 
 ## Schedule
