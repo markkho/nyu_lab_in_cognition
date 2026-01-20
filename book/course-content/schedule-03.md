@@ -9,7 +9,7 @@ a particular date it says watch a video, that is for next time!
 ### Tues, January 20
 - Agenda
   - Introduction to course
-  - Form groups
+  - Form working groups
   - Initial test of JupyterHub
 - Assignments
   - Read/watch {doc}`Ch 1: What is Cognitive Science and how do we study it? <../chapters/00/00-cogsci>`
