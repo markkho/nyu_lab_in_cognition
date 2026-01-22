@@ -17,8 +17,8 @@ a particular date it says watch a video, that is for next time!
 ### Thurs, Jan 22
 - Agenda
   - Discuss Ch 1
-  - {doc}`Intro to Cognitive Science ICA <../chapters/00/cogsci-ica>`
 - Assignments
+  - Read {doc}`Intro to Cognitive Science ICA <../chapters/00/cogsci-ica>`
   - Read/watch {doc}`Ch 2: Why do we have to learn statistics? <../chapters/01/00-whystats>` by next class
     
 ### Tues, Jan 27
