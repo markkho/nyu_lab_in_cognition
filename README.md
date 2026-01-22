@@ -19,10 +19,13 @@ Changes to this repository will be reflected in the hosted website.
 The course materials support integration with JupyterHub. To set this up:
 
 1. Contact Instructional-Tools-For-Coding@nyu.edu to set up a JupyterHub site for the course
-2. Log into JupyterHub as an instructor
-3. Clone or upload this repository to JupyterHub
-4. Open a terminal and navigate to the repository directory
-5. Run:
+2. Log into JupyterHub as an **instructor** in **turbo mode** and open a terminal.
+3. Clone or upload this repository to JupyterHub by typing:
+```
+git clone https://github.com/markkho/nyu_lab_in_cognition.git
+```
+5. Navigate to the repository directory (`nyu_lab_in_cognition/`)
+6. Run:
 ```
 make setup
 ```
