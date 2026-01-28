@@ -23,8 +23,7 @@ a particular date it says watch a video, that is for next time!
     
 ### Tues, Jan 27
 - Agenda
-  - Discuss Ch 2
-  - JupyterHub introduction
+  - Discuss Intro to Cognitive Science ICA and Ch 2
 - Assignments
   - Read/watch {doc}`Ch 3: Introduction to Jupyter <../chapters/02/00-jupyter>` by next class
 
