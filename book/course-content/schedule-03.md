@@ -44,6 +44,7 @@ a particular date it says watch a video, that is for next time!
 
 ### Thurs, Feb 5
 - Agenda
+  - Discuss {doc}`Intro to for-loops <../tips/fortyforloops>`
   - Work on {doc}`HW 1 <../homeworks/Homework1>`
 - Assignments
   - Read/watch {doc}`Ch 5: A brief introduction to research design <../chapters/04/00-researchdesign>`
@@ -52,10 +53,14 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - **Homework 1 Due**
 
-### Tues & Thurs, Feb 10 & 12
+### Tues, Feb 10
 - Agenda
   - Group 2 presentation on {doc}`Ch 5: A brief introduction to research design <../chapters/04/00-researchdesign>`
   - Do {doc}`Ch 5 ICA: Evaluating research designs <../chapters/04/design-ica>`
+
+
+### Thurs, Feb 12
+- Agenda
   - Begin {doc}`HW 2: Python for data analysis <../homeworks/hw2/Homework2>` in class
 - Assignments
   - Read/watch {doc}`Ch 6: Format and structure of digital data <../chapters/05/00-data>`
@@ -69,7 +74,6 @@ a particular date it says watch a video, that is for next time!
 - Agenda
   - Group 3 presentation on {doc}`Ch 6: Format and structure of digital data <../chapters/05/00-data>`
   - Do {doc}`Ch 6 ICA: Data and Dataframes <../chapters/05/data-ica-1>`
-  - Discuss {doc}`Intro to for-loops <../tips/fortyforloops>`
   - Work on {doc}`HW 2 <../homeworks/hw2/Homework2>` in class
 - Assignments
   - Read/watch {doc}`Ch 7: Visualizing data <../chapters/06/00-plots>`
