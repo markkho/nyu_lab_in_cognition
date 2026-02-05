@@ -56,11 +56,13 @@ a particular date it says watch a video, that is for next time!
 ### Tues, Feb 10
 - Agenda
   - Group 2 presentation on {doc}`Ch 5: A brief introduction to research design <../chapters/04/00-researchdesign>`
-  - Do {doc}`Ch 5 ICA: Evaluating research designs <../chapters/04/design-ica>`
+- Assignments
+  - Working groups choose research paper to assses for Ch 5 ICA: Evaluating research designs
 
 
 ### Thurs, Feb 12
 - Agenda
+  - Do {doc}`Ch 5 ICA: Evaluating research designs <../chapters/04/design-ica>`
   - Begin {doc}`HW 2: Python for data analysis <../homeworks/hw2/Homework2>` in class
 - Assignments
   - Read/watch {doc}`Ch 6: Format and structure of digital data <../chapters/05/00-data>`
@@ -70,10 +72,13 @@ a particular date it says watch a video, that is for next time!
 - Agenda
   - **No class (Legislative Monday)**
     
-### Thurs & Tues, Feb 19 & 21
+### Thurs, Feb 19
 - Agenda
   - Group 3 presentation on {doc}`Ch 6: Format and structure of digital data <../chapters/05/00-data>`
   - Do {doc}`Ch 6 ICA: Data and Dataframes <../chapters/05/data-ica-1>`
+
+### Tues, Feb 21
+- Agenda
   - Work on {doc}`HW 2 <../homeworks/hw2/Homework2>` in class
 - Assignments
   - Read/watch {doc}`Ch 7: Visualizing data <../chapters/06/00-plots>`
