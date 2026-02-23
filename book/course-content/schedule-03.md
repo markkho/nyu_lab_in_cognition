@@ -77,33 +77,42 @@ a particular date it says watch a video, that is for next time!
   - Group 3 presentation on {doc}`Ch 6: Format and structure of digital data <../chapters/05/00-data>`
   - Do {doc}`Ch 6 ICA: Data and Dataframes <../chapters/05/data-ica-1>`
 
-### Tues, Feb 21
+### Tues, Feb 24
 - Agenda
   - Work on {doc}`HW 2 <../homeworks/hw2/Homework2>` in class
 - Assignments
   - Read/watch {doc}`Ch 7: Visualizing data <../chapters/06/00-plots>`
 
-### Thurs & Tues, Feb 26 & Mar 3
+### Thurs, Feb 26
 - Agenda
   - Group 4 presentation on {doc}`Ch 7: Visualizing data <../chapters/06/00-plots>`
   - Do {doc}`Ch 7 ICA: Visualizing data <../chapters/06/viz-ica-1>`
   - Work on {doc}`HW 2 <../homeworks/hw2/Homework2>`
 - Assignments
   - Read/watch {doc}`Ch 8: Describing data <../chapters/07/00-describingdata>`
-  - Read/watch {doc}`Ch 9: Samples, populations, and sampling <../chapters/08/01-sampling>`
 
 ### Fri, Feb 27 (No class)
 - Assignments
   - **Homework 2 Due**
 
-### Thurs & Tues, Mar 5 & 10
+### Tues, Mar 3
+- Agenda
+  - Do {doc}`Ch 7 ICA: Visualizing data <../chapters/06/viz-ica-1>`
+- Assignments
+  - Read/watch {doc}`Ch 9: Samples, populations, and sampling <../chapters/08/01-sampling>`
+
+### Thurs, Mar 5
 - Agenda
   - Group 5 presentation on {doc}`Ch 8: Describing data <../chapters/07/00-describingdata>`
-  - Group 1 presentation on {doc}`Ch 9: Samples, populations, and sampling <../chapters/08/01-sampling>`
   - Work on {doc}`Ch 9 ICA: Sampling <../chapters/08/sampling-ica>`
-  - Work on {doc}`HW 3: Exploring Data <../homeworks/Homework3>`
 - Assignments
   - Read/watch {doc}`Ch 10: Hypothesis testing <../chapters/09/00-hypothesistesting>`
+
+### Tues, Mar 10
+- Agenda
+  - Group 1 presentation on {doc}`Ch 9: Samples, populations, and sampling <../chapters/08/01-sampling>`
+  - Work on {doc}`HW 3: Exploring Data <../homeworks/Homework3>`
+- Assignments
   - Read/watch {doc}`Ch 11: Comparing one or two means <../chapters/10/00-ttest>`
 
 ### Thurs & Tues, Mar 12 & 24
