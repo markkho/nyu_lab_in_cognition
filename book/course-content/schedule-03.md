@@ -115,25 +115,34 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - Read/watch {doc}`Ch 11: Comparing one or two means <../chapters/10/00-ttest>`
 
-### Thurs & Tues, Mar 12 & 24
+### Thurs Mar 12
 - Agenda
   - Group 2 presentation on {doc}`Ch 10: Hypothesis Testing <../chapters/09/00-hypothesistesting>`
   - Work on {doc}`Ch 10 ICA: Hypothesis testing <../chapters/09/hypothesistesting-ica>`
+
+### Spring Break!
+
+### Tues, Mar 24
+- Agenda
   - Group 3 presentation on {doc}`Ch 11: Comparing one or two means <../chapters/10/00-ttest>`
   - Work on {doc}`Ch 11 ICA: Differences between means <../chapters/10/ttest-ica>`
 - Assignments
   - Read/watch {doc}`Ch 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
 
-### Mon, Mar 23 (No class)
+### Thurs, Mar 26
+- Agenda
+  - Group 4 presentation on {doc}`Chapter 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
+- Assignments
+  - Read/watch {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
+
+### Fri, Mar 27 (No class)
 - Assignments
   - **Homework 3 Due**
 
-### Thurs & Tues, Mar 26 & 31
+### Tues, Mar 31
 - Agenda
-  - Group 4 presentation on {doc}`Chapter 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
   - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`, {doc}`part 2 <../labs/LabSDT-Pt2>`)
 - Assignments
-  - Read/watch {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
   - Read/watch {doc}`Chapter 15: Replication Crisis in Psychology <../chapters/20/replication-crisis-in-psychology>`
 
 ### Thurs & Tues, Apr 2 & 7
