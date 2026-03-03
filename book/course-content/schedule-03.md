@@ -122,6 +122,10 @@ a particular date it says watch a video, that is for next time!
 
 ### Spring Break!
 
+### Mon, Mar 23 (No class)
+- Assignments
+  - **Homework 3 Due**
+
 ### Tues, Mar 24
 - Agenda
   - Group 3 presentation on {doc}`Ch 11: Comparing one or two means <../chapters/10/00-ttest>`
@@ -134,10 +138,6 @@ a particular date it says watch a video, that is for next time!
   - Group 4 presentation on {doc}`Chapter 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
 - Assignments
   - Read/watch {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
-
-### Fri, Mar 27 (No class)
-- Assignments
-  - **Homework 3 Due**
 
 ### Tues, Mar 31
 - Agenda
