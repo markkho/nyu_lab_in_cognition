@@ -111,14 +111,14 @@ a particular date it says watch a video, that is for next time!
 ### Tues, Mar 10
 - Agenda
   - Group 1 presentation on {doc}`Ch 9: Samples, populations, and sampling <../chapters/08/01-sampling>`
-  - Work on {doc}`HW 3: Exploring Data <../homeworks/Homework3>`
+  - Group 2 presentation on {doc}`Ch 10: Hypothesis Testing <../chapters/09/00-hypothesistesting>`
 - Assignments
   - Read/watch {doc}`Ch 11: Comparing one or two means <../chapters/10/00-ttest>`
 
 ### Thurs Mar 12
 - Agenda
-  - Group 2 presentation on {doc}`Ch 10: Hypothesis Testing <../chapters/09/00-hypothesistesting>`
   - Work on {doc}`Ch 10 ICA: Hypothesis testing <../chapters/09/hypothesistesting-ica>`
+  - Work on {doc}`HW 3: Exploring Data <../homeworks/Homework3>`
 
 ### Spring Break!
 
