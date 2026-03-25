@@ -190,11 +190,16 @@ psychology>`
   - Group 5 presentation on {doc}`Chapter 19: Mental Imagery, Mental Simulation, and Mental Rotation <../chapters/16/00-mentalsimulation>`
   - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`, {doc}`part 2 <../labs/LabReg-AdvancedRegression>`, {doc}`part 3 <../labs/LabReg-MentalRotation>`)
 
-### Thurs & Tues, Apr 23 & 28
+### Thurs, Apr 23
 - Agenda
   - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`, {doc}`part 2 <../labs/LabReg-AdvancedRegression>`, {doc}`part 3 <../labs/LabReg-MentalRotation>`)
 - Assignments
   - Read {doc}`Chapter 20: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
+
+### Tues, Apr 28
+- Agenda
+  - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`, {doc}`part 2 <../labs/LabReg-AdvancedRegression>`, {doc}`part 3 <../labs/LabReg-MentalRotation>`)
+- Assignments
   - Read/watch {doc}`Chapter 21: What's Next? <../chapters/24/00-what-next>`
 
 ### Thurs & Tues, Apr 30 & May 5
