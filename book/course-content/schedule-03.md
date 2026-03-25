@@ -151,7 +151,7 @@ a particular date it says watch a video, that is for next time!
 - Agenda
   - Group 1 presentation on {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
 psychology>`
-  - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`,{doc}part 2 <../labs/LabSDT-Pt2>)
+  - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`, {doc}part 2 <../labs/LabSDT-Pt2>)
 - Assignments
   - Read/watch {doc}`Chapter 15: Replication Crisis in Psychology <../chapters/20/replication-crisis-in-psychology>`
 
