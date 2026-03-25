@@ -151,7 +151,7 @@ a particular date it says watch a video, that is for next time!
 - Agenda
   - Group 1 presentation on {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
 psychology>`
-  - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`, {doc}part 2 <../labs/LabSDT-Pt2>)
+  - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`)
 - Assignments
   - Read/watch {doc}`Chapter 15: Replication Crisis in Psychology <../chapters/20/replication-crisis-in-psychology>`
 
@@ -162,16 +162,21 @@ psychology>`
 - Assignments
   - Read/watch {doc}`Chapter 16: Linear Regression <../chapters/13/00-linearregression>`
 
-### Thurs & Tues, Apr 9 & 14
+### Thurs, Apr 9
 - Agenda
   - Group 3 presentation on {doc}`Chapter 16: Linear Regression <../chapters/13/00-linearregression>`
-  - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`, {doc}`part 2 <../labs/LabSDT-Pt2>`)
+  - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`)
 - Assignments
   - Read {doc}`Chapter 18: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>`
 
 ### Fri, Apr 10 (No class)
 - Assignments
   - **Signal Detection Theory lab due**
+
+### Tues, Apr 14
+- Agenda
+- Assignments
+  - Read {doc}`Chapter 18: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>`
 
 ### Thurs & Tues, Apr 16 & 21
 - Agenda
