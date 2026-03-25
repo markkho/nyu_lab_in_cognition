@@ -138,11 +138,11 @@ a particular date it says watch a video, that is for next time!
   - Group 4 presentation on {doc}`Chapter 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
   - Work on {doc}`Ch 11 ICA: Differences between means <../chapters/10/ttest-ica>`
 - Assignments
-  - Read/watch {doc}`Chapter 13: Correlation <../chapters/13/00-correlation>`
+  - Read/watch {doc}`Chapter 13: Correlation <../chapters/12/00-correlation>`
 
 ### Tues, Mar 31
 - Agenda
-  - Group 5 presentation on {doc}`Chapter 13: Correlation <../chapters/13/00-correlation>`
+  - Group 5 presentation on {doc}`Chapter 13: Correlation <../chapters/12/00-correlation>`
   - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`)
 - Assignments
   - Read/watch {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
