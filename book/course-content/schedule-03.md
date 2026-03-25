@@ -136,20 +136,23 @@ a particular date it says watch a video, that is for next time!
 ### Thurs, Mar 26
 - Agenda
   - Group 4 presentation on {doc}`Chapter 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
+  - Work on {doc}`Ch 11 ICA: Differences between means <../chapters/10/ttest-ica>`
 - Assignments
-  - Read/watch {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
+  - Read/watch {doc}`Chapter 13: Correlation <../chapters/13/00-correlation>`
 
 ### Tues, Mar 31
 - Agenda
-  - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`, {doc}`part 2 <../labs/LabSDT-Pt2>`)
+  - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`)
 - Assignments
-  - Read/watch {doc}`Chapter 15: Replication Crisis in Psychology <../chapters/20/replication-crisis-in-psychology>`
+  - Read/watch {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
 
 ### Thurs, Apr 2
 - Agenda
   - Group 5 presentation on {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
 psychology>`
   - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`)
+- Assignments
+  - Read/watch {doc}`Chapter 15: Replication Crisis in Psychology <../chapters/20/replication-crisis-in-psychology>`
 
 ### Tues, Apr 7
 - Agenda
