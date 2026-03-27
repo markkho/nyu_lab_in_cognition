@@ -196,6 +196,10 @@ psychology>`
 - Assignments
   - Read {doc}`Chapter 20: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
 
+### Fri, Apr 24 (No class)
+- Assignments
+  - **Linear Regression lab due**
+
 ### Tues, Apr 28
 - Agenda
   - Group 1 presentation on {doc}`Chapter 20: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
@@ -211,3 +215,8 @@ psychology>`
 - Agenda
   - Final Discussion
   - {doc}`part 2 <../labs/LabReg--MRI-Pt2>`)
+
+### Fri, May 8 (No class)
+- Assignments
+  - **MRI lab due**
+
