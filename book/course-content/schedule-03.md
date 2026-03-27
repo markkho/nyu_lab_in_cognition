@@ -188,7 +188,7 @@ psychology>`
 ### Tues, Apr 21
 - Agenda
   - Group 5 presentation on {doc}`Chapter 19: Mental Imagery, Mental Simulation, and Mental Rotation <../chapters/16/00-mentalsimulation>`
-  - Linear Regression lab ({doc}`part 2 <../labs/LabReg-AdvancedRegression>`, {doc}`part 3 <../labs/LabReg-MentalRotation>`)
+  - Linear Regression lab ({doc}`part 2 <../labs/LabReg-AdvancedRegression>`)
 
 ### Thurs, Apr 23
 - Agenda
@@ -214,7 +214,7 @@ psychology>`
 ### Tues, May 5
 - Agenda
   - Final Discussion
-  - {doc}`part 2 <../labs/LabReg--MRI-Pt2>`)
+  - MRI lab ({doc}`part 2 <../labs/LabReg--MRI-Pt2>`)
 
 ### Fri, May 8 (No class)
 - Assignments
