@@ -207,15 +207,15 @@ psychology>`
     
 ### Thurs, Apr 30
 - Agenda
-  - MRI lab ({doc}`part 2 <../labs/LabReg--MRI-Pt2>`)
+  - MRI lab ({doc}`part 2 <../labs/LabReg-MRI-Pt2>`)
 - Assignments
   - Read/watch {doc}`Chapter 21: What's Next? <../chapters/24/00-what-next>`
 
 ### Tues, May 5
 - Agenda
   - Final Discussion
-  - MRI lab ({doc}`part 1 <../labs/LabReg--MRI-Pt1>`)
-  - MRI lab ({doc}`part 2 <../labs/LabReg--MRI-Pt2>`)
+  - MRI lab ({doc}`part 1 <../labs/LabReg-MRI-Pt1>`)
+  - MRI lab ({doc}`part 2 <../labs/LabReg-MRI-Pt2>`)
 
 ### Fri, May 8 (No class)
 - Assignments
