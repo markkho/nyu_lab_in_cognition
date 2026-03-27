@@ -214,6 +214,7 @@ psychology>`
 ### Tues, May 5
 - Agenda
   - Final Discussion
+  - MRI lab ({doc}`part 1 <../labs/LabReg--MRI-Pt1>`)
   - MRI lab ({doc}`part 2 <../labs/LabReg--MRI-Pt2>`)
 
 ### Fri, May 8 (No class)
