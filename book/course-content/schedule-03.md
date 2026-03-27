@@ -195,7 +195,7 @@ psychology>`
 - Agenda
   - Linear Regression lab ({doc}`part 3 <../labs/LabReg-MentalRotation>`)
 - Assignments
-  - Read {doc}`Chapter 20: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
+  - Read  {doc}`Chapter 20: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
 
 ### Fri, Apr 24 (No class)
 - Assignments
