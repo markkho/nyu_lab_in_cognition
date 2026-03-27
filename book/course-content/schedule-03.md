@@ -157,6 +157,7 @@ psychology>`
 
 ### Tues, Apr 7
 - Agenda
+  - Discuss Replication Crisis
   - Signal Detection Theory lab ({doc}`part 2 <../labs/LabSDT-Pt2>`)
 - Assignments
   - Read/watch {doc}`Chapter 16: Linear Regression <../chapters/13/00-linearregression>`
