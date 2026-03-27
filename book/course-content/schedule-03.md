@@ -175,8 +175,8 @@ psychology>`
 
 ### Tues, Apr 14
 - Agenda
-- Assignments
-  - Read {doc}`Chapter 18: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>`
+  - Group 4 presentation on {doc}`Chapter 18: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>`
+  - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`)
 
 ### Thurs, Apr 16
 - Agenda
