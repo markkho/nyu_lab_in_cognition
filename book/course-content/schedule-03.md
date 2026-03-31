@@ -157,17 +157,17 @@ psychology>`
 
 ### Tues, Apr 7
 - Agenda
-  - Group 2 presentation on {doc}`Chapter 15: Replication Crisis in Psychology <../chapters/20/replication-crisis-in-psychology>`
+  - Discuss Replication Crisis
   - Signal Detection Theory lab ({doc}`part 2 <../labs/LabSDT-Pt2>`)
 - Assignments
   - Read/watch {doc}`Chapter 16: Linear Regression <../chapters/13/00-linearregression>`
 
 ### Thurs, Apr 9
 - Agenda
-  - Group 3 presentation on {doc}`Chapter 16: Linear Regression <../chapters/13/00-linearregression>`
+  - Group 2 presentation on {doc}`Chapter 16: Linear Regression <../chapters/13/00-linearregression>`
   - Signal Detection Theory lab ({doc}`part 2 <../labs/LabSDT-Pt2>`)
 - Assignments
-  - Read {doc}`Chapter 18: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>`
+  - Read {doc}`Chapter 17: Logistic Regression <../chapters/14/00-logisticregression>`
 
 ### Fri, Apr 10 (No class)
 - Assignments
@@ -175,35 +175,50 @@ psychology>`
 
 ### Tues, Apr 14
 - Agenda
+  - Discuss Logistic Regression
+  - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`)
 - Assignments
   - Read {doc}`Chapter 18: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>`
 
 ### Thurs, Apr 16
 - Agenda
-  - Group 4 presentation on {doc}`Chapter 18: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>`
-  - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`, {doc}`part 2 <../labs/LabReg-AdvancedRegression>`, {doc}`part 3 <../labs/LabReg-MentalRotation>`)
+  - Group 3 presentation on {doc}`Chapter 18: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>`
+  - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`)
 - Assignments
   - Read {doc}`Chapter 19: Mental Imagery, Mental Simulation, and Mental Rotation <../chapters/16/00-mentalsimulation>`
 
 ### Tues, Apr 21
 - Agenda
-  - Group 5 presentation on {doc}`Chapter 19: Mental Imagery, Mental Simulation, and Mental Rotation <../chapters/16/00-mentalsimulation>`
-  - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`, {doc}`part 2 <../labs/LabReg-AdvancedRegression>`, {doc}`part 3 <../labs/LabReg-MentalRotation>`)
+  - Group 4 presentation on {doc}`Chapter 19: Mental Imagery, Mental Simulation, and Mental Rotation <../chapters/16/00-mentalsimulation>`
+  - Linear Regression lab ({doc}`part 2 <../labs/LabReg-AdvancedRegression>`)
 
 ### Thurs, Apr 23
 - Agenda
-  - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`, {doc}`part 2 <../labs/LabReg-AdvancedRegression>`, {doc}`part 3 <../labs/LabReg-MentalRotation>`)
+  - Linear Regression lab ({doc}`part 3 <../labs/LabReg-MentalRotation>`)
 - Assignments
-  - Read {doc}`Chapter 20: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
+  - Read  {doc}`Chapter 20: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
+
+### Fri, Apr 24 (No class)
+- Assignments
+  - **Linear Regression lab due**
 
 ### Tues, Apr 28
 - Agenda
-  - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`, {doc}`part 2 <../labs/LabReg-AdvancedRegression>`, {doc}`part 3 <../labs/LabReg-MentalRotation>`)
+  - Group 5 presentation on {doc}`Chapter 20: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
+  - MRI lab ({doc}`part 1 <../labs/LabReg-MRI-Pt1>`)
+    
+### Thurs, Apr 30
+- Agenda
+  - MRI lab ({doc}`part 2 <../labs/LabReg-MRI-Pt2>`)
 - Assignments
   - Read/watch {doc}`Chapter 21: What's Next? <../chapters/24/00-what-next>`
 
-### Thurs & Tues, Apr 30 & May 5
+### Tues, May 5
 - Agenda
-  - Group 1 presentation on {doc}`Chapter 20: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
   - Final Discussion
-  - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`, {doc}`part 2 <../labs/LabReg-AdvancedRegression>`, {doc}`part 3 <../labs/LabReg-MentalRotation>`)
+  - MRI lab ({doc}`part 2 <../labs/LabReg-MRI-Pt2>`)
+
+### Fri, May 8 (No class)
+- Assignments
+  - **MRI lab due**
+
