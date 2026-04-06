@@ -126,7 +126,7 @@ class Detection_Experiment():
                 self.rt.append((datetime.now()-self.dt).total_seconds() * 1000)
                 
                 self.next_trial()
-        else:
+        #else:
             #clear_output()
             #self.save_data(self.output_file)
             #print("The experiment is finished!")
