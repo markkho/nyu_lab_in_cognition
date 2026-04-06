@@ -79,7 +79,7 @@ class Detection_Experiment():
             width='auto', object_position='center', grid_area='output'))  # output widgets wrapped in VBoxes
 
         np.random.seed(24)
-        self.create_trials(25, [10, 15, 25, 60])
+        self.create_trials(2, [10, 15, 25, 60])
         self.done = False
     
     def create_trials(self, ntrials, vals):
@@ -127,13 +127,13 @@ class Detection_Experiment():
                 
                 self.next_trial()
         else:
-            clear_output()
-            self.save_data(self.output_file)
-            print("The experiment is finished!")
-            print("Data saved to .csv")
-            print("Also available as exp.trials")
-            print("-------------")
-            print("Thanks so much for your time!")
+            #clear_output()
+            #self.save_data(self.output_file)
+            #print("The experiment is finished!")
+            #print("Data saved to .csv")
+            #print("Also available as exp.trials")
+            #print("-------------")
+            #print("Thanks so much for your time!")
 
     def save_data(self, fn):
         # create dataframe
@@ -193,6 +193,15 @@ class Detection_Experiment():
 
         except StopIteration:
             self.done=True
+            # Move here by Zoe and Bob
+            clear_output()
+            self.save_data(self.output_file)
+            print("The experiment is finished!")
+            print("Data saved to .csv")
+            print("Also available as exp.trials")
+            print("-------------")
+            print("Thanks so much for your time!")
+
 
 
     def start_experiment(self):
