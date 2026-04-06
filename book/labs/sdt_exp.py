@@ -193,14 +193,15 @@ class Detection_Experiment():
 
         except StopIteration:
             self.done=True
-            # Move here by Zoe and Bob
-            clear_output()
             self.save_data(self.output_file)
-            print("The experiment is finished!")
-            print("Data saved to .csv")
-            print("Also available as exp.trials")
-            print("-------------")
-            print("Thanks so much for your time!")
+            # Moved here by Zoe and Bob. Also added with self.out
+            with self.out:
+              clear_output()
+              print("The experiment is finished!")
+              print("Data saved to .csv")
+              print("Also available as exp.trials")
+              print("-------------")
+              print("Thanks so much for your time!")
 
 
 
