@@ -79,7 +79,7 @@ class Detection_Experiment():
             width='auto', object_position='center', grid_area='output'))  # output widgets wrapped in VBoxes
 
         np.random.seed(24)
-        self.create_trials(2, [10, 15, 25, 60])
+        self.create_trials(25, [10, 15, 25, 60])
         self.done = False
     
     def create_trials(self, ntrials, vals):
