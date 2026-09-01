@@ -13,13 +13,13 @@
 **Office Hours**: Tuesday, 12:30-2:30
 **Office**: Zoom or Meyer 586  
 
-**Teaching Assistant**: Zoe Duan  
-**Email**: zd2213@nyu.edu
+**Teaching Assistant**: Trevor Hartnett  
+**Email**: tmh8587@nyu.edu
 **Office Hours**: By appointment  
-**Office**: Room 888, Meyer Hall  
+**Office**: TBD  
 
 ### Place and Time
-Silver 618  
+Meyer 159 
 Tues/Thurs, 11:00 AM - 12:15 PM
 
 
