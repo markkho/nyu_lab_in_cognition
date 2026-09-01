@@ -6,7 +6,7 @@ links to the lecture will be provided here for easy reference to the calendar.
 The assignments refer to the homework **following** a class meeting. So if on
 a particular date it says watch a video, that is for next time! 
 
-### Tues, January 20
+### Thurs, Sept 3
 - Agenda
   - Introduction to course
   - Form working groups
@@ -14,20 +14,20 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - Read/watch {doc}`Ch 1: What is Cognitive Science and how do we study it? <../chapters/00/00-cogsci>`
 
-### Thurs, Jan 22
+### Tues, Sept 8
 - Agenda
   - Discuss Ch 1
 - Assignments
   - Read {doc}`Intro to Cognitive Science ICA <../chapters/00/cogsci-ica>`
   - Read/watch {doc}`Ch 2: Why do we have to learn statistics? <../chapters/01/00-whystats>` by next class
     
-### Tues, Jan 27
+### Thurs, Sept 10
 - Agenda
   - Discuss Intro to Cognitive Science ICA and Ch 2
 - Assignments
   - Read/watch {doc}`Ch 3: Introduction to Jupyter <../chapters/02/00-jupyter>` by next class
 
-### Thurs, Jan 29
+### Tues, Sept 15
 - Agenda
   - Discuss Ch 3
   - JupyterHub introduction
@@ -35,14 +35,14 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - Read/watch {doc}`Ch 4: Introduction to Python for Psychology Undergraduates <../chapters/03/00-python>`
 
-### Tues, Feb 3
+### Tues, Sept 17
 - Agenda
   - Group 1 presentation on {doc}`Ch 4: Introduction to Python for Psychology Undergraduates <../chapters/03/00-python>`
   - Do {doc}`Ch 4 ICA: Python <../chapters/03/python-ica>`
 - Assignments
     - Read through {doc}`Intro to for-loops <../tips/fortyforloops>`
 
-### Thurs, Feb 5
+### Tues, Sept 22
 - Agenda
   - Discuss {doc}`Intro to for-loops <../tips/fortyforloops>`
   - Work on {doc}`HW 1 <../homeworks/Homework1>`
