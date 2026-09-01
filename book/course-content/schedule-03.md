@@ -35,7 +35,7 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - Read/watch {doc}`Ch 4: Introduction to Python for Psychology Undergraduates <../chapters/03/00-python>`
 
-### Tues, Sept 17
+### Thurs, Sept 17
 - Agenda
   - Group 1 presentation on {doc}`Ch 4: Introduction to Python for Psychology Undergraduates <../chapters/03/00-python>`
   - Do {doc}`Ch 4 ICA: Python <../chapters/03/python-ica>`
@@ -49,41 +49,35 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - Read/watch {doc}`Ch 5: A brief introduction to research design <../chapters/04/00-researchdesign>`
 
-### Fri, Feb 6 (No class)
-- Assignments
-  - **Homework 1 Due**
-
-### Tues, Feb 10
+### Thurs, Sept 24
 - Agenda
   - Group 2 presentation on {doc}`Ch 5: A brief introduction to research design <../chapters/04/00-researchdesign>`
 - Assignments
   - Working groups choose research paper to assses for Ch 5 ICA: Evaluating research designs
 
+### Mon, Sept 28 (No class)
+- Assignments
+  - **Homework 1 Due**
 
-### Thurs, Feb 12
+### Tues, Sept 29
 - Agenda
   - Do {doc}`Ch 5 ICA: Evaluating research designs <../chapters/04/design-ica>`
   - Begin {doc}`HW 2: Python for data analysis <../homeworks/hw2/Homework2>` in class
 - Assignments
   - Read/watch {doc}`Ch 6: Format and structure of digital data <../chapters/05/00-data>`
 
-
-### Tues, Feb 17 (No class, Legislative Monday)
-- Agenda
-  - **No class (Legislative Monday)**
-    
-### Thurs, Feb 19
+### Thurs, Oct 1
 - Agenda
   - Group 3 presentation on {doc}`Ch 6: Format and structure of digital data <../chapters/05/00-data>`
   - Do {doc}`Ch 6 ICA: Data and Dataframes <../chapters/05/data-ica-1>`
 
-### Tues, Feb 24
+### Tues, Oct 6
 - Agenda
   - Work on {doc}`HW 2 <../homeworks/hw2/Homework2>` in class
 - Assignments
   - Read/watch {doc}`Ch 7: Visualizing data <../chapters/06/00-plots>`
 
-### Thurs, Feb 26
+### Thurs, Oct 8
 - Agenda
   - Group 4 presentation on {doc}`Ch 7: Visualizing data <../chapters/06/00-plots>`
   - Do {doc}`Ch 7 ICA: Visualizing data <../chapters/06/viz-ica-1>`
@@ -91,63 +85,61 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - Read/watch {doc}`Ch 8: Describing data <../chapters/07/00-describingdata>`
 
-### Fri, Feb 27 (No class)
+### Mon, Oct 9 (No class)
 - Assignments
   - **Homework 2 Due**
 
-### Tues, Mar 3
+### Tues, Oct 13
 - Agenda
   - Do {doc}`Ch 7 ICA: Visualizing data <../chapters/06/viz-ica-1>`
 - Assignments
   - Read/watch {doc}`Ch 9: Samples, populations, and sampling <../chapters/08/01-sampling>`
 
-### Thurs, Mar 5
+### Thurs, Oct 15
 - Agenda
   - Group 5 presentation on {doc}`Ch 8: Describing data <../chapters/07/00-describingdata>`
   - Work on {doc}`Ch 9 ICA: Sampling <../chapters/08/sampling-ica>`
 - Assignments
   - Read/watch {doc}`Ch 10: Hypothesis testing <../chapters/09/00-hypothesistesting>`
 
-### Tues, Mar 10
+### Tues, Oct 20
 - Agenda
   - Group 1 presentation on {doc}`Ch 9: Samples, populations, and sampling <../chapters/08/01-sampling>`
   - Group 2 presentation on {doc}`Ch 10: Hypothesis Testing <../chapters/09/00-hypothesistesting>`
 - Assignments
   - Read/watch {doc}`Ch 11: Comparing one or two means <../chapters/10/00-ttest>`
 
-### Thurs Mar 12
+### Thurs Oct 22
 - Agenda
   - Work on {doc}`Ch 10 ICA: Hypothesis testing <../chapters/09/hypothesistesting-ica>`
   - Work on {doc}`HW 3: Exploring Data <../homeworks/Homework3>`
 
-### Spring Break!
-
-### Mon, Mar 23 (No class)
+### Mon, Oct 26 (No class)
 - Assignments
   - **Homework 3 Due**
 
-### Tues, Mar 24
+### Tues, Oct 27
 - Agenda
   - Group 3 presentation on {doc}`Ch 11: Comparing one or two means <../chapters/10/00-ttest>`
   - Work on {doc}`Ch 11 ICA: Differences between means <../chapters/10/ttest-ica>`
 - Assignments
   - Read/watch {doc}`Ch 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
 
-### Thurs, Mar 26
+### Thurs, Oct 29
 - Agenda
   - Group 4 presentation on {doc}`Chapter 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
   - Work on {doc}`Ch 11 ICA: Differences between means <../chapters/10/ttest-ica>`
 - Assignments
   - Read/watch {doc}`Chapter 13: Correlation <../chapters/12/00-correlation>`
 
-### Tues, Mar 31
+### Tues, Nov 3
 - Agenda
   - Group 5 presentation on {doc}`Chapter 13: Correlation <../chapters/12/00-correlation>`
   - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`)
 - Assignments
   - Read/watch {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
 
-### Thurs, Apr 2
+### Thurs, Nov 5
 - Agenda
   - Group 1 presentation on {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
 psychology>`
@@ -155,70 +147,72 @@ psychology>`
 - Assignments
   - Read/watch {doc}`Chapter 15: Replication Crisis in Psychology <../chapters/20/replication-crisis-in-psychology>`
 
-### Tues, Apr 7
+### Tues, Nov 10
 - Agenda
   - Discuss Replication Crisis
   - Signal Detection Theory lab ({doc}`part 2 <../labs/LabSDT-Pt2>`)
 - Assignments
   - Read/watch {doc}`Chapter 16: Linear Regression <../chapters/13/00-linearregression>`
 
-### Thurs, Apr 9
+### Thurs, Nov 12
 - Agenda
   - Group 2 presentation on {doc}`Chapter 16: Linear Regression <../chapters/13/00-linearregression>`
   - Signal Detection Theory lab ({doc}`part 2 <../labs/LabSDT-Pt2>`)
 - Assignments
   - Read {doc}`Chapter 17: Logistic Regression <../chapters/14/00-logisticregression>`
 
-### Fri, Apr 10 (No class)
+### Fri, Nov 13 (No class)
 - Assignments
   - **Signal Detection Theory lab due**
 
-### Tues, Apr 14
+### Tues, Nov 17
 - Agenda
   - Discuss Logistic Regression
   - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`)
 - Assignments
   - Read {doc}`Chapter 18: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>`
 
-### Thurs, Apr 16
+### Thurs, Nov 19
 - Agenda
   - Group 3 presentation on {doc}`Chapter 18: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>`
   - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`)
 - Assignments
   - Read {doc}`Chapter 19: Mental Imagery, Mental Simulation, and Mental Rotation <../chapters/16/00-mentalsimulation>`
 
-### Tues, Apr 21
+### Tues, Nov 24
 - Agenda
   - Group 4 presentation on {doc}`Chapter 19: Mental Imagery, Mental Simulation, and Mental Rotation <../chapters/16/00-mentalsimulation>`
   - Linear Regression lab ({doc}`part 2 <../labs/LabReg-AdvancedRegression>`)
 
-### Thurs, Apr 23
+### Thanksgiving!
+
+### Tues, Dec 1
 - Agenda
   - Linear Regression lab ({doc}`part 3 <../labs/LabReg-MentalRotation>`)
 - Assignments
   - Read  {doc}`Chapter 20: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
 
-### Fri, Apr 24 (No class)
-- Assignments
-  - **Linear Regression lab due**
-
-### Tues, Apr 28
+### Thurs, Dec 3
 - Agenda
   - Group 5 presentation on {doc}`Chapter 20: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
   - MRI lab ({doc}`part 1 <../labs/LabReg-MRI-Pt1>`)
     
-### Thurs, Apr 30
+### Mon, Dec 7 (No class)
+- Assignments
+  - **Linear Regression lab due**
+
+### Tues, Dec 8
 - Agenda
   - MRI lab ({doc}`part 2 <../labs/LabReg-MRI-Pt2>`)
 - Assignments
   - Read/watch {doc}`Chapter 21: What's Next? <../chapters/24/00-what-next>`
 
-### Tues, May 5
+### Thurs, Dec 10
 - Agenda
   - Final Discussion
   - MRI lab ({doc}`part 2 <../labs/LabReg-MRI-Pt2>`)
 
-### Fri, May 8 (No class)
+### Mon, Dec 14 (No class)
 - Assignments
   - **MRI lab due**
 
