@@ -9,7 +9,7 @@ parts:
     title: Schedule (Section 003)
 - caption: Resources
   chapters:
-  - url: https://psych-ua46-spring.rcnyu.org/
+  - url: https://psych-ua4603-fall.rcnyu.org/
     title: JupyterHub
   - url: https://github.com/markkho/nyu_lab_in_cognition
     title: GitHub
