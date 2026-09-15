@@ -37,7 +37,6 @@ a particular date it says watch a video, that is for next time!
 
 ### Thurs, Sept 17
 - Agenda
-  - Group 1 presentation on {doc}`Ch 4: Introduction to Python for Psychology Undergraduates <../chapters/03/00-python>`
   - Do {doc}`Ch 4 ICA: Python <../chapters/03/python-ica>`
 - Assignments
     - Read through {doc}`Intro to for-loops <../tips/fortyforloops>`
@@ -51,7 +50,7 @@ a particular date it says watch a video, that is for next time!
 
 ### Thurs, Sept 24
 - Agenda
-  - Group 2 presentation on {doc}`Ch 5: A brief introduction to research design <../chapters/04/00-researchdesign>`
+  - Group 1 presentation on {doc}`Ch 5: A brief introduction to research design <../chapters/04/00-researchdesign>`
 - Assignments
   - Working groups choose research paper to assses for Ch 5 ICA: Evaluating research designs
 
@@ -68,7 +67,7 @@ a particular date it says watch a video, that is for next time!
 
 ### Thurs, Oct 1
 - Agenda
-  - Group 3 presentation on {doc}`Ch 6: Format and structure of digital data <../chapters/05/00-data>`
+  - Group 2 presentation on {doc}`Ch 6: Format and structure of digital data <../chapters/05/00-data>`
   - Do {doc}`Ch 6 ICA: Data and Dataframes <../chapters/05/data-ica-1>`
 
 ### Tues, Oct 6
@@ -79,7 +78,7 @@ a particular date it says watch a video, that is for next time!
 
 ### Thurs, Oct 8
 - Agenda
-  - Group 4 presentation on {doc}`Ch 7: Visualizing data <../chapters/06/00-plots>`
+  - Group 1 presentation on {doc}`Ch 7: Visualizing data <../chapters/06/00-plots>`
   - Do {doc}`Ch 7 ICA: Visualizing data <../chapters/06/viz-ica-1>`
   - Work on {doc}`HW 2 <../homeworks/hw2/Homework2>`
 - Assignments
@@ -97,7 +96,7 @@ a particular date it says watch a video, that is for next time!
 
 ### Thurs, Oct 15
 - Agenda
-  - Group 5 presentation on {doc}`Ch 8: Describing data <../chapters/07/00-describingdata>`
+  - Group 2 presentation on {doc}`Ch 8: Describing data <../chapters/07/00-describingdata>`
   - Work on {doc}`Ch 9 ICA: Sampling <../chapters/08/sampling-ica>`
 - Assignments
   - Read/watch {doc}`Ch 10: Hypothesis testing <../chapters/09/00-hypothesistesting>`
@@ -120,28 +119,28 @@ a particular date it says watch a video, that is for next time!
 
 ### Tues, Oct 27
 - Agenda
-  - Group 3 presentation on {doc}`Ch 11: Comparing one or two means <../chapters/10/00-ttest>`
+  - Group 1 presentation on {doc}`Ch 11: Comparing one or two means <../chapters/10/00-ttest>`
   - Work on {doc}`Ch 11 ICA: Differences between means <../chapters/10/ttest-ica>`
 - Assignments
   - Read/watch {doc}`Ch 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
 
 ### Thurs, Oct 29
 - Agenda
-  - Group 4 presentation on {doc}`Chapter 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
+  - Group 2 presentation on {doc}`Chapter 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
   - Work on {doc}`Ch 11 ICA: Differences between means <../chapters/10/ttest-ica>`
 - Assignments
   - Read/watch {doc}`Chapter 13: Correlation <../chapters/12/00-correlation>`
 
 ### Tues, Nov 3
 - Agenda
-  - Group 5 presentation on {doc}`Chapter 13: Correlation <../chapters/12/00-correlation>`
+  - Group 1 presentation on {doc}`Chapter 13: Correlation <../chapters/12/00-correlation>`
   - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`)
 - Assignments
   - Read/watch {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
 
 ### Thurs, Nov 5
 - Agenda
-  - Group 1 presentation on {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
+  - Group 2 presentation on {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
 psychology>`
   - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`)
 - Assignments
@@ -156,7 +155,7 @@ psychology>`
 
 ### Thurs, Nov 12
 - Agenda
-  - Group 2 presentation on {doc}`Chapter 16: Linear Regression <../chapters/13/00-linearregression>`
+  - Group 1 presentation on {doc}`Chapter 16: Linear Regression <../chapters/13/00-linearregression>`
   - Signal Detection Theory lab ({doc}`part 2 <../labs/LabSDT-Pt2>`)
 - Assignments
   - Read {doc}`Chapter 17: Logistic Regression <../chapters/14/00-logisticregression>`
@@ -174,14 +173,14 @@ psychology>`
 
 ### Thurs, Nov 19
 - Agenda
-  - Group 3 presentation on {doc}`Chapter 18: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>`
+  - Group 2 presentation on {doc}`Chapter 18: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>`
   - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`)
 - Assignments
   - Read {doc}`Chapter 19: Mental Imagery, Mental Simulation, and Mental Rotation <../chapters/16/00-mentalsimulation>`
 
 ### Tues, Nov 24
 - Agenda
-  - Group 4 presentation on {doc}`Chapter 19: Mental Imagery, Mental Simulation, and Mental Rotation <../chapters/16/00-mentalsimulation>`
+  - Group 1 presentation on {doc}`Chapter 19: Mental Imagery, Mental Simulation, and Mental Rotation <../chapters/16/00-mentalsimulation>`
   - Linear Regression lab ({doc}`part 2 <../labs/LabReg-AdvancedRegression>`)
 
 ### Thanksgiving!
@@ -194,7 +193,7 @@ psychology>`
 
 ### Thurs, Dec 3
 - Agenda
-  - Group 5 presentation on {doc}`Chapter 20: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
+  - Group 2 presentation on {doc}`Chapter 20: Functional Magnetic Resonance Imaging <../chapters/17/00-mri>`
   - MRI lab ({doc}`part 1 <../labs/LabReg-MRI-Pt1>`)
     
 ### Mon, Dec 7 (No class)
