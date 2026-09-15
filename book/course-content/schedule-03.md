@@ -54,7 +54,7 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - Working groups choose research paper to assses for Ch 5 ICA: Evaluating research designs
 
-### Mon, Sept 28 (No class)
+### Fri, Sept 25 (No class)
 - Assignments
   - **Homework 1 Due**
 
