@@ -78,7 +78,7 @@ a particular date it says watch a video, that is for next time!
 
 ### Thurs, Oct 8
 - Agenda
-  - Group 1 presentation on {doc}`Ch 7: Visualizing data <../chapters/06/00-plots>`
+  - Group 3 presentation on {doc}`Ch 7: Visualizing data <../chapters/06/00-plots>`
   - Do {doc}`Ch 7 ICA: Visualizing data <../chapters/06/viz-ica-1>`
   - Work on {doc}`HW 2 <../homeworks/hw2/Homework2>`
 - Assignments
@@ -96,15 +96,15 @@ a particular date it says watch a video, that is for next time!
 
 ### Thurs, Oct 15
 - Agenda
-  - Group 2 presentation on {doc}`Ch 8: Describing data <../chapters/07/00-describingdata>`
+  - Group 1 presentation on {doc}`Ch 8: Describing data <../chapters/07/00-describingdata>`
   - Work on {doc}`Ch 9 ICA: Sampling <../chapters/08/sampling-ica>`
 - Assignments
   - Read/watch {doc}`Ch 10: Hypothesis testing <../chapters/09/00-hypothesistesting>`
 
 ### Tues, Oct 20
 - Agenda
-  - Group 1 presentation on {doc}`Ch 9: Samples, populations, and sampling <../chapters/08/01-sampling>`
-  - Group 2 presentation on {doc}`Ch 10: Hypothesis Testing <../chapters/09/00-hypothesistesting>`
+  - Group 2 presentation on {doc}`Ch 9: Samples, populations, and sampling <../chapters/08/01-sampling>`
+  - Group 3 presentation on {doc}`Ch 10: Hypothesis Testing <../chapters/09/00-hypothesistesting>`
 - Assignments
   - Read/watch {doc}`Ch 11: Comparing one or two means <../chapters/10/00-ttest>`
 
@@ -133,14 +133,14 @@ a particular date it says watch a video, that is for next time!
 
 ### Tues, Nov 3
 - Agenda
-  - Group 1 presentation on {doc}`Chapter 13: Correlation <../chapters/12/00-correlation>`
+  - Group 3 presentation on {doc}`Chapter 13: Correlation <../chapters/12/00-correlation>`
   - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`)
 - Assignments
   - Read/watch {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
 
 ### Thurs, Nov 5
 - Agenda
-  - Group 2 presentation on {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
+  - Group 1 presentation on {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
 psychology>`
   - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`)
 - Assignments
@@ -155,7 +155,7 @@ psychology>`
 
 ### Thurs, Nov 12
 - Agenda
-  - Group 1 presentation on {doc}`Chapter 16: Linear Regression <../chapters/13/00-linearregression>`
+  - Group 2 presentation on {doc}`Chapter 16: Linear Regression <../chapters/13/00-linearregression>`
   - Signal Detection Theory lab ({doc}`part 2 <../labs/LabSDT-Pt2>`)
 - Assignments
   - Read {doc}`Chapter 17: Logistic Regression <../chapters/14/00-logisticregression>`
@@ -173,7 +173,7 @@ psychology>`
 
 ### Thurs, Nov 19
 - Agenda
-  - Group 2 presentation on {doc}`Chapter 18: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>`
+  - Group 3 presentation on {doc}`Chapter 18: Linear Mixed Effect Models <../chapters/15/00-mixed-effect>`
   - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`)
 - Assignments
   - Read {doc}`Chapter 19: Mental Imagery, Mental Simulation, and Mental Rotation <../chapters/16/00-mentalsimulation>`
