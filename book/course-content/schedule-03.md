@@ -84,7 +84,7 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - Read/watch {doc}`Ch 8: Describing data <../chapters/07/00-describingdata>`
 
-### Mon, Oct 9 (No class)
+### Fri, Oct 9 (No class)
 - Assignments
   - **Homework 2 Due**
 
