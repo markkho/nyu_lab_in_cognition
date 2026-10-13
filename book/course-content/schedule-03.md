@@ -96,7 +96,7 @@ a particular date it says watch a video, that is for next time!
 
 ### Thurs, Oct 15
 - Agenda
-  - Group 1 presentation on {doc}`Ch 8: Describing data <../chapters/07/00-describingdata>`
+  - Group 1 presentation on {doc}`Ch 9: Samples, populations, and sampling <../chapters/08/01-sampling>`
   - Work on {doc}`Ch 9 ICA: Sampling <../chapters/08/sampling-ica>`
 - Assignments
   - Read/watch {doc}`Ch 10: Hypothesis testing <../chapters/09/00-hypothesistesting>`
