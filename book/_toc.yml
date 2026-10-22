@@ -63,6 +63,8 @@ parts:
     # title: Homework 2 - Python for data
   - file: homeworks/Homework3
     # title: Homework 3 - Exploring Data
+  - file: homeworks/Homework4
+    # title: Homework 4 - T-tests
 # - caption: Labs
   # chapters:
   # - file: labs/LabSDT-Pt1.ipynb
