@@ -118,29 +118,27 @@ a particular date it says watch a video, that is for next time!
   - **Homework 3 Due**
 
 ### Tues, Oct 27
-- Agenda
-  - Group 1 presentation on {doc}`Ch 11: Comparing one or two means <../chapters/10/00-ttest>`
   - Work on {doc}`Ch 11 ICA: Differences between means <../chapters/10/ttest-ica>`
 - Assignments
   - Read/watch {doc}`Ch 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
 
 ### Thurs, Oct 29
 - Agenda
-  - Group 2 presentation on {doc}`Chapter 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
+  - Group 1 presentation on {doc}`Chapter 12: Measuring behavior <../chapters/11/00-inferences-from-behavior>`
   - Work on {doc}`Ch 11 ICA: Differences between means <../chapters/10/ttest-ica>`
 - Assignments
   - Read/watch {doc}`Chapter 13: Correlation <../chapters/12/00-correlation>`
 
 ### Tues, Nov 3
 - Agenda
-  - Group 3 presentation on {doc}`Chapter 13: Correlation <../chapters/12/00-correlation>`
+  - Group 2 presentation on {doc}`Chapter 13: Correlation <../chapters/12/00-correlation>`
   - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`)
 - Assignments
   - Read/watch {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
 
 ### Thurs, Nov 5
 - Agenda
-  - Group 1 presentation on {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
+  - Group 3 presentation on {doc}`Chapter 14: Research Ethics <../chapters/21/00-ethics-irb>`
 psychology>`
   - Signal Detection Theory lab ({doc}`part 1 <../labs/LabSDT-Pt1>`)
 - Assignments
