@@ -129,6 +129,10 @@ a particular date it says watch a video, that is for next time!
 - Assignments
   - Read/watch {doc}`Chapter 13: Correlation <../chapters/12/00-correlation>`
 
+### Mon, Nov 2 (No class)
+- Assignments
+  - **Homework 4 Due**
+  - 
 ### Tues, Nov 3
 - Agenda
   - Group 2 presentation on {doc}`Chapter 13: Correlation <../chapters/12/00-correlation>`
