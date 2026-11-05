@@ -157,7 +157,7 @@ psychology>`
 
 ### Thurs, Nov 12
 - Agenda
-  - Group 2 presentation on {doc}`Chapter 16: Linear Regression <../chapters/13/00-linearregression>`
+  - Group 1 presentation on {doc}`Chapter 16: Linear Regression <../chapters/13/00-linearregression>`
   - Signal Detection Theory lab ({doc}`part 2 <../labs/LabSDT-Pt2>`)
 - Assignments
   - Read {doc}`Chapter 17: Logistic Regression <../chapters/14/00-logisticregression>`
@@ -168,6 +168,7 @@ psychology>`
 
 ### Tues, Nov 17
 - Agenda
+  - Group 2 presentation on {doc}`Chapter 17: Logistic Regression <../chapters/14/00-logisticregression>`
   - Discuss Logistic Regression
   - Linear Regression lab ({doc}`part 1 <../labs/LabReg-IntroToRegression>`)
 - Assignments
